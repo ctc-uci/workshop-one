@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Nav from './app/components/navbar/Nav.js';
+import Nav from './app/components/Navbar/Nav.js';
 import Home from './app/views/home/Home.js';
 import About from './app/views/about/About.js';
 import Projects from './app/views/projects/Projects.js';
