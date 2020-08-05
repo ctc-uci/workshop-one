@@ -1,12 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Nav from './app/components/Navbar/Nav.js';
-import Home from './app/views/home/Home.js';
-import About from './app/views/about/About.js';
-import Projects from './app/views/projects/Projects.js';
-import ContactUs from './app/views/contact-us/ContactUs.js';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Footer from './app/components/Footer/Footer.js';
+import Nav from './app/components/Navbar/Nav';
+import Home from './app/views/home/Home';
+import About from './app/views/about/About';
+import Projects from './app/views/projects/Projects';
+import ContactUs from './app/views/contact-us/ContactUs';
+import Footer from './app/components/Footer/Footer';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
 
         </Switch>
       </div>
-      <Footer></Footer>
+      <Footer />
     </Router>
 
   );
