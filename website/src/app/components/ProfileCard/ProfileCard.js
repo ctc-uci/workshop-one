@@ -1,20 +1,39 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ProfileCard.css';
 
-function ProfileCard() {
+function ProfileCard(props) {
+  const {
+    imageURL, name, major, bio, facebookURL, twitterURL, linkedinURL, instagramURL,
+  } = props;
   return (
     <div className="card">
-      <img src={this.props.imageURL} alt="personImage" style={{ width: '100%' }} />
-      <h1>{this.props.name}</h1>
-      <p className= "title">{this.props.major}</p>
-      <p> {this.props.bio}</p>
+      <img src={imageURL} alt="personImage" style={{ width: '100%' }} />
+      <h1>{name}</h1>
+      <p className="title">{major}</p>
+      <p>
+        {bio}
+      </p>
       <div className="logoborder">
-        <a href={this.props.facebookURL}><i className="fa fa-facebook"></i></a>
-        <a href={this.props.twitterURL}><i className="fa fa-twitter"></i></a>
-        <a href={this.props.linkedinURL}><i className="fa fa-linkedin"></i></a>
-        <a href={this.props.instagramURL}><i className="fa fa-instagram"></i></a>
+        <a href={facebookURL} aria-label="Facebook URL"><i className="fa fa-facebook" /></a>
+        <a href={twitterURL} aria-label="Twitter URL"><i className="fa fa-twitter" /></a>
+        <a href={linkedinURL} aria-label="Linkedin URL"><i className="fa fa-linkedin" /></a>
+        <a href={instagramURL} aria-label="Instagram URL"><i className="fa fa-instagram" /></a>
       </div>
     </div>
   );
 }
+
+ProfileCard.propTypes = {
+  imageURL: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  major: PropTypes.string.isRequired,
+  bio: PropTypes.string.isRequired,
+  facebookURL: PropTypes.string.isRequired,
+  twitterURL: PropTypes.string.isRequired,
+  linkedinURL: PropTypes.string.isRequired,
+  instagramURL: PropTypes.string.isRequired,
+
+};
+
 export default ProfileCard;
