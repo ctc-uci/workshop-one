@@ -1,0 +1,24 @@
+@import "../../../styles/common.css";
+
+nav {
+    height: 50px;
+}
+
+nav a {
+    line-height: 50px;
+    color: #f2f2f2;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: var(--dark-purple);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.link {
+    float: right;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
