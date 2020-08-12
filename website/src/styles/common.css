@@ -1,0 +1,17 @@
+/**
+
+Commit the Change website environment styles.
+
+**/
+
+
+/* Secondary and Accent Colors */
+
+:root {
+    --dark-purple: #6331D8;
+    --light-purple: #BEA9EF;
+    --orange: #FC5D03;
+    --yellow: #FC9803;
+    --dark-pink: #ED315D;
+    --light-pink: #F58EA6;
+}
