@@ -1,0 +1,60 @@
+@import "../../../styles/common.css";
+
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 80vh 80vh;
+    grid-template-areas:
+    "image right"
+    "bottom bottom";
+    overflow: scroll;
+    align-items: center;
+}
+
+img {
+    grid-area: image;
+    width: 500px;
+    height: 500px;
+    justify-self: end;
+}
+
+.right {
+    grid-area: right;
+    margin-left: 20%;
+    width: 60%;
+    color: var(--dark-purple);
+}
+
+.right p {
+    line-height: 1.7em;
+}
+
+#learn-more {
+    width: 150px;
+    border-radius: 20px;
+    background-color: var(--dark-pink);
+    margin-top: 5px;
+}
+
+.bottom-panel {
+    grid-area: bottom;
+    height: 100%;
+    color: var(--dark-purple);
+    text-align: center;
+}
+
+.bottom-panel p {
+    margin-top: 30px;
+}
+
+.logoborder a {
+    text-decoration: none;
+    font-size: 20px;
+
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.logoborder a i {
+    color: var(--dark-purple);
+}
