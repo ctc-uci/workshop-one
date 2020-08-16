@@ -12,18 +12,20 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/projects" exact component={Projects} />
-          <Route path="/contact" exact component={ContactUs} />
-
-        </Switch>
+        <div className="page-container">
+          <div className="content-wrap">
+            <Nav />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/about" exact component={About} />
+              <Route path="/projects" exact component={Projects} />
+              <Route path="/contact" exact component={ContactUs} />
+            </Switch>
+          </div>
+        </div>
       </div>
       <Footer />
     </Router>
-
   );
 }
 
