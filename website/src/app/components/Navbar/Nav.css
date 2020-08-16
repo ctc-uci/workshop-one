@@ -1,24 +1,55 @@
-@import "../../../styles/common.css";
-
-nav {
-    height: 50px;
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 5px;
+}
+  
+.logo {
+    flex: 1;
+    width: 86px;
+    height: 58px;
+    margin: 10px 20px;
 }
 
-nav a {
-    line-height: 50px;
-    color: #f2f2f2;
-    padding-left: 16px;
-    padding-right: 16px;
-    color: var(--dark-purple);
+.logo:hover {
+    color: var(--light-purple);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+  
+.navigation a {
     text-decoration: none;
-    font-size: 17px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
 }
 
-.link {
-    float: right;
+.navigation a:hover {
+    color: var(--light-purple);
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+.elem {
+    margin: 0px 30px;
+}
+
+.apply-button {
+    background: white;
+    border-radius: 20px;
+    width: 150px;
+    line-height: 80%;
+}
+
+.apply-button a {
+    color: var(--dark-purple);
+    font-weight: bold;
 }

@@ -7,6 +7,7 @@ import About from './app/views/about/About';
 import Projects from './app/views/projects/Projects';
 import ContactUs from './app/views/contact-us/ContactUs';
 import Footer from './app/components/Footer/Footer';
+import topRightBlob from './images/right-blob.svg';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <div className="page-container">
           <div className="content-wrap">
+            <img className="top-blob" src={topRightBlob} alt="blob" />
             <Nav />
             <Switch>
               <Route path="/" exact component={Home} />

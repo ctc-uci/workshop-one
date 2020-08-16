@@ -1,5 +1,14 @@
 @import "styles/common.css";
 
+.top-blob {
+    width: 700px;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;
