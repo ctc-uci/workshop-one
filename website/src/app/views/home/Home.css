@@ -1,13 +1,17 @@
 @import "../../../styles/common.css";
 
-main {
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-panel {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
 }
 
 .top-left {
-    flex: 1 0 50vw;
+    flex: 1;
 }
 
 .top-left .image {
@@ -24,7 +28,7 @@ main {
 }
 
 .top-right {
-    flex: 1 0 50vw;
+    flex: 1;
     color: var(--dark-purple);
     display: flex;
     flex-direction: column;
@@ -59,7 +63,7 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-    main {
+    .top-panel {
         flex-direction: column;
     }
 
