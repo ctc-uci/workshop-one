@@ -12,12 +12,11 @@ function Home() {
         </div>
         <div className="top-right">
           <div className="text">
-            <h1>Commit the Change</h1>
+            <h1>What is Commit the Change?</h1>
             <p>
-              We are a student organization at UC Irvine with a passion for
-              technology and community service. Our team of student designers
-              and engineers work to create sleek, modern websites for nonprofit
-              organizations, completely free of charge!
+              We are a student organization at UC Irvine focused on delivering
+              high quality software for nonprofit organizations free of charge
+              and promoting technology for social good in our community.
             </p>
             <button id="learn-more" type="button">Learn More</button>
           </div>
