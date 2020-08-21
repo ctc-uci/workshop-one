@@ -1,0 +1,175 @@
+@import "../../../styles/common.css";
+
+main {
+    color: var(--dark-purple);
+}
+.top-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-left {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-left h1, .panel-left p {
+    width: 70%;
+}
+
+.panel-right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    flex: 1 1 500px;
+    max-width: 70%;
+
+}
+
+.links {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    
+}
+
+.links a {
+    border-radius: 20px;
+    background-color: var(--dark-pink);
+    color: white;
+    text-decoration: none;
+    padding: 1.5em 6em;
+}
+
+.our-mission-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+}
+
+.our-mission-panel p {
+    width: 80%;
+}
+
+.our-values-panel {
+    text-align: center;
+    margin: 200px 0;
+}
+
+.our-values-panel p {
+    width: 80%;
+    margin: auto;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+
+
+.value {
+    flex: 0 1 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.value span {
+    font-size: 70px;
+}
+
+.value p {
+    padding: 10px 30px;
+}
+
+.small-image {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+.our-team-panel {
+    text-align: center;
+}
+
+.our-team-panel>h1 {
+    margin-bottom: 100px;
+}
+
+.team-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+ProfileCard {
+    flex: 0 1 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    .links {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .links a {
+        padding: 1.5em 1em;
+        text-align: center;
+        margin: 10px;  
+    }
+
+    .team-photos {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: none;
+        width: 40%;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .top-panel {
+        flex-direction: column;
+    }
+
+    .panel-left {
+        margin-bottom: 50px;
+    }
+
+    .our-mission-panel {
+        margin: 50px 0;
+    }
+
+    .values {
+        flex-direction: column;
+    }
+
+    .team-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 50px 0;
+    }
+}
