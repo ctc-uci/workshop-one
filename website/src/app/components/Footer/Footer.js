@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import ctcLogo from '../../../images/logo-white-no-words.png';
+import ctcLogo from '../../../images/logo/white-ctc.svg';
 
 function Footer() {
   return (
