@@ -3,7 +3,7 @@
 .top-blob {
     width: 700px;
     height: auto;
-    position: fixed;
+    position: absolute;
     top: 0px;
     right: 0px;
     z-index: -1;
@@ -17,4 +17,15 @@
   
 .content-wrap {
     flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .top-blob {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+    }
 }

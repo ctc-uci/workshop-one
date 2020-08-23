@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
-import ctcLogo from '../../../images/purple-ctc.svg';
+import ctcLogo from '../../../images/logo/purple-ctc.svg';
 
 function Nav() {
   return (

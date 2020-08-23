@@ -26,7 +26,8 @@
   
 .navigation a {
     text-decoration: none;
-    color: white;
+    color: var(--dark-purple);
+    /* color: white; */
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -52,4 +53,28 @@
 .apply-button a {
     color: var(--dark-purple);
     font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-bar {
+        width: 10%;
+    }
+
+    .navigation {
+        width: 90%;
+        margin: 0;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .elem {
+        margin: 0px 12px;
+        font-size: 5px;
+    }
+
+    .apply-button {
+        width: 0px;
+    }
 }
