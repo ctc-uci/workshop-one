@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import collaborationGraphic from '../../../images/collaboration-graphic.svg';
-import ctcLogo from '../../../images/logo-white-no-words.png';
+import ctcLogo from '../../../images/logo/white-ctc.svg';
 
 import './About.css';
 
