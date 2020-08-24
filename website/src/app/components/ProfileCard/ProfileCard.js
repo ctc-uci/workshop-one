@@ -3,20 +3,19 @@ import PropTypes from 'prop-types';
 import linkedinLogo from '../../../images/linkedin.svg';
 import './ProfileCard.css';
 
-
 function ProfileCard(props) {
   const {
-    imageURL, name, position, linkedinURL
+    imageURL, name, position, linkedinURL,
   } = props;
   return (
     <div className="card">
-      <img src={imageURL} alt="personImage"/>
-      <div class="info">
+      <img src={imageURL} alt="personImage" />
+      <div className="info">
         <h3>{name}</h3>
         <p>{position}</p>
       </div>
       <div className="logoborder">
-        <a href={linkedinURL}><img src={linkedinLogo} alt="linkedin logo"></img></a>
+        <a href={linkedinURL}><img src={linkedinLogo} alt="linkedin logo" /></a>
       </div>
     </div>
   );
