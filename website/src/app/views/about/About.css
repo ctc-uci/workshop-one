@@ -29,64 +29,118 @@ main {
     align-items: center;
 }
 
-img {
+.panel-right>img {
     flex: 1 1 500px;
     max-width: 70%;
 
 }
 
 .links {
-    width: 70%;
+    width: 100%;
+    background-color: var(--dark-purple);
     display: flex;
-    justify-content: space-between;
-    margin: 100px auto;
-    
+    justify-content: space-around;
+    margin: 100px auto 0 auto;
+    padding: 0.7em 0;
 }
 
 .links a {
-    border-radius: 20px;
-    background-color: var(--dark-pink);
     color: white;
     text-decoration: none;
-    padding: 1.5em 6em;
+}
+
+.off {
+    color: var(--dark-purple);
+}
+
+h2:hover>.off {
+    color: white;
 }
 
 .our-mission-panel {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
-    margin: 200px 0;
+    background-image: url('../../../images/our-mission-triangle-background.jpg');
+    background-color: rgb(128, 88, 222);
+    background-blend-mode: multiply;
+    padding: 30px 0;
 }
 
-.our-mission-panel p {
-    width: 80%;
+.mission-text {
+    width: 50%;
+    color: white;
 }
+
+.mission-text h1 {
+    padding: 0 10%;
+    font-size: 45px;
+    margin: auto
+}
+
+.mission-text p {
+    padding: 0 20% 0 10%;
+    font-size: 22px;
+    margin: auto
+}
+
+.chevron {
+    font-size: 25px;
+}
+
+.ctc-logo {
+    height: 600px;
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.placeholder {
+    flex: 1;
+    height: auto;
+}
+
+.ctc-logo .image {
+    flex: 1;
+}
+
+.image img {
+    width: 2000px;
+    overflow: hidden;
+}
+
 
 .our-values-panel {
     text-align: center;
-    margin: 200px 0;
+    margin: 100px 0;
 }
 
-.our-values-panel p {
+.our-values-panel>p {
     width: 80%;
-    margin: auto;
+    margin: 0px auto 100px auto;
 }
 
-.values {
+.value-row-1 {
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 100px;
+    margin: 10px auto;
 }
 
-
+.value-row-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
 
 .value {
-    flex: 0 1 20%;
+    flex: 0 1 400px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
-    margin: 30px 0;
+    margin: 30px 10px;
 }
 
 .value span {
@@ -103,11 +157,8 @@ img {
     padding: 20px;
 }
 
-.our-team-panel {
-    text-align: center;
-}
-
 .our-team-panel>h1 {
+    text-align: center;
     margin-bottom: 100px;
 }
 
@@ -118,10 +169,6 @@ img {
     margin: 30px 0;
 }
 
-ProfileCard {
-    flex: 0 1 10%;
-}
-
 @media screen and (max-width: 1200px) {
     .links {
         flex-direction: column;
@@ -129,20 +176,25 @@ ProfileCard {
     }
 
     .links a {
-        padding: 1.5em 1em;
+        padding: 0em 1em;
         text-align: center;
-        margin: 10px;  
     }
 
     .team-photos {
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
 
+    .person {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .card {
-        max-width: none;
-        width: 40%;
-        margin: 50px 0;
+        margin: auto;
     }
 }
 
@@ -157,13 +209,18 @@ ProfileCard {
     }
 
     .our-mission-panel {
-        margin: 50px 0;
+        margin: 0px 0;
     }
 
-    .values {
+    .value-row-1, .value-row-2 {
         flex-direction: column;
+        width: 50%;
     }
 
+    .value {
+        flex: 0;
+        margin: 30px auto;
+    }
     .team-photos {
         flex-direction: column;
         align-items: center;
