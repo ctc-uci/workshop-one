@@ -49,9 +49,8 @@ function About() {
           </div>
         </div>
       </div>
-      <h1>Our Values &#38; Culture</h1>
-      <h2>Develop Community</h2>
       <div className="our-values-panel" id="values">
+        <h1>Our Values &#38; Culture</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua.
@@ -59,6 +58,7 @@ function About() {
         <div className="value-row-1">
           <div className="value">
             <span role="img" aria-label="emoji">🤝</span>
+            <h2>Develop Community</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua.
@@ -106,44 +106,44 @@ function About() {
       <div className="our-team-panel" id="team">
         <h1>Our Team</h1>
         <div className="team-photos">
-          <div class="person">
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
-          <div class="person">
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
-          <div class="person">
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
-          <div class="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-        </div>
-        <div className="team-photos">
-          <div class="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div class="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div class="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div class="person">
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
         </div>
         <div className="team-photos">
-          <div class="person">
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
-          <div class="person">
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
-          <div class="person">
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
-          <div class="person">
+          <div className="person">
+            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
+          </div>
+        </div>
+        <div className="team-photos">
+          <div className="person">
+            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
+          </div>
+          <div className="person">
+            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
+          </div>
+          <div className="person">
+            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
+          </div>
+          <div className="person">
             <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
           </div>
         </div>
