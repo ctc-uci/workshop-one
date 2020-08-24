@@ -2,7 +2,7 @@ import React from 'react';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import collaborationGraphic from '../../../images/collaboration-graphic.svg';
 import ctcLogo from '../../../images/logo/white-ctc.svg';
-
+import teamData from './data.json';
 import './About.css';
 
 function About() {
@@ -130,46 +130,19 @@ function About() {
       <div className="our-team-panel" id="team">
         <h1>Our Team</h1>
         <div className="team-photos">
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-        </div>
-        <div className="team-photos">
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-        </div>
-        <div className="team-photos">
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
-          <div className="person">
-            <ProfileCard name="Mingjia Wang" position="President" linkedinURL="https://www.linkedin.com/in/mingjia-wang/" imageURL="https://www.w3schools.com/howto/img_avatar.png" />
-          </div>
+          {
+            teamData.People.map((person) => (
+              <div className="person">
+                <ProfileCard
+                  name={person.name}
+                  position={person.position}
+                  linkedinURL={person.linkedinURL}
+                  imageURL={person.imageURL}
+                />
+              </div>
+            ))
+          }
+
         </div>
       </div>
 
