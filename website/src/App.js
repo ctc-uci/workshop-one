@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './app/components/Navbar/Nav';
 import Home from './app/views/home/Home';
 import About from './app/views/about/About';
-import Projects from './app/views/projects/Projects';
+import Projects from './app/views/our-work/OurWork';
 import ContactUs from './app/views/contact-us/ContactUs';
 import Footer from './app/components/Footer/Footer';
 import topRightBlob from './images/right-blob.svg';

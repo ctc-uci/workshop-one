@@ -10,7 +10,7 @@ function ProfileCard(props) {
     <div className="card">
       <img src={imageURL} alt="personImage" style={{ width: '100%' }} />
       <h1>{name}</h1>
-      <p className="title">{major}</p>
+      <p className="profile-title">{major}</p>
       <p>
         {bio}
       </p>
