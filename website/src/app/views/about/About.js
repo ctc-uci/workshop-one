@@ -44,7 +44,6 @@ function About() {
         </a>
       </div>
       <div className="our-mission-panel .tint" id="mission">
-
         <div className="mission-text">
           <h1>Our Mission</h1>
           <p>
@@ -64,10 +63,8 @@ function About() {
           </p>
         </div>
         <div className="ctc-logo">
-          <div className="placeholder" />
-          <div className="image">
-            <img src={ctcLogo} alt="logo" />
-          </div>
+          <img src={ctcLogo} alt="logo" />
+          {/* <svg src={ctcLogo} viewBox="849 0 1698.000000 930.000000"></svg> */}
         </div>
       </div>
       <div className="our-values-panel" id="values">

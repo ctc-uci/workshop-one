@@ -95,20 +95,10 @@ h2:hover>.off {
     flex-direction: row-reverse;
 }
 
-.placeholder {
-    flex: 1;
-    height: auto;
+svg {
+    width: 1000px;
+    height: 600px;
 }
-
-.ctc-logo .image {
-    flex: 1;
-}
-
-.image img {
-    width: 2000px;
-    overflow: hidden;
-}
-
 
 .our-values-panel {
     text-align: center;
