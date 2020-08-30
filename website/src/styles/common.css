@@ -20,3 +20,8 @@ Commit the Change website environment styles.
 button {
     border: none;
 }
+
+/* 
+    Removed button borders globally due to a strange
+    bug that gave all buttons a black outline
+*/

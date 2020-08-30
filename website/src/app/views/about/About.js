@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import collaborationGraphic from '../../../images/collaboration-graphic.svg';
-import ctcLogo from '../../../images/logo/white-ctc.svg';
+import whiteCtcLogo from '../../../images/logo/cropped-white-ctc.svg';
 import teamData from './data.json';
 import './About.css';
 
@@ -63,8 +63,7 @@ function About() {
           </p>
         </div>
         <div className="ctc-logo">
-          <img src={ctcLogo} alt="logo" />
-          {/* <svg src={ctcLogo} viewBox="849 0 1698.000000 930.000000"></svg> */}
+          <img src={whiteCtcLogo} alt="logo" />
         </div>
       </div>
       <div className="our-values-panel" id="values">
@@ -128,7 +127,7 @@ function About() {
         <h1>Our Team</h1>
         <div className="team-photos">
           {
-            teamData.People.map((person) => (
+            teamData.map((person) => (
               <div className="person">
                 <ProfileCard
                   name={person.name}

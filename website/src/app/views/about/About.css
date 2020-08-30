@@ -61,9 +61,7 @@ h2:hover>.off {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    background-image: url('../../../images/our-mission-triangle-background.jpg');
     background-color: rgb(128, 88, 222);
-    background-blend-mode: multiply;
     padding: 30px 0;
 }
 
@@ -95,9 +93,8 @@ h2:hover>.off {
     flex-direction: row-reverse;
 }
 
-svg {
-    width: 1000px;
-    height: 600px;
+.ctc-logo img {
+    width: 100%;
 }
 
 .our-values-panel {
