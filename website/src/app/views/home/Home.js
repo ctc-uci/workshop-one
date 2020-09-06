@@ -1,7 +1,9 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import homeLandingPic from '../../../images/home-pic.svg';
+import Timeline from '../../components/Timeline/Timeline';
+import homeLandingPic from '../../../images/home/home-illustration.svg';
+import tempHome from '../../../images/home/temp-home.svg';
 
 function Home() {
   return (
@@ -15,9 +17,7 @@ function Home() {
         <div className="top-right">
           <div className="text">
             <h1>
-              What is
-              {' '}
-              <b>Commit the Change?</b>
+              Commit the Change
             </h1>
             <p>
               We are a student organization at UC Irvine focused on delivering
@@ -30,7 +30,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="middle-panel">
+      <div className="middle-panel" style={{ background: `url(${tempHome})` }}>
         <h2>STUDENTS</h2>
         <p className="join-team">Want to join the team?</p>
         <p className="interested">
@@ -49,6 +49,7 @@ function Home() {
           <br />
           Join Commit the Change!
         </p>
+        <Timeline />
         <div className="buttons">
           <button className="btn" id="projects-button" type="button">
             <Link to="/projects">Projects</Link>

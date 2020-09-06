@@ -7,6 +7,9 @@ Commit the Change website environment styles.
 /* Montserrat Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Source Code Pro for timeline */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 /* Secondary and Accent Colors */
 :root {
     --dark-purple: #6331D8;
