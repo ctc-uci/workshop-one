@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
 import ctcLogo from '../../../images/logo/white-ctc.svg';
 
 function Footer() {
@@ -11,7 +10,7 @@ function Footer() {
           <div className="inner-left">
             Copyright Commit the Change
             <br />
-            Illustrations from undraw.co
+            Illustrations from ___
             <br />
             Created in Irvine, CA
             <br />
@@ -39,13 +38,13 @@ function Footer() {
         </div>
         <div className="right-column">
           <div className="inner-right">
-            <Link to="/">Home</Link>
+            <a href="/">Home</a>
             <br />
-            <Link to="/about">About</Link>
+            <a href="/about">About</a>
             <br />
-            <Link to="/projects">Our Work</Link>
+            <a href="/projects">Our Work</a>
             <br />
-            <Link to="/contact-us">Contact Us</Link>
+            <a href="/contact">Contact Us</a>
           </div>
         </div>
       </div>
