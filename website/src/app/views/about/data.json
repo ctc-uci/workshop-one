@@ -1,0 +1,73 @@
+[
+    {   "name": "Albert Zhang",
+        "position": "President",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Justine Koa",
+        "position": "Internal VP",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Kayla Tran",
+        "position": "External VP",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Harrison Huang",
+        "position": "VP of Projects",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Leon Lin",
+        "position": "VP of Recruitment",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Paul Yang",
+        "position": "Honorary Alumnus",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Ethan Nguyen",
+        "position": "VP of Marketing",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Mingjia Wang",
+        "position": "VP of Outreach",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Sonali Chellappa",
+        "position": "Co-VP of Design",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Kamille Suayan",
+        "position": "Co-VP of Design",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Ryan Adra",
+        "position": "Designer",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        "name": "Person Person",
+        "position": "President",
+        "linkedinURL": "https://www.linkedin.com/in/mingjia-wang/",
+        "imageURL": "https://www.w3schools.com/howto/img_avatar.png"
+    }
+]

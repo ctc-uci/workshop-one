@@ -16,3 +16,12 @@ Commit the Change website environment styles.
     --dark-pink: #ED315D;
     --light-pink: #F58EA6;
 }
+
+button {
+    border: none;
+}
+
+/* 
+    Removed button borders globally due to a strange
+    bug that gave all buttons a black outline
+*/
