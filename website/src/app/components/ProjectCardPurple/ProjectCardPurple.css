@@ -1,24 +1,21 @@
-
-.project-name{
+.project-name-purple{
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #F58EA6;
+  color: #BEA9EF;
 }
-.description{
+.description-purple{
   font-size: 16px;
   line-height: 20px;
 }
 
-.project-card{
-  box-shadow: 0px 4px 20px rgba(237, 49, 93, 0.5);
+.project-card-purple{
+  box-shadow: 0px 4px 20px rgba(99, 49, 216, 0.5);
   text-align: center;
   padding: 10px;
-  margin: 2%;
   border-radius: 20px;
-  flex-basis: 20%;
 }
 
 .project-card-image{
@@ -26,3 +23,8 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width:768px){
+  .project-card-purple{
+    width: 100%;
+  }
+}
