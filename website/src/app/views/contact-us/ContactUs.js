@@ -2,40 +2,34 @@ import React from 'react';
 import './ContactUs.css';
 import ContactUsData from './ContactUs.json';
 import placeholder from '../../../images/undraw_placeholder.png';
-import downArrow from '../../../images/down_arrow.png';
+import contactUsImage from '../../../images/contactUs/contact-us-header.svg';
+import purpleLogo from '../../../images/contactUs/purple_ctc 2.svg';
 
 function ContactUs() {
   return (
     <div className="contact-us-page">
       <div className="contact-us-upper-third">
         <div className="contact-us-upper-third-items">
-          <img src={placeholder} alt="undraw" className="contact-us-img" />
           <div className="contact-us-info">
-            <h1>{ContactUsData.topThird.titleText}</h1>
+            <h3 className="contact-us-students">STUDENTS</h3>
+            <h1 className="contact-us-title-text">{ContactUsData.topThird.titleText}</h1>
             <p>{ContactUsData.topThird.description}</p>
+            <a href="https://google.com" className="apply-now-button">Apply Now!</a>
           </div>
+          <img src={contactUsImage} alt="undraw" className="contact-us-img" />
         </div>
-        <a href="#contact-us-middle-third" className="scroll_one">
-          <img alt="scroll" src={downArrow} className="down-arrow" />
-        </a>
       </div>
       <div id="contact-us-middle-third">
         <div className="contact-us-middle-items">
+          <img src={purpleLogo} alt="undraw" className="heart-logo" />
           <div className="middle-third-info">
-            <h3>{ContactUsData.middleThird.header}</h3>
-            <h1>
-              {ContactUsData.middleThird.topTitle}
-              <br />
-              {ContactUsData.middleThird.bottomTitle}
-            </h1>
+            <h3 className="middle-contact-header">{ContactUsData.middleThird.header}</h3>
+            <h1 className="middle-contact-title">{ContactUsData.middleThird.topTitle}</h1>
             <p>{ContactUsData.middleThird.topDescription}</p>
             <p>{ContactUsData.middleThird.bottomDescription}</p>
+            <a href="mailto:committhechange.uci@gmail.com" className="get-in-touch-button" target="_blank" rel="noreferrer">Get in Touch</a>
           </div>
-          <img src={placeholder} alt="undraw" className="contact-us-img" />
         </div>
-        <a href="#contact-us-bottom-third" className="scroll_one">
-          <img alt="scroll" src={downArrow} className="down-arrow" />
-        </a>
       </div>
       <div id="contact-us-bottom-third">
         <div className="contact-us-bottom-third-items">
