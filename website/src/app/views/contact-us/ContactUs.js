@@ -27,7 +27,7 @@ function ContactUs() {
             <h1 className="middle-contact-title">{ContactUsData.middleThird.topTitle}</h1>
             <p>{ContactUsData.middleThird.topDescription}</p>
             <p>{ContactUsData.middleThird.bottomDescription}</p>
-            <a href="mailto:committhechange.uci@gmail.com" className="get-in-touch-button" target="_blank" rel="noreferrer">Get in Touch</a>
+            <a href="mailto:committhechange.uci@gmail.com" className="get-in-touch-button" target="_blank" rel="noopener noreferrer">Get in Touch</a>
           </div>
         </div>
       </div>
