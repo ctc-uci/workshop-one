@@ -1,14 +1,13 @@
 {
   "topThird":
   {
-    "titleText":"Contact Us",
+    "titleText":"Want to join the team?",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi at libero vehicula blandit ut ac sem. Aenean luctus elit eget libero aliquam, eu finibus est eleifend. Phasellus dolor metus, porta et semper quis, varius euismod tellus."
   },
   "middleThird":
   {
     "header": "NON-PROFITS",
     "topTitle":"Have a project in mind?",
-    "bottomTitle":"Contact Us!",
     "topDescription":"We work with non-profit organizations throughout the school year (September 2020 - June 2021) on a software project that has a meaningful, positive impact and will be a good learning experience for our team.",
     "bottomDescription":"We are currently finalizing projects for the 2020-2021 school year, but if you would like to learn more about our organization or talk about how we can partner together in the future, please email us at committhechange.uci@gmail.com"
   },
