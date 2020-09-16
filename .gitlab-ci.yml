@@ -2,7 +2,6 @@ image: node
  
 stages: 
  - lint
- - deploy
  
 eslint:
  stage: lint
@@ -12,13 +11,3 @@ eslint:
    - npm install eslint-config-airbnb
    - npx install-peerdeps eslint-config-airbnb
    - eslint --ext js,jsx .
- 
-deploy_staging:
-  stage: deploy
-  script:
-    - echo "Deploying to test site
-  environment:
-    name: staging
-    url: http://ctc-uci.com
-  only:
-    - dev
