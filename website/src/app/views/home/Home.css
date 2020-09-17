@@ -187,12 +187,17 @@
 }
 
 @media screen and (max-width: 800px) {
+    .text{
+        text-align: center;
+    }
+
     .text h1 {
         font-size: 36px;
     }
 
     .text p {
         font-size: 14px;
+        padding: 0 40px;
     }
 
     .top-right .text {
@@ -201,6 +206,10 @@
 
     .inner-top-left {
         padding-left: 15px;
+    }
+
+    .top-left {
+        display: none;
     }
 }
 
@@ -229,8 +238,8 @@
         font-size: 16px;
     }
 
-    .top-left img {
-        display: none;
+    .text-p {
+        padding: 0;
     }
 
     .middle-panel {
