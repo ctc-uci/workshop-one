@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
-import collaborationGraphic from '../../../images/collaboration-graphic.svg';
+import aboutUsGraphic from '../../../images/about-us.svg';
 import whiteCtcLogo from '../../../images/logo/cropped-white-ctc.svg';
 import teamData from './data.json';
 import './About.css';
@@ -20,7 +20,7 @@ function About() {
           </p>
         </div>
         <div className="panel-right">
-          <img src={collaborationGraphic} alt="people collaborating" />
+          <img src={aboutUsGraphic} alt="people collaborating" />
         </div>
       </div>
       <div className="links">
