@@ -1,14 +1,18 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { animated, useSpring } from 'react-spring';
+import animationConfig from '../animationConstants';
 import Timeline from '../../components/Timeline/Timeline';
 import homeLandingPic from '../../../images/home/home-illustration.svg';
 import tempHome from '../../../images/home/temp-home.svg';
 
 function Home() {
+  const slideUp = useSpring(animationConfig);
+
   return (
     <main>
-      <div className="top-panel">
+      <animated.div style={slideUp} className="top-panel">
         <div className="top-left">
           <div className="inner-top-left">
             <img src={homeLandingPic} alt="Person" />
@@ -16,9 +20,7 @@ function Home() {
         </div>
         <div className="top-right">
           <div className="text">
-            <h1>
-              Commit the Change
-            </h1>
+            <h1>Commit the Change</h1>
             <p>
               We are a student organization at UC Irvine focused on delivering
               high quality software for nonprofit organizations free of charge
@@ -29,7 +31,7 @@ function Home() {
             </button>
           </div>
         </div>
-      </div>
+      </animated.div>
       <div className="social-media-section">
         <div className="media-content">
           <h2>Connect With Us!</h2>
@@ -64,16 +66,13 @@ function Home() {
         <p className="interested">
           Interested in using your skills in
           {' '}
-          {' '}
           <b>programming</b>
           {' '}
           or
           {' '}
-          {' '}
           <b>design</b>
           {' '}
-          on projects
-          that help non-profit organizations?
+          on projects that help non-profit organizations?
           <br />
           Join Commit the Change!
         </p>

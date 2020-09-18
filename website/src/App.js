@@ -18,10 +18,10 @@ function App() {
             <img className="top-blob" src={topRightBlob} alt="blob" />
             <Nav />
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/about" exact component={About} />
-              <Route path="/projects" exact component={Projects} />
-              <Route path="/contact" exact component={ContactUs} />
+              <Route path="/" exact render={() => <Home />} />
+              <Route path="/about" exact render={() => <About />} />
+              <Route path="/projects" exact render={() => <Projects />} />
+              <Route path="/contact" exact render={() => <ContactUs />} />
             </Switch>
           </div>
         </div>
