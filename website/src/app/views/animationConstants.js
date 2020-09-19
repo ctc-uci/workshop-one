@@ -31,6 +31,11 @@ const animationConfigs = {
     opacity: state ? 1 : 0,
     from: { opacity: 0 },
   }),
+  fadeInStiff: (state) => ({
+    config: config.stiff,
+    opacity: state ? 1 : 0,
+    from: { opacity: 0 },
+  }),
 };
 
 export default animationConfigs;

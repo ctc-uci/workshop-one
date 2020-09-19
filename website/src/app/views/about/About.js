@@ -1,5 +1,6 @@
-import React from 'react';
-import { animated, useSpring } from 'react-spring';
+import React, { useState } from 'react';
+import { animated, useSpring, useTrail } from 'react-spring';
+import VisibilitySensor from 'react-visibility-sensor';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import aboutUsGraphic from '../../../images/about/about-us.svg';
 import whiteCtcLogo from '../../../images/logo/cropped-white-ctc.svg';
@@ -8,7 +9,26 @@ import animationConfig from '../animationConstants';
 import './About.css';
 
 function About() {
+  const [teamViewCount, setTeamVisible] = useState(0);
   const slideUp = useSpring(animationConfig.slideUp(true));
+  const grid = useTrail(
+    teamData.length,
+    animationConfig.fadeInStiff(teamViewCount > 0),
+  );
+
+  const profileImages = grid.map((props, index) => {
+    const person = teamData[index];
+    return (
+      <animated.div style={props} className="person">
+        <ProfileCard
+          name={person.name}
+          position={person.position}
+          linkedinURL={person.linkedinURL}
+          imageURL={person.imageURL}
+        />
+      </animated.div>
+    );
+  });
 
   return (
     <main>
@@ -141,19 +161,15 @@ function About() {
         </div>
       </div>
       <div className="our-team-panel" id="team">
-        <h1>Our Team</h1>
-        <div className="team-photos">
-          {teamData.map((person) => (
-            <div className="person">
-              <ProfileCard
-                name={person.name}
-                position={person.position}
-                linkedinURL={person.linkedinURL}
-                imageURL={person.imageURL}
-              />
-            </div>
-          ))}
-        </div>
+        <VisibilitySensor
+          onChange={(isVisible) => {
+            if (isVisible) setTeamVisible(teamViewCount + 1);
+          }}
+        >
+          <h1>Our Team</h1>
+        </VisibilitySensor>
+
+        <div className="team-photos">{profileImages}</div>
       </div>
     </main>
   );
