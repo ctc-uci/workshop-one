@@ -4,13 +4,14 @@ import { animated, useSpring } from 'react-spring';
 import animationConfig from '../animationConstants';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import ProjectCardPurple from '../../components/ProjectCardPurple/ProjectCardPurple';
-import ourWorkPic from '../../../images/our-work.svg';
-import scroll from '../../../images/scroll.svg';
-import crimeSurvivors from '../../../images/our-work-crime-survivors.svg';
+import ourWorkPic from '../../../images/ourWork/our-work.svg';
+import * as projectData from './ProjectCard.json';
+
+// NPO Logos
 import childCreativityLab from '../../../images/nonprofits/Child-Creativity-Lab.png';
 import justiceForFamilies from '../../../images/nonprofits/Justice-For-Families.png';
-import waymakers from '../../../images/nonprofits/Waymakers-2.png';
-import * as projectData from './ProjectCard.json';
+import waymakers from '../../../images/nonprofits/Waymakers.png';
+import crimeSurvivors from '../../../images/nonprofits/our-work-crime-survivors.svg';
 
 function OurWork() {
   const slideUp = useSpring(animationConfig);
@@ -59,9 +60,6 @@ function OurWork() {
             projectURL={projectData.project3.projectURL}
           />
         </div>
-        <a href="#bottom-our-work" className="scroll-button-element">
-          <img src={scroll} alt="scroll-button" />
-        </a>
       </div>
       <div id="bottom-our-work">
         <div className="bottom-card">

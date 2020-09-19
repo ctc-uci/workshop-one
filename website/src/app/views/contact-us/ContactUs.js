@@ -3,7 +3,6 @@ import './ContactUs.css';
 import { animated, useSpring } from 'react-spring';
 import animationConfig from '../animationConstants';
 import ContactUsData from './ContactUs.json';
-import placeholder from '../../../images/undraw_placeholder.png';
 import contactUsImage from '../../../images/contactUs/contact-us-header.svg';
 import purpleLogo from '../../../images/contactUs/purple_ctc 2.svg';
 
@@ -61,7 +60,6 @@ function ContactUs() {
       </div>
       <div id="contact-us-bottom-third">
         <div className="contact-us-bottom-third-items">
-          <img src={placeholder} alt="undraw" className="contact-us-img" />
           <div className="bottom-third-info">
             <h3>{ContactUsData.bottomThird.header}</h3>
             <h1>{ContactUsData.bottomThird.titleText}</h1>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import linkedinLogo from '../../../images/linkedin.svg';
+import linkedinLogo from '../../../images/about/linkedin.svg';
 import './ProfileCard.css';
 
 function ProfileCard(props) {
