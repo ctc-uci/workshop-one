@@ -14,7 +14,7 @@ import waymakers from '../../../images/nonprofits/Waymakers.png';
 import crimeSurvivors from '../../../images/nonprofits/our-work-crime-survivors.svg';
 
 function OurWork() {
-  const slideUp = useSpring(animationConfig);
+  const slideUp = useSpring(animationConfig.slideUp(true));
 
   return (
     <main>

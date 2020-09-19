@@ -7,7 +7,7 @@ import contactUsImage from '../../../images/contactUs/contact-us-header.svg';
 import purpleLogo from '../../../images/contactUs/purple_ctc 2.svg';
 
 function ContactUs() {
-  const slideUp = useSpring(animationConfig);
+  const slideUp = useSpring(animationConfig.slideUp(true));
 
   return (
     <div className="contact-us-page">
