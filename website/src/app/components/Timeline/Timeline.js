@@ -8,14 +8,14 @@ function Timeline() {
         <p className="number">01</p>
         <div className="detail">
           <p className="event-title">APPLICATION</p>
-          <p className="event-date">Due 10/6</p>
+          <p className="event-date">Due 10/10</p>
         </div>
       </div>
       <div className="event">
         <p className="number">02</p>
         <div className="detail">
           <p className="event-title">COFFEE CHAT</p>
-          <p className="event-date">By 10/12</p>
+          <p className="event-date">10/12 - 10/16</p>
         </div>
       </div>
       <div className="event">

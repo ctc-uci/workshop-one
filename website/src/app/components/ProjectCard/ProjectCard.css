@@ -1,28 +1,25 @@
-
-.project-name{
+.project-name {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
-  color: #F58EA6;
+  color: #f58ea6;
 }
-.description{
+
+.description {
   font-size: 16px;
   line-height: 20px;
 }
 
-.project-card{
+.project-card {
   box-shadow: 0px 4px 20px rgba(237, 49, 93, 0.5);
-  text-align: center;
   padding: 10px;
   margin: 2%;
   border-radius: 20px;
   flex-basis: 20%;
 }
 
-.project-card-image{
-  width:90%;
+.project-card-image {
+  width: 90%;
   border-radius: 10px;
 }
-

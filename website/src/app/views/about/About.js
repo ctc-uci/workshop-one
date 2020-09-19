@@ -12,18 +12,27 @@ function About() {
   return (
     <main>
       <animated.div style={slideUp} className="top-panel">
-        <div className="panel-left">
-          <h1>About Us</h1>
-          <p>
-            Founded in 2019, Commit the Change started as a small group of
-            undergraduate students with a shared love for coding and volunteering
-            for causes in their communities. Today, Commit the Change is a student
-            organization at UC Irvine with a team of skilled designers and coders.
-            We design websites for nonprofit organizations and build them from start to finish.
-          </p>
+        <div className="top-panel-text">
+          <div className="inside-top-panel-text">
+            <h1 className="top-panel-title">About Us</h1>
+            <p className="top-panel-description">
+              Founded in 2020, Commit the Change started as a small group of
+              undergraduate students with a shared love for coding and
+              volunteering for causes in their communities. Today, Commit the
+              Change is an established student organization at UC Irvine with a team of skilled
+              designers and developers.
+            </p>
+            <a href="#mission" className="common-pink-button">
+              Learn More
+            </a>
+          </div>
         </div>
-        <div className="panel-right">
-          <img src={aboutUsGraphic} alt="people collaborating" />
+        <div className="top-panel-pic">
+          <img
+            src={aboutUsGraphic}
+            className="about-top-panel-img"
+            alt="people collaborating"
+          />
         </div>
       </animated.div>
       <div className="links">
@@ -51,18 +60,18 @@ function About() {
           <h1>Our Mission</h1>
           <p>
             <span className="chevron">&#8250;</span>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
           </p>
           <p>
             <span className="chevron">&#8250;</span>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
           </p>
           <p>
             <span className="chevron">&#8250;</span>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
           </p>
         </div>
         <div className="ctc-logo">
@@ -72,56 +81,60 @@ function About() {
       <div className="our-values-panel" id="values">
         <h1>Our Values &#38; Culture</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className="value-row-1">
           <div className="value">
-            <span role="img" aria-label="emoji">🤝</span>
+            <span role="img" aria-label="emoji">
+              🤝
+            </span>
             <h2>Develop Community</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div className="value">
-            <span role="img" aria-label="emoji">🛠️</span>
+            <span role="img" aria-label="emoji">
+              🛠️
+            </span>
             <h2>Build Enduring Products</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div className="value">
-            <span role="img" aria-label="emoji">💗</span>
+            <span role="img" aria-label="emoji">
+              💗
+            </span>
             <h2>Be Authentic</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
         <div className="value-row-2">
           <div className="value">
-            <span role="img" aria-label="emoji">🚀</span>
+            <span role="img" aria-label="emoji">
+              🚀
+            </span>
             <h2>Take Initiative</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div className="value">
-            <span role="img" aria-label="emoji">👍</span>
+            <span role="img" aria-label="emoji">
+              👍
+            </span>
             <h2>Strive for Social Impact</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
@@ -129,22 +142,18 @@ function About() {
       <div className="our-team-panel" id="team">
         <h1>Our Team</h1>
         <div className="team-photos">
-          {
-            teamData.map((person) => (
-              <div className="person">
-                <ProfileCard
-                  name={person.name}
-                  position={person.position}
-                  linkedinURL={person.linkedinURL}
-                  imageURL={person.imageURL}
-                />
-              </div>
-            ))
-          }
-
+          {teamData.map((person) => (
+            <div className="person">
+              <ProfileCard
+                name={person.name}
+                position={person.position}
+                linkedinURL={person.linkedinURL}
+                imageURL={person.imageURL}
+              />
+            </div>
+          ))}
         </div>
       </div>
-
     </main>
   );
 }
