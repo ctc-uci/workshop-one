@@ -8,7 +8,8 @@ import animationConfig from '../animationConstants';
 import './About.css';
 
 function About() {
-  const slideUp = useSpring(animationConfig);
+  const slideUp = useSpring(animationConfig.slideUp(true));
+
   return (
     <main>
       <animated.div style={slideUp} className="top-panel">

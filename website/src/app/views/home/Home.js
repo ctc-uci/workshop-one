@@ -1,13 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
-import { animated, useSpring } from 'react-spring';
+import {
+  animated, useSpring, useTrail,
+} from 'react-spring';
+import VisibilitySensor from 'react-visibility-sensor';
 import animationConfig from '../animationConstants';
 import Timeline from '../../components/Timeline/Timeline';
 import homeLandingPic from '../../../images/home/home-top-panel.svg';
 import tempHome from '../../../images/home/temp-home.svg';
 
 function Home() {
-  const slideUp = useSpring(animationConfig);
+  const [middleViewCount, setMiddleVisible] = useState(0);
+  const [bottomViewCount, setBottomVisible] = useState(0);
+  const [bottomButtonViewCount, setBottomButtonVisible] = useState(0);
+
+  // todo: make these into components
+  const socialMediaList = [
+    <a
+      href="https://www.facebook.com/ctc.uci/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fa fa-facebook-square fa-4x" />
+      <p id="link-name">Facebook</p>
+    </a>,
+    <a
+      href="https://www.instagram.com/ctc.uci/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fa fa-instagram fa-4x" />
+      <p id="link-name">Instagram</p>
+    </a>,
+    <a
+      href="https://www.linkedin.com/company/commit-the-change-uci/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fa fa-linkedin-square fa-4x" />
+      <p id="link-name">Linkedin</p>
+    </a>,
+    <a
+      href="https://medium.com/@committhechange.uci"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fa fa-medium fa-4x" />
+      <p id="link-name">Medium</p>
+    </a>,
+  ];
+
+  const slideUp = useSpring(animationConfig.slideUp(true));
+  const fadeInMiddle = useSpring(animationConfig.fadeIn(middleViewCount > 0));
+  const fadeInBottom = useSpring(animationConfig.fadeIn(bottomViewCount > 0));
+  const trail = useTrail(socialMediaList.length, animationConfig.trail(middleViewCount > 0));
+  const popButtons = useSpring(animationConfig.slideUp(bottomButtonViewCount > 0));
+
+  const socialMediaLinks = trail.map((props, index) => (
+    <animated.a className="social-media-link" style={props}>
+      {socialMediaList[index]}
+    </animated.a>
+  ));
 
   return (
     <main>
@@ -35,85 +88,58 @@ function Home() {
       </animated.div>
       <div className="social-media-section">
         <div className="media-content">
-          <h2>Connect With Us!</h2>
-          <p>
-            Stay in the loop with us on our mission to create
-            <br />
-            <b>Tech With Purpose.</b>
-          </p>
-          <div className="media-links">
-            <a
-              href="https://www.facebook.com/ctc.uci/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-media-link"
-            >
-              <i className="fa fa-facebook-square fa-4x" />
-              <p id="link-name">Facebook</p>
-            </a>
-            <a
-              href="https://www.instagram.com/ctc.uci/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-media-link"
-            >
-              <i className="fa fa-instagram fa-4x" />
-              <p id="link-name">Instagram</p>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/commit-the-change-uci/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-media-link"
-            >
-              <i className="fa fa-linkedin-square fa-4x" />
-              <p id="link-name">Linkedin</p>
-            </a>
-            <a
-              href="https://medium.com/@committhechange.uci"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-media-link"
-            >
-              <i className="fa fa-medium fa-4x" />
-              <p id="link-name">Medium</p>
-            </a>
-          </div>
+          <VisibilitySensor onChange={(isVisible) => { if (isVisible) setMiddleVisible(middleViewCount + 1); }}>
+            <animated.div style={fadeInMiddle}>
+              <h2>Connect With Us!</h2>
+              <p>
+                Stay in the loop with us on our mission to create
+                <br />
+                <b>Tech With Purpose.</b>
+              </p>
+            </animated.div>
+          </VisibilitySensor>
+          <div className="media-links">{socialMediaLinks}</div>
         </div>
       </div>
       <div className="bottom-panel" style={{ background: `url(${tempHome})` }}>
-        <h2>STUDENTS</h2>
-        <p className="join-team">Want to join the team?</p>
-        <p className="interested">
-          Interested in using your skills in
-          {' '}
-          <b>programming</b>
-          {' '}
-          or
-          {' '}
-          <b>design</b>
-          {' '}
-          on projects that help non-profit organizations?
-          <br />
-          Join Commit the Change!
-        </p>
+        <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomVisible(bottomViewCount + 1); }}>
+          <animated.div style={fadeInBottom}>
+            <h2>STUDENTS</h2>
+            <p className="join-team">Want to join the team?</p>
+            <p className="interested">
+              Interested in using your skills in
+              {' '}
+              <b>programming</b>
+              {' '}
+              or
+              {' '}
+              <b>design</b>
+              {' '}
+              on projects that help non-profit organizations?
+              <br />
+              Join Commit the Change!
+            </p>
+          </animated.div>
+        </VisibilitySensor>
         <Timeline />
-        <div className="buttons">
-          <a
-            href="/projects#middle-our-work"
-            className="timeline-btn projects-btn"
-          >
-            View Projects
-          </a>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdhMFr1ZT8J5ENi2uEe62L54w-hNH8aVIAQLMDNqvPgWkhsWg/viewform?usp=sf_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="timeline-btn apply-btn"
-          >
-            Apply Here!
-          </a>
-        </div>
+        <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomButtonVisible(bottomButtonViewCount + 1); }}>
+          <animated.div style={popButtons} className="buttons">
+            <a
+              href="/projects#middle-our-work"
+              className="timeline-btn projects-btn"
+            >
+              View Projects
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdhMFr1ZT8J5ENi2uEe62L54w-hNH8aVIAQLMDNqvPgWkhsWg/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="timeline-btn apply-btn"
+            >
+              Apply Here!
+            </a>
+          </animated.div>
+        </VisibilitySensor>
       </div>
     </main>
   );
