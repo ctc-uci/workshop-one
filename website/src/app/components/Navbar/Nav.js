@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { animated, useSpring, config } from 'react-spring';
 
 import ctcLogo from '../../../images/logo/purple-ctc.svg';
-import closeIcon from '../../../images/close.svg';
+import closeIcon from '../../../images/navbar/close.svg';
 import './Nav.css';
 
 function Nav() {

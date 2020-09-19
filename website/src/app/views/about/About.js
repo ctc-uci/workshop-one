@@ -1,7 +1,7 @@
 import React from 'react';
 import { animated, useSpring } from 'react-spring';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
-import aboutUsGraphic from '../../../images/about-us.svg';
+import aboutUsGraphic from '../../../images/about/about-us.svg';
 import whiteCtcLogo from '../../../images/logo/cropped-white-ctc.svg';
 import teamData from './data.json';
 import animationConfig from '../animationConstants';
@@ -19,8 +19,8 @@ function About() {
               Founded in 2020, Commit the Change started as a small group of
               undergraduate students with a shared love for coding and
               volunteering for causes in their communities. Today, Commit the
-              Change is an established student organization at UC Irvine with a team of skilled
-              designers and developers.
+              Change is an established student organization at UC Irvine with a
+              team of skilled designers and developers.
             </p>
             <a href="#mission" className="common-pink-button">
               Learn More
