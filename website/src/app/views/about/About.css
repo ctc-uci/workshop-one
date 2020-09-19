@@ -1,263 +1,226 @@
 @import "../../../styles/common.css";
 
-
-.top-panel {
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.panel-left {
-    flex: 1 1 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.panel-left h1 {
-    color: var(--dark-purple);
-    width: 70%;
-}
-
-.panel-left p {
-    width: 70%;
-}
-
-.panel-right {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.panel-right>img {
-    flex: 1 1 500px;
-    max-width: 70%;
-
+.about-top-panel-img {
+  width: 80%;
+  max-height: 500px;
 }
 
 .links {
-    width: 100%;
-    background-color: var(--dark-purple);
-    display: flex;
-    justify-content: space-around;
-    margin: 100px auto 0 auto;
-    padding: 0.7em 0;
+  width: 100%;
+  background-color: var(--dark-purple);
+  display: flex;
+  justify-content: space-around;
+  padding: 0.7em 0;
 }
 
 .links a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .off {
-    color: var(--dark-purple);
+  color: var(--dark-purple);
 }
 
-h2:hover>.off {
-    color: white;
+h2:hover > .off {
+  color: white;
 }
 
 .our-mission-panel {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    background-color: rgb(128, 88, 222);
-    padding: 30px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: rgb(128, 88, 222);
+  padding: 30px 0;
 }
 
 .mission-text {
-    width: 50%;
-    color: white;
+  width: 50%;
+  color: white;
 }
 
 .mission-text h1 {
-    padding: 0 10%;
-    font-size: 45px;
-    margin: auto;
+  padding: 0 10%;
+  font-size: 45px;
+  margin: auto;
 }
 
 .mission-text p {
-    padding: 0 20% 0 10%;
-    font-size: 22px;
-    margin: auto
+  padding: 0 20% 0 10%;
+  font-size: 22px;
+  margin: auto;
 }
 
 .chevron {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .ctc-logo {
-    height: 600px;
-    width: 50%;
-    display: flex;
-    flex-direction: row-reverse;
+  height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .ctc-logo img {
-    width: 100%;
+  width: 100%;
 }
 
 .our-values-panel {
-    text-align: center;
-    margin: 100px 0;
+  text-align: center;
+  margin: 100px 0;
 }
 
 .our-values-panel h1 {
-    color: var(--dark-purple);
+  color: var(--dark-purple);
 }
 
-.our-values-panel>p {
-    width: 80%;
-    margin: 0px auto 100px auto;
+.our-values-panel > p {
+  width: 80%;
+  margin: 0px auto 100px auto;
 }
 
 .value-row-1 {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 10px auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px auto;
 }
 
 .value-row-2 {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 10px auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px auto;
 }
 
 .value {
-    flex: 0 1 400px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    margin: 30px 10px;
+  flex: 0 1 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 30px 10px;
 }
 
 .value span {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 .value p {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 
 .small-image {
-    width: 200px;
-    height: auto;
-    padding: 20px;
+  width: 200px;
+  height: auto;
+  padding: 20px;
 }
 
-.our-team-panel>h1 {
-    text-align: center;
-    margin-bottom: 100px;
-    color: var(--dark-purple);
+.our-team-panel > h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  color: var(--dark-purple);
 }
 
 .team-photos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 30px 0;
-    flex-wrap: wrap; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
 .person {
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
-    .links {
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .links {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .links a {
-        padding: 0em 1em;
-        text-align: center;
-    }
+  .links a {
+    padding: 0em 1em;
+    text-align: center;
+  }
 
-    .team-photos {
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+  .team-photos {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-    .person {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  .person {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .card {
-        margin: auto;
-    }
+  .card {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .about-top-panel-img {
+    width: 70%;
+  }
 
-    .top-panel {
-        flex-direction: column;
-    }
+  .our-mission-panel {
+    margin: 0px 0;
+  }
 
-    .panel-left {
-        margin-bottom: 50px;
-    }
+  .mission-text {
+    text-align: center;
+    width: 100%;
+  }
 
-    .panel-right img {
-        height: 20vh;
-        flex: 1 1 50%;
-    }
-    .our-mission-panel {
-        margin: 0px 0;
-    }
+  .mission-text h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-    .mission-text {
-        text-align: center;
-        width: 100%;
-    }
+  .mission-text p {
+    padding: 0 20%;
+    margin-bottom: 20px;
+  }
 
-    .mission-text h1 {
-        text-align: center;
-        margin-bottom: 50px;
-    }
+  .ctc-logo {
+    display: none;
+  }
 
-    .mission-text p {
-        padding: 0 20%;
-        margin-bottom: 20px;
-    }
+  .value-row-1,
+  .value-row-2 {
+    flex-direction: column;
+    width: 50%;
+  }
 
-    .ctc-logo {
-        display: none;
-    }
+  .value {
+    flex: 0;
+    margin: 30px auto;
+  }
 
-    .value-row-1, .value-row-2 {
-        flex-direction: column;
-        width: 50%;
-    }
+  .value h1,
+  .value p {
+    margin: 30px;
+  }
 
-    .value {
-        flex: 0;
-        margin: 30px auto;
-    }
+  .team-photos {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .value h1, .value p {
-        margin: 30px;
-    }
-    .team-photos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        margin: 50px 0;
-    }
+  .card {
+    margin: 50px 0;
+  }
 }

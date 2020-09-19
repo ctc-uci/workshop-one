@@ -47,14 +47,17 @@ nav {
 }
 
 .apply-button {
-  background: white;
-  border-radius: 20px;
+  background: var(--dark-purple);
+  border-radius: 30px;
   width: 150px;
-  line-height: 80%;
+  height: 35px;
+  line-height: 100%;
+  border: none;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 .apply-button a {
-  color: var(--dark-purple);
+  color: white;
   font-weight: bold;
 }
 
