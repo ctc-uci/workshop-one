@@ -15,17 +15,17 @@ function Nav() {
     from: { opacity: 0, transform: 'translateY(-20px)' },
   });
   return (
-    <animated.nav style={slideDown}>
+    <nav>
       <div>
         <div
           className={`mobile-nav-links-container ${open ? 'open' : 'hidden'}`}
         >
           <div className="mobile-nav-content">
             <div className="mobile-nav-links">
-              <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/projects">Our Work</Link>
-              <Link to="/contact">Apply Now</Link>
+              <Link onClick={() => { toggleVisibility(!open); }} to="/">Home</Link>
+              <Link onClick={() => { toggleVisibility(false); }} to="/about">About</Link>
+              <Link onClick={() => { toggleVisibility(false); }} to="/projects">Our Work</Link>
+              <Link onClick={() => { toggleVisibility(false); }} to="/contact">Apply Now</Link>
             </div>
             <button
               type="button"
@@ -41,7 +41,7 @@ function Nav() {
             </button>
           </div>
         </div>
-        <div className="nav-bar">
+        <animated.div style={slideDown} className="nav-bar">
           <div clasName="left">
             <Link to="/">
               <img className="logo" src={ctcLogo} alt="ctc logo" />
@@ -78,9 +78,9 @@ function Nav() {
           >
             <i className="fa fa-3x fa-bars hamburger" />
           </button>
-        </div>
+        </animated.div>
       </div>
-    </animated.nav>
+    </nav>
   );
 }
 
