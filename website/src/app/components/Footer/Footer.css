@@ -4,9 +4,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--dark-purple);
+    background-color: #481DAB;
     color: white;
-    /* margin-top: 50px; */
     font-family: 'Montserrat', sans-serif;
 }
 
