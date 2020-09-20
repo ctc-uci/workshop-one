@@ -4,6 +4,14 @@ import VisibilitySensor from 'react-visibility-sensor';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import aboutUsGraphic from '../../../images/about/about-us.svg';
 import whiteCtcLogo from '../../../images/logo/cropped-white-ctc.svg';
+
+// VALUES ICONS
+import community from '../../../images/about/community.svg';
+import product from '../../../images/about/authentication.svg';
+import authentic from '../../../images/about/heart-2.svg';
+import initiative from '../../../images/about/startup.svg';
+import impact from '../../../images/about/social-responsibility.svg';
+
 import teamData from './data.json';
 import animationConfig from '../animationConstants';
 import './About.css';
@@ -105,30 +113,24 @@ function About() {
         </p>
         <div className="value-row-1">
           <div className="value">
-            <span role="img" aria-label="emoji">
-              🤝
-            </span>
             <h2>Develop Community</h2>
+            <img src={community} alt="community icon" />
             <p>
               Our goal is to bring the whole organization together as one strong, helpful, and supportive community as friends
               and teammates.
             </p>
           </div>
           <div className="value">
-            <span role="img" aria-label="emoji">
-              🛠️
-            </span>
             <h2>Build Enduring Products</h2>
+            <img src={product} alt="product icon" />
             <p>
               We aim to build products that are maintainable and sustainable for long-term use. This involves high quality
               development, design, and documentation.
             </p>
           </div>
           <div className="value">
-            <span role="img" aria-label="emoji">
-              💗
-            </span>
             <h2>Be Authentic</h2>
+            <img src={authentic} alt="authentic icon" />
             <p>
               We want every member to feel safe being honest and true to their authentic self.
               Respect other members by being open to other opinions and perspectives.
@@ -137,20 +139,16 @@ function About() {
         </div>
         <div className="value-row-2">
           <div className="value">
-            <span role="img" aria-label="emoji">
-              🚀
-            </span>
             <h2>Take Initiative</h2>
+            <img src={initiative} alt="initiative icon" />
             <p>
               We want every member to feel comfortable trying and learning new things.
               Failure is accepted and encouraged, as long as you continue to try again.
             </p>
           </div>
           <div className="value">
-            <span role="img" aria-label="emoji">
-              👍
-            </span>
             <h2>Strive for Social Impact</h2>
+            <img src={impact} alt="impact icon" />
             <p>
               We aim to come up with creative solutions when designing our products to make a difference in the community
               and strive to pick partnerships with organizations that need our help the most, thus making the largest impact.
