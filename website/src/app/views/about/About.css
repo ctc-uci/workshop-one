@@ -89,6 +89,10 @@ h2:hover > .off {
   line-height: 25px;
 }
 
+.value img {
+  height: 100px;
+}
+
 
 .value-row-1 {
   width: 70%;
