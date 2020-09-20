@@ -4,21 +4,16 @@ import VisibilitySensor from 'react-visibility-sensor';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import aboutUsGraphic from '../../../images/about/about-us.svg';
 import whiteCtcLogo from '../../../images/logo/cropped-white-ctc.svg';
-
-// VALUES ICONS
-import community from '../../../images/about/community.svg';
-import product from '../../../images/about/authentication.svg';
-import authentic from '../../../images/about/heart-2.svg';
-import initiative from '../../../images/about/startup.svg';
-import impact from '../../../images/about/social-responsibility.svg';
-
 import teamData from './data.json';
+import values from './values';
 import animationConfig from '../animationConstants';
 import './About.css';
 
 function About() {
   const [teamViewCount, setTeamVisible] = useState(0);
+  const [valuesViewCount, setValuesVisible] = useState(0);
   const slideUp = useSpring(animationConfig.slideUp(true));
+  const slideUpValuesHeader = useSpring(animationConfig.slideUp(valuesViewCount > 0));
   const grid = useTrail(
     teamData.length,
     animationConfig.fadeInStiff(teamViewCount > 0),
@@ -34,6 +29,35 @@ function About() {
           linkedinURL={person.linkedinURL}
           imageURL={person.imageURL}
         />
+      </animated.div>
+    );
+  });
+
+  const valuesAnimationTopRow = useTrail(values.top.length, animationConfig.trail(valuesViewCount > 0));
+  const valuesAnimationBottomRow = useTrail(values.bottom.length, animationConfig.trail(valuesViewCount > 0));
+
+  const topRow = valuesAnimationTopRow.map((props, index) => {
+    const value = values.top[index];
+    return (
+      <animated.div style={props} className="value">
+        <h2>{value.title}</h2>
+        <img src={value.src} alt={value.alt} />
+        <p>
+          {value.description}
+        </p>
+      </animated.div>
+    );
+  });
+
+  const bottomRow = valuesAnimationBottomRow.map((props, index) => {
+    const value = values.bottom[index];
+    return (
+      <animated.div style={props} className="value">
+        <h2>{value.title}</h2>
+        <img src={value.src} alt={value.alt} />
+        <p>
+          {value.description}
+        </p>
       </animated.div>
     );
   });
@@ -105,55 +129,21 @@ function About() {
         </div>
       </div>
       <div className="our-values-panel" id="values">
-        <h1>Our Values &#38; Culture</h1>
-        <p>
-          Commit the Change understands the importance of culture and is committed to standing for these common values.
-          These are not just hollow sayings, we will hold ourselves accountable to constantly improving and
-          challenging ourselves through our actions and words.
-        </p>
-        <div className="value-row-1">
-          <div className="value">
-            <h2>Develop Community</h2>
-            <img src={community} alt="community icon" />
-            <p>
-              Our goal is to bring the whole organization together as one strong, helpful, and supportive community as friends
-              and teammates.
-            </p>
+        <animated.div style={slideUpValuesHeader}>
+          <h1>Our Values &#38; Culture</h1>
+          <p className="values-description">
+            Commit the Change understands the importance of culture and is committed to standing for these common values.
+            These are not just hollow sayings, we will hold ourselves accountable to constantly improving and
+            challenging ourselves through our actions and words.
+          </p>
+        </animated.div>
+        <VisibilitySensor partialVisibility onChange={(isVisible) => { if (isVisible) setValuesVisible(valuesViewCount + 1); }}>
+          <div className="value-row-1">
+            {topRow}
           </div>
-          <div className="value">
-            <h2>Build Enduring Products</h2>
-            <img src={product} alt="product icon" />
-            <p>
-              We aim to build products that are maintainable and sustainable for long-term use. This involves high quality
-              development, design, and documentation.
-            </p>
-          </div>
-          <div className="value">
-            <h2>Be Authentic</h2>
-            <img src={authentic} alt="authentic icon" />
-            <p>
-              We want every member to feel safe being honest and true to their authentic self.
-              Respect other members by being open to other opinions and perspectives.
-            </p>
-          </div>
-        </div>
+        </VisibilitySensor>
         <div className="value-row-2">
-          <div className="value">
-            <h2>Take Initiative</h2>
-            <img src={initiative} alt="initiative icon" />
-            <p>
-              We want every member to feel comfortable trying and learning new things.
-              Failure is accepted and encouraged, as long as you continue to try again.
-            </p>
-          </div>
-          <div className="value">
-            <h2>Strive for Social Impact</h2>
-            <img src={impact} alt="impact icon" />
-            <p>
-              We aim to come up with creative solutions when designing our products to make a difference in the community
-              and strive to pick partnerships with organizations that need our help the most, thus making the largest impact.
-            </p>
-          </div>
+          {bottomRow}
         </div>
       </div>
       <div className="our-team-panel" id="team">
