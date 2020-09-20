@@ -14,7 +14,7 @@ function Timeline() {
       <p className="number">01</p>
       <div className="detail">
         <p className="event-title">APPLICATION</p>
-        <p className="event-date">Due 10/6</p>
+        <p className="event-date">Due 10/10</p>
       </div>
     </div>,
     <div>
@@ -28,7 +28,7 @@ function Timeline() {
       <p className="number">03</p>
       <div className="detail">
         <p className="event-title">DECISION</p>
-        <p className="event-date">By 10/17</p>
+        <p className="event-date">By 10/18</p>
       </div>
     </div>,
   ];
