@@ -65,9 +65,10 @@ function OurWork() {
         </VisibilitySensor>
         <div className="projects">{activeProjectsAnimation}</div>
       </div>
+
       <div className="past-project-section">
-        <div className="past-project-div">
-          <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomVisible(bottomViewCount + 1); }}>
+        <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomVisible(bottomViewCount + 1); }}>
+          <div className="past-project-div">
             <animated.div style={slideInBottomText} className="past-project-content">
               <h1 className="past-project-title">Our Past Project</h1>
               <p className="past-project-description">
@@ -85,8 +86,9 @@ function OurWork() {
                 View Project
               </a>
             </animated.div>
-          </VisibilitySensor>
-        </div>
+          </div>
+        </VisibilitySensor>
+
         <div className="bottom-card-div">
           <animated.div style={slideUpInactiveProjects} className="bottom-card">
             <ProjectCardPurple
