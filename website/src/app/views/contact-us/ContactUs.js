@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ContactUs.css';
 import { animated, useSpring } from 'react-spring';
 import animationConfig from '../animationConstants';
 import ContactUsData from './ContactUs.json';
+import QuestionData from './FAQ.json';
+import Question from '../../components/Question/Question';
 import contactUsImage from '../../../images/contactUs/contact-us-header.svg';
 import purpleLogo from '../../../images/contactUs/purple_ctc 2.svg';
 
 function ContactUs() {
   const slideUp = useSpring(animationConfig.slideUp(true));
+
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const handleClick = (index) => {
+    if (expandedIndex === index) {
+      setExpandedIndex(null);
+    } else {
+      setExpandedIndex(index);
+    }
+  };
 
   return (
     <div className="contact-us-page">
@@ -59,12 +71,13 @@ function ContactUs() {
         </div>
       </div>
       <div id="contact-us-bottom-third">
+        <h1>Frequently Asked Questions</h1>
         <div className="contact-us-bottom-third-items">
-          <div className="bottom-third-info">
-            <h3>{ContactUsData.bottomThird.header}</h3>
-            <h1>{ContactUsData.bottomThird.titleText}</h1>
-            <p>{ContactUsData.bottomThird.description}</p>
-          </div>
+          {
+            QuestionData.map((el, index) => (
+              <Question key={index.toString()} index={index} questionText={el.question} answerText={el.answer} expanded={index === expandedIndex} handleClick={handleClick} />
+            ))
+          }
         </div>
       </div>
     </div>
