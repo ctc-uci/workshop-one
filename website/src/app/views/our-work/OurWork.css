@@ -13,9 +13,14 @@ html {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 44px;
+  line-height: 36px;
   text-align: center;
-  color: #ed315d;
+  color: var(--dark-pink);
+}
+
+.upcoming-projects-description {
+  text-align: center;
+  font-size: 18px;
 }
 
 #middle-our-work {
@@ -31,45 +36,105 @@ html {
   justify-content: center;
 }
 
-.scroll-button-element {
-  align-self: center;
-}
-
-#bottom-our-work {
+.past-project-section {
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap-reverse;
+}
+
+.past-project-div {
+  flex: 1;
+}
+
+.bottom-card-div {
+  flex: 1;
 }
 
 .bottom-card {
-  width: 40%;
+  max-width: 800px;
+  width: 90%;
+  float: left;
 }
 
-@media screen and (max-width: 768px) {
+.past-project-content {
+  width: 80%;
+  float: right;
+}
+
+.past-project-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--dark-purple);
+}
+
+.past-project-description {
+  width: 90%;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 875px) {
   .projects {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 
   #middle-our-work {
     height: auto;
   }
 
-  .bottom-card {
-    width: 75%;
-  }
-
-  #bottom-our-work {
+  .past-project-section {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}
 
-@media screen and (max-width: 800px) {
-  .our-work-panel-img {
-    width: 60%;
+  .upcoming-projects {
+    margin-top: 15vh;
+    font-size: 28px;
+  }
+
+  .upcoming-projects-description {
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .past-project-section {
+    height: 100%;
+    margin: 15vh 0;
+  }
+
+  .past-project-content {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .past-project-title {
+    margin-top: 50px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .past-project-description {
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .bottom-card {
+    margin: 0 auto;
+    float: none;
+    width: 75%;
+  }
+
+  .bottom-card-div {
+    margin: 30px auto;
   }
 }

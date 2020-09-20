@@ -23,8 +23,10 @@ function OurWork() {
           <div className="inside-top-panel-text">
             <h1 className="top-panel-title">Our Work</h1>
             <p className="top-panel-description">
-              Each academic school year, Commit the Change partners with new non-profit organizations to work on an impactful project
-              free of charge. With the non-profit, we assess problems, ideate solutions, and create software to address an operational bottleneck.
+              Each academic school year, Commit the Change partners with new
+              non-profit organizations to work on an impactful project free of
+              charge. With the non-profit, we assess problems, ideate solutions,
+              and create software to address an operational bottleneck.
             </p>
             <a href="#middle-our-work" className="common-pink-button">
               Learn More
@@ -36,10 +38,17 @@ function OurWork() {
         </div>
       </animated.div>
       <div id="middle-our-work">
-        <h1 className="upcoming-projects">Our Upcoming Projects</h1>
+        <div className="project-text">
+          <h1 className="upcoming-projects">Our Upcoming Projects</h1>
+          <p className="upcoming-projects-description">
+            We are proud to present the below projects for the 2020-2021
+            academic year!
+          </p>
+        </div>
         <div className="projects">
           <ProjectCard
             className="projectcard"
+            id="ccl"
             imageURL={childCreativityLab}
             projectName={projectData.project1.projectName}
             description={projectData.project1.description}
@@ -61,23 +70,34 @@ function OurWork() {
           />
         </div>
       </div>
-      <div id="bottom-our-work">
-        <div className="bottom-card">
-          <ProjectCardPurple
-            projectName={projectData.project4.projectName}
-            imageURL={crimeSurvivors}
-            description={projectData.project4.description}
-            projectURL={projectData.project4.projectURL}
-          />
+      <div className="past-project-section">
+        <div className="past-project-div">
+          <div className="past-project-content">
+            <h1 className="past-project-title">Our Past Project</h1>
+            <p className="past-project-description">
+              Commit the Change started its first project in April 2020 with the
+              nonprofit Crime Survivors. This organization wanted a way to put their paper pamplets online, so that the
+              information can be more accessible and to decrease the printing cost of the pamplets.
+            </p>
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="common-pink-button"
+            >
+              View Project
+            </a>
+          </div>
         </div>
-        <div className="title-div">
-          <h1 className="title-header">Our Past Projects</h1>
-          <p className="title-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea
-          </p>
+        <div className="bottom-card-div">
+          <div className="bottom-card">
+            <ProjectCardPurple
+              projectName={projectData.project4.projectName}
+              imageURL={crimeSurvivors}
+              description={projectData.project4.description}
+              projectURL={projectData.project4.projectURL}
+            />
+          </div>
         </div>
       </div>
     </main>
