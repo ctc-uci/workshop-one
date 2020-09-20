@@ -2,25 +2,25 @@
   "project1":
   {
     "projectName" : "Child Creativity Lab",
-    "description" : "For this nonprofit whose mission is to foster the next generation of leaders through hands-on creativity enhancing exploration, Commit the Change will create an online waiver system for efficient volunteer onboarding and a platform to sell educational kits for children.",
+    "description" : "We will create an online waiver system and a platform to sell educational kits for children.",
     "projectURL" : "https://google.com"
   },
   "project2":
   {
     "projectName" : "Justice for Families",
-    "description" : "For this nonprofit whose mission is to stop the U.S. youth incarceration epidemic and advocate for investment in youth and families, Commit the Change will create a mobile application for the families of incarcerated loved ones which will serve as a safe place for them to share experiences and receive support.",
+    "description" : "We will create a mobile application for the families of incarcerated loved ones to connect.",
     "projectURL" : "https://google.com"
   },
   "project3":
   {
     "projectName" : "Waymakers",
-    "description" : "For this nonprofit whose mission is to build safer communities by helping individuals make their way through conflict and crisis to a place of strength and stability, Commit the Change will create a platform to electronically capture volunteer and inventory data about their programs.",
+    "description" : "We will create a platform to electronically capture volunteer and inventory data about their programs.",
     "projectURL" : "https://google.com"
   },
   "project4":
   {
     "projectName" :"Crime Survivors",
-    "description" : "to provide them a website to replace their printed pamphlets that detail resources in different counties in Southern California. Replacing these pamphlets by providing an online website instead would save the organization over $100,000 every year in printing and distribution costs! That amount of money would instead go directly back into helping survivors get items they need like baby diapers, food, and other necessities.",
+    "description" : "We created a website to replace their paper pamphlets that detail important resources and information for crime victims in different counties throughout Southern California. This project will save the organization thousands of dollars every year in printing and distribution costs, which will go directly back into helping survivors get necessity items.",
     "projectURL" : "https://google.com"
   }
 }
