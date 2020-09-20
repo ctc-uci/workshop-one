@@ -2,11 +2,18 @@ import { config } from 'react-spring';
 
 // these animations take in a state and produce a config that relies on that state to animate
 const animationConfigs = {
-  slideUp: (state) => ({
+  slideUp: (state, delay = 0) => ({
     config: config.gentle,
+    delay,
     opacity: state ? 1 : 0,
-    transform: state ? 'translate(0)' : 'translateY(20px)',
-    from: { opacity: 0, transform: 'translateY(20px)' },
+    transform: state ? 'translate(0)' : 'translateY(30px)',
+    from: { opacity: 0, transform: 'translateY(30px)' },
+  }),
+  slideInLeft: (state) => ({
+    config: config.wobbly,
+    opacity: state ? 1 : 0,
+    transform: state ? 'translate(0)' : 'translateX(-50px)',
+    from: { opacity: 0, transform: 'translateX(-50px)' },
   }),
   trail: (state) => ({
     config: config.wobbly,
