@@ -24,7 +24,7 @@ html {
 }
 
 #middle-our-work {
-  height: 100vh;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -37,7 +37,7 @@ html {
 }
 
 .past-project-section {
-  height: 100vh;
+  margin: 120px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
