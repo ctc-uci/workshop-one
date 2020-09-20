@@ -22,7 +22,7 @@ Commit the Change website environment styles.
 }
 
 .top-panel {
-  height: calc(100vh - 82px);
+  height: calc(100vh - 102px);
   display: flex;
   flex-direction: row;
 }
@@ -72,7 +72,6 @@ Commit the Change website environment styles.
 
 @media screen and (max-width: 800px) {
   .top-panel {
-    height: calc(100vh - 102px);
     width: 100%;
     flex-direction: column;
     align-items: center;
