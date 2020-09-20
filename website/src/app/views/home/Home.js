@@ -69,9 +69,8 @@ function Home() {
           <div className="inside-top-panel-text">
             <h1 className="top-panel-title">Commit the Change</h1>
             <p className="top-panel-description">
-              We are a student organization at UC Irvine focused on delivering
-              high quality software for nonprofit organizations free of charge
-              and promoting technology for social good in our community.
+              We are a student organization at UC Irvine that aims to deliver free, high-quality software
+              for nonprofits and promote creating technology with purpose in our community.
             </p>
             <a href="/about" className="common-pink-button">
               Learn More
