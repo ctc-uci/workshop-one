@@ -121,6 +121,12 @@ h2:hover > .off {
   padding: 20px;
 }
 
+.our-team-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .our-team-panel > h1 {
   text-align: center;
   margin-bottom: 100px;
@@ -128,21 +134,27 @@ h2:hover > .off {
 }
 
 .team-photos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 30px 0;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 350px));
+  grid-auto-rows: 1fr;
+  gap: 4rem;
+  margin: 4rem;
 }
 
-.person {
-  width: 25%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.team-photos::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
-@media screen and (max-width: 1200px) {
+.team-photos > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+@media screen and (max-width: 1290px) {
   .links {
     flex-direction: column;
     justify-content: space-between;
@@ -154,20 +166,7 @@ h2:hover > .off {
   }
 
   .team-photos {
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .person {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .card {
-    margin: auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -176,6 +175,41 @@ h2:hover > .off {
     width: 70%;
   }
 
+  .our-mission-panel {
+    margin: 0px 0;
+  }
+
+  .mission-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .mission-text h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .mission-text p {
+    padding: 0 20%;
+    margin-bottom: 20px;
+  }
+
+  .ctc-logo {
+    display: none;
+  }
+
+  .top-panel {
+    flex-direction: column;
+  }
+
+  .panel-left {
+    margin-bottom: 50px;
+  }
+
+  .panel-right img {
+    height: 20vh;
+    flex: 1 1 50%;
+  }
   .our-mission-panel {
     margin: 0px 0;
   }
@@ -214,13 +248,10 @@ h2:hover > .off {
   .value p {
     margin: 30px;
   }
+}
 
+@media screen and (max-width: 680px) {
   .team-photos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    margin: 50px 0;
+      grid-template-columns: 1fr;
   }
 }

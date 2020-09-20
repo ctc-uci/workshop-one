@@ -9,10 +9,12 @@ function ProfileCard(props) {
   } = props;
   return (
     <div className="card">
-      <img src={imageURL} alt="personImage" />
+      <img className="profile-img" src={imageURL} alt="personImage" />
       <div className="info">
-        <h3>{name}</h3>
-        <p>{position}</p>
+        <div className="info-text">
+          <h3>{name}</h3>
+          <p>{position}</p>
+        </div>
       </div>
       <div className="logoborder">
         <a href={linkedinURL}><img src={linkedinLogo} alt="linkedin logo" /></a>
