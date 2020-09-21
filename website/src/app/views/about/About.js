@@ -10,6 +10,8 @@ import animationConfig from '../animationConstants';
 import './About.css';
 
 function About() {
+  const pathToAssets = require.context('../../../images/about/memberImages');
+
   const [teamViewCount, setTeamVisible] = useState(0);
   const [valuesViewCount, setValuesVisible] = useState(0);
   const slideUp = useSpring(animationConfig.slideUp(true));
@@ -24,10 +26,11 @@ function About() {
     return (
       <animated.div style={props} className="person">
         <ProfileCard
+          imageURL={pathToAssets(person.imageURL)}
           name={person.name}
           position={person.position}
           linkedinURL={person.linkedinURL}
-          imageURL={person.imageURL}
+
         />
       </animated.div>
     );
