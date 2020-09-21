@@ -4,6 +4,7 @@ import { animated, useSpring, config } from 'react-spring';
 
 import ctcLogo from '../../../images/logo/purple-ctc.svg';
 import closeIcon from '../../../images/navbar/close.svg';
+import animationConfigs from '../../views/animationConstants';
 import './Nav.css';
 
 function Nav() {
@@ -14,18 +15,50 @@ function Nav() {
     transform: 'translate(0)',
     from: { opacity: 0, transform: 'translateY(-20px)' },
   });
+
+  const slideDownMobileNav = useSpring(animationConfigs.slideDownNav(open));
+
   return (
     <nav>
       <div>
-        <div
-          className={`mobile-nav-links-container ${open ? 'open' : 'hidden'}`}
+        <animated.div
+          style={slideDownMobileNav}
+          className="mobile-nav-links-container"
         >
           <div className="mobile-nav-content">
             <div className="mobile-nav-links">
-              <Link onClick={() => { toggleVisibility(!open); }} to="/">Home</Link>
-              <Link onClick={() => { toggleVisibility(false); }} to="/about">About</Link>
-              <Link onClick={() => { toggleVisibility(false); }} to="/projects">Our Work</Link>
-              <Link onClick={() => { toggleVisibility(false); }} to="/contact">Apply Now</Link>
+              <Link
+                onClick={() => {
+                  toggleVisibility(false);
+                }}
+                to="/"
+              >
+                Home
+              </Link>
+              <Link
+                onClick={() => {
+                  toggleVisibility(false);
+                }}
+                to="/about"
+              >
+                About
+              </Link>
+              <Link
+                onClick={() => {
+                  toggleVisibility(false);
+                }}
+                to="/projects"
+              >
+                Our Work
+              </Link>
+              <Link
+                onClick={() => {
+                  toggleVisibility(false);
+                }}
+                to="/contact"
+              >
+                Apply Now
+              </Link>
             </div>
             <button
               type="button"
@@ -37,10 +70,14 @@ function Nav() {
                 toggleVisibility(!open);
               }}
             >
-              <img className="mobile-nav-close-icon" src={closeIcon} alt="Close Button" />
+              <img
+                className="mobile-nav-close-icon"
+                src={closeIcon}
+                alt="Close Button"
+              />
             </button>
           </div>
-        </div>
+        </animated.div>
         <animated.div style={slideDown} className="nav-bar">
           <div className="left">
             <Link to="/">
