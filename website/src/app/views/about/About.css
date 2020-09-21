@@ -289,5 +289,6 @@ h2:hover > .off {
 @media screen and (max-width: 680px) {
   .team-photos {
       grid-template-columns: 1fr;
+      grid-auto-rows: 247px;
   }
 }
