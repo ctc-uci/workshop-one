@@ -31,30 +31,30 @@ h2:hover > .off {
 }
 
 .our-mission-panel {
-  height: 100vh;
+  margin: 0;
+  padding: 80px 0;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   background-color: rgb(128, 88, 222);
-  padding: 30px 0;
 }
 
 .mission-text {
   width: 65%;
-  line-height: 50px;
   color: white;
+  padding-right: 80px;
 }
 
 .mission-text h1 {
-  padding: 0 10%;
+  padding: 20px 0;
   font-size: 45px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.mission-text p {
-  padding: 0 20% 0 10%;
+.mission-text-description {
   font-size: 22px;
-  margin: auto;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .chevron {
@@ -206,26 +206,21 @@ h2:hover > .off {
     width: 70%;
   }
 
-  .our-mission-panel {
-    margin: 0px 0;
+  .mission-text h1 {
+    text-align: center;
+    font-size: 32px;
   }
 
   .mission-text {
     text-align: center;
     width: 100%;
-  }
-
-  .mission-text h1 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 32px;
+    padding: 0;
   }
 
   .mission-text p {
     font-size: 14px;
     line-height: 22px;
     padding: 0 20%;
-    margin-bottom: 20px;
   }
 
   .ctc-logo {
@@ -243,15 +238,6 @@ h2:hover > .off {
   .panel-right img {
     height: 20vh;
     flex: 1 1 50%;
-  }
-
-  .our-mission-panel {
-    margin: 0px 0;
-  }
-
-  .mission-text {
-    text-align: center;
-    width: 100%;
   }
 
   .ctc-logo {
