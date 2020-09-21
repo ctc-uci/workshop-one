@@ -111,17 +111,14 @@ function About() {
       <div className="our-mission-panel .tint" id="mission">
         <div className="mission-text">
           <h1>Our Mission</h1>
-          <p>
-            <span className="chevron">&#8250; </span>
-            Deliver high-quality software for nonprofit organizations free of charge
+          <p className="mission-text-description">
+            At Commit the Change, our mission is to develop high quality software for non-profit organizations
+            while giving students at UC Irvine opportunities to develop tech, with purpose.
           </p>
-          <p>
-            <span className="chevron">&#8250; </span>
-            Promote the use of technology for social good
-          </p>
-          <p>
-            <span className="chevron">&#8250; </span>
-            Uphold our five core values in everything we do
+          <br />
+          <p className="mission-text-description">
+            We believe in the talent of our members and provide countless opportunities for growth. Many of our alumni continue
+            to spread their influence within large companies across the world.
           </p>
         </div>
         <div className="ctc-logo">
