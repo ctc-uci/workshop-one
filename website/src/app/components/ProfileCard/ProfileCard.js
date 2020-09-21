@@ -17,7 +17,7 @@ function ProfileCard(props) {
         </div>
       </div>
       <div className="logoborder">
-        <a href={linkedinURL}><img src={linkedinLogo} alt="linkedin logo" /></a>
+        <a href={linkedinURL}><img src={linkedinLogo} alt="linkedin logo" target="_blank" rel="noopener noreferrer" /></a>
       </div>
     </div>
   );
