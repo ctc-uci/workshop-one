@@ -60,7 +60,7 @@ function Nav() {
             </li>
             <li>
               <button type="button" className="elem apply-button">
-                <Link to="/contact" className="apply-link">
+                <Link to="/contact" id="apply-link">
                   Apply Now
                 </Link>
               </button>

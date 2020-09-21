@@ -10,7 +10,9 @@ function Footer() {
           <div className="inner-left">
             Copyright Commit the Change
             <br />
-            Illustrations from ___
+            Icons made by
+            {' '}
+            <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons" style={{ color: 'white' }}>Flat Icons</a>
             <br />
             Created in Irvine, CA
             <br />
