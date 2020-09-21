@@ -33,15 +33,19 @@
 
 .top-half h2 {
     display: inline;
-    font-size: 30px;
+    font-size: 24px;
     color: var(--light-pink);
     transform: translateY(10px);
     margin: 0 0 10px 0;
 }
 
-.top-half h2:hover {
-    color: var(--dark-pink);
+@media (hover: hover) {
+    .top-half h2:hover {
+        color: var(--dark-pink);
+    }
 }
+
+
 
 .bottom-half p {
     margin-left: 40px;
@@ -56,7 +60,13 @@
         flex: 0 0 50px;
     }
 
+    .top-half h2 {
+        font-size: 18px;
+    }
+
     .bottom-half p {
-        margin-left: 25px;
+        font-size: 16px;
+        margin-left: 20px;
+        padding: 5px;
     }
 }
