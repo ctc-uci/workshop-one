@@ -43,6 +43,12 @@ const animationConfigs = {
     opacity: state ? 1 : 0,
     from: { opacity: 0 },
   }),
+  slideDownNav: (state) => ({
+    config: config.slow,
+    opacity: state ? 1 : 0,
+    transform: state ? 'translate(0)' : 'translateY(-500px)',
+    from: { opacity: 0, transform: 'translateY(-500px)' },
+  }),
 };
 
 export default animationConfigs;
