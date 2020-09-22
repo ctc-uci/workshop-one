@@ -9,12 +9,16 @@ html {
   max-height: 500px;
 }
 
-.links {
-  width: 100%;
+.links-div {
   background-color: var(--dark-purple);
+}
+
+.links {
+  max-width: 2000px;
   display: flex;
   justify-content: space-around;
   padding: 0.7em 0;
+  margin: 0 auto;
 }
 
 .links a {
