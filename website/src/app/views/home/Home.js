@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
-import {
-  animated, useSpring, useTrail,
-} from 'react-spring';
+import { animated, useSpring, useTrail } from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 import animationConfig from '../animationConstants';
 import Timeline from '../../components/Timeline/Timeline';
@@ -56,8 +54,13 @@ function Home() {
   const slideUp = useSpring(animationConfig.slideUp(true));
   const fadeInMiddle = useSpring(animationConfig.fadeIn(middleViewCount > 0));
   const fadeInBottom = useSpring(animationConfig.fadeIn(bottomViewCount > 0));
-  const trail = useTrail(socialMediaList.length, animationConfig.trail(middleViewCount > 0));
-  const popButtons = useSpring(animationConfig.slideUp(bottomButtonViewCount > 0));
+  const trail = useTrail(
+    socialMediaList.length,
+    animationConfig.trail(middleViewCount > 0),
+  );
+  const popButtons = useSpring(
+    animationConfig.slideUp(bottomButtonViewCount > 0),
+  );
 
   const socialMediaLinks = trail.map((props, index) => (
     <animated.a className="social-media-link" style={props}>
@@ -72,10 +75,16 @@ function Home() {
           <div className="inside-top-panel-text">
             <h1 className="top-panel-title">Commit the Change</h1>
             <p className="top-panel-description">
-              We are a student organization at UC Irvine that aims to deliver free, high-quality software
-              for nonprofits and promote creating technology with purpose in our community.
+              We are an organization at UC Irvine that delivers high quality
+              software for non-profit organizations while providing meaningful
+              opportunities for students to develop tech with purpose.
             </p>
-            <a href="/about" className="common-pink-button">
+            <a
+              href="https://medium.com/@committhechange.uci/what-is-commit-the-change-uci-e389de8d1ab0"
+              className="common-pink-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Learn More
             </a>
           </div>
@@ -90,7 +99,11 @@ function Home() {
       </animated.div>
       <div className="social-media-section">
         <div className="media-content">
-          <VisibilitySensor onChange={(isVisible) => { if (isVisible) setMiddleVisible(middleViewCount + 1); }}>
+          <VisibilitySensor
+            onChange={(isVisible) => {
+              if (isVisible) setMiddleVisible(middleViewCount + 1);
+            }}
+          >
             <animated.div style={fadeInMiddle}>
               <h2>Connect With Us!</h2>
               <p>
@@ -105,7 +118,11 @@ function Home() {
       </div>
       <div className="bottom-panel">
         <div className="purple-tint">
-          <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomVisible(bottomViewCount + 1); }}>
+          <VisibilitySensor
+            onChange={(isVisible) => {
+              if (isVisible) setBottomVisible(bottomViewCount + 1);
+            }}
+          >
             <animated.div style={fadeInBottom}>
               <h2>STUDENTS</h2>
               <p className="join-team">Want to join the team?</p>
@@ -125,7 +142,11 @@ function Home() {
             </animated.div>
           </VisibilitySensor>
           <Timeline />
-          <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomButtonVisible(bottomButtonViewCount + 1); }}>
+          <VisibilitySensor
+            onChange={(isVisible) => {
+              if (isVisible) setBottomButtonVisible(bottomButtonViewCount + 1);
+            }}
+          >
             <animated.div style={popButtons} className="buttons">
               <a
                 href="/projects#middle-our-work"
