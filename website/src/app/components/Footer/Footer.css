@@ -14,6 +14,8 @@
     flex-direction: row;
     font-size: 15px;
     padding: 50px 40px;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .left-column {
