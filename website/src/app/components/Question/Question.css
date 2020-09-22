@@ -1,72 +1,56 @@
 .question-card {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
-    width: 100%;
-    margin: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 0 80px;
+  max-width: 700px;
 }
 
 .question-card:focus {
-    outline: none;
+  outline: none;
 }
 
 .question-card:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .symbol {
-    flex: 0 0 100px;
-    display: inline-flex;
-    justify-content: center;
+  flex: 0 0 50px;
+  display: inline-flex;
+  transform: translateY(-6px);
 }
 
 .expand-symbol {
-    font-size: 44px;
-    color: var(--dark-pink);
+  font-size: 44px;
+  color: var(--dark-pink);
 }
 
 .top-half {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
 }
 
 .top-half h2 {
-    display: inline;
-    font-size: 24px;
-    color: var(--light-pink);
-    transform: translateY(10px);
-    margin: 0 0 10px 0;
+  display: inline;
+  font-size: 24px;
+  color: var(--light-pink);
+  transform: translateY(10px);
+  margin: 0 0 10px 0;
 }
 
-@media (hover: hover) {
-    .top-half h2:hover {
-        color: var(--dark-pink);
-    }
+.top-half h2:hover {
+color: var(--dark-pink);
 }
-
 
 
 .bottom-half p {
-    margin-left: 40px;
+  margin-left: 54px;
+  line-height: 25px;
 }
 
-.hidden {
-    display: none;
+.minus {
+  transform: translate(4px, -4px);
 }
 
-@media screen and (max-width: 600px) {
-    .symbol {
-        flex: 0 0 50px;
-    }
-
-    .top-half h2 {
-        font-size: 18px;
-    }
-
-    .bottom-half p {
-        font-size: 16px;
-        margin-left: 20px;
-        padding: 5px;
-    }
-}
