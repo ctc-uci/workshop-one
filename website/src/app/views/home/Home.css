@@ -129,6 +129,16 @@
 .social-media-link a{
     color: var(--light-pink);
     text-decoration: none;
+    display: inherit;
+}
+
+.social-logo {
+    filter: invert(82%) sepia(9%) saturate(6346%) hue-rotate(295deg) brightness(103%) contrast(92%);
+    width: 4em;
+}
+
+.medium-logo{
+        width: 5em;
 }
 
 .middle-column a:hover {
@@ -142,6 +152,12 @@
 
     .home-top-panel-img {
         width: 65%;
+    }
+    .medium-logo{
+        width: 2em;
+    }
+    .social-logo{
+        width: 2em;
     }
 }
 

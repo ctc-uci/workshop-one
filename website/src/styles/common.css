@@ -24,7 +24,7 @@ Commit the Change website environment styles.
 .top-panel {
   max-width: 2000px;
   margin: 0 auto;
-  height: calc(100vh - 102px);
+  min-height: calc(100vh - 102px);
   display: flex;
   flex-direction: row;
 }
