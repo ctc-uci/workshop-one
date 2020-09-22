@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './app/components/Navbar/Nav';
 import Home from './app/views/home/Home';
@@ -10,6 +11,9 @@ import Footer from './app/components/Footer/Footer';
 import topRightBlob from './images/Vector 2.svg';
 
 function App() {
+  ReactGA.initialize('UA-178250253-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <Router>
       <div className="App">
