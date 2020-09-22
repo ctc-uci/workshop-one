@@ -14,7 +14,7 @@
 /* Bottom Panel */
 
 .bottom-panel {
-    background: url("../../../images/home/ppl.png") no-repeat center center;
+    background: url("../../../images/home/ppl.png") repeat center center;
     background-size: auto 100%;
     color: white;
 }

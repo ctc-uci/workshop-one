@@ -135,6 +135,7 @@ button:focus {
   
   .mobile-nav-links {
     margin: 30px 30px;
+    white-space: nowrap;
   }
   
   .mobile-nav-close-icon {
