@@ -47,7 +47,7 @@ function ContactUs() {
           <img src={contactUsImage} alt="undraw" className="contact-us-top-panel-img" />
         </div>
       </animated.div>
-      <div id="contact-us-middle-third">
+      <div className="contact-us-middle-third">
         <div className="contact-us-middle-items">
           <img src={purpleLogo} alt="undraw" className="heart-logo" />
           <div className="middle-third-info">
