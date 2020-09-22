@@ -14,11 +14,15 @@
 /* Bottom Panel */
 
 .bottom-panel {
-    background-image: url("../../../images/home/temp-home.svg");
-    width: 100%;
-    height: 100vh;
-    padding-top: 10vh;
+    background: url("../../../images/home/ppl.png") no-repeat center center;
+    background-size: auto 100%;
     color: white;
+}
+
+.purple-tint {
+    background-color: rgb(85, 49, 175, 0.75);
+    padding-top: 10vh;
+    height: 100vh;
 }
 
 .bottom-panel h2 {
@@ -27,6 +31,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 20px;
+    opacity: 0.75;
 }
 
 .bottom-panel .join-team{

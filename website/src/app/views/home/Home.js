@@ -7,7 +7,6 @@ import VisibilitySensor from 'react-visibility-sensor';
 import animationConfig from '../animationConstants';
 import Timeline from '../../components/Timeline/Timeline';
 import homeLandingPic from '../../../images/home/home-top-panel.svg';
-import tempHome from '../../../images/home/temp-home.svg';
 
 function Home() {
   const [middleViewCount, setMiddleVisible] = useState(0);
@@ -100,45 +99,47 @@ function Home() {
           <div className="media-links">{socialMediaLinks}</div>
         </div>
       </div>
-      <div className="bottom-panel" style={{ background: `url(${tempHome})` }}>
-        <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomVisible(bottomViewCount + 1); }}>
-          <animated.div style={fadeInBottom}>
-            <h2>STUDENTS</h2>
-            <p className="join-team">Want to join the team?</p>
-            <p className="interested">
-              Interested in using your skills in
-              {' '}
-              <b>programming</b>
-              {' '}
-              or
-              {' '}
-              <b>design</b>
-              {' '}
-              on projects that help non-profit organizations?
-              <br />
-              Join Commit the Change!
-            </p>
-          </animated.div>
-        </VisibilitySensor>
-        <Timeline />
-        <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomButtonVisible(bottomButtonViewCount + 1); }}>
-          <animated.div style={popButtons} className="buttons">
-            <a
-              href="/projects#middle-our-work"
-              className="timeline-btn projects-btn"
-            >
-              View Projects
-            </a>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdhMFr1ZT8J5ENi2uEe62L54w-hNH8aVIAQLMDNqvPgWkhsWg/viewform?usp=sf_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="timeline-btn apply-btn"
-            >
-              Apply Here!
-            </a>
-          </animated.div>
-        </VisibilitySensor>
+      <div className="bottom-panel">
+        <div className="purple-tint">
+          <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomVisible(bottomViewCount + 1); }}>
+            <animated.div style={fadeInBottom}>
+              <h2>STUDENTS</h2>
+              <p className="join-team">Want to join the team?</p>
+              <p className="interested">
+                Interested in using your skills in
+                {' '}
+                <b>programming</b>
+                {' '}
+                or
+                {' '}
+                <b>design</b>
+                {' '}
+                on projects that help non-profit organizations?
+                <br />
+                Join Commit the Change!
+              </p>
+            </animated.div>
+          </VisibilitySensor>
+          <Timeline />
+          <VisibilitySensor onChange={(isVisible) => { if (isVisible) setBottomButtonVisible(bottomButtonViewCount + 1); }}>
+            <animated.div style={popButtons} className="buttons">
+              <a
+                href="/projects#middle-our-work"
+                className="timeline-btn projects-btn"
+              >
+                View Projects
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdhMFr1ZT8J5ENi2uEe62L54w-hNH8aVIAQLMDNqvPgWkhsWg/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="timeline-btn apply-btn"
+              >
+                Apply Here!
+              </a>
+            </animated.div>
+          </VisibilitySensor>
+        </div>
       </div>
     </main>
   );
