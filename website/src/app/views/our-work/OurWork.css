@@ -12,15 +12,18 @@ html {
 .upcoming-projects {
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 40px;
+  line-height: 40px;
   text-align: center;
   color: var(--dark-pink);
+  text-shadow: 1px 0 var(--dark-pink);
+  margin: 50px;
 }
 
 .upcoming-projects-description {
   text-align: center;
   font-size: 18px;
+  line-height: 22px;
 }
 
 #middle-our-work {
@@ -35,27 +38,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-@media screen and (max-width:768px){
-    .title-div{
-      flex-basis: 70%;
-    }
-  }
-  @media screen and (max-width:846px){
-    .our-work-img{
-        height: 40%;
-    }
-  }
-
-.upcoming-projects{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
-    color: #ED315D;
-    margin: 6%;
 }
 
 #middle-our-work{
@@ -204,9 +186,10 @@ html {
 .past-project-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 40px;
+  line-height: 40px;
   color: var(--dark-purple);
+  text-shadow: 1px 0 var(--dark-purple)
 }
 
 .past-project-description {
@@ -223,6 +206,7 @@ html {
 
   #middle-our-work {
     height: auto;
+    padding: 0;
   }
 
   .past-project-section {
@@ -238,7 +222,7 @@ html {
 
   .upcoming-projects-description {
     font-size: 14px;
-    width: 90%;
+    width: 75%;
     margin: 0 auto 20px;
   }
 

@@ -102,15 +102,15 @@
 @media screen and (max-width: 600px) {
   .timeline:before {
     margin-left: 50px;
-    width: 185px;
+    width: 200px;
   }
 
   .event {
-    margin: 0 35px;
+    margin: 0 40px;
   }
 
   .event-title {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .event-date {
