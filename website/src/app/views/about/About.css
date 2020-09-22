@@ -15,7 +15,6 @@ html {
   display: flex;
   justify-content: space-around;
   padding: 0.7em 0;
-  display: none;
 }
 
 .links a {
@@ -37,7 +36,11 @@ h2:hover > .off {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background: linear-gradient(149deg, rgba(128,88,222,1) 0%, rgba(227,177,177,1) 100%);
+  background: linear-gradient(
+    149deg,
+    rgba(128, 88, 222, 1) 0%,
+    rgba(227, 177, 177, 1) 100%
+  );
 }
 
 .mission-text {
@@ -83,7 +86,7 @@ h2:hover > .off {
   font-size: 40px;
 }
 
-.values-description{
+.values-description {
   width: 60%;
   margin: 0px auto 20px auto;
   line-height: 25px;
@@ -92,7 +95,6 @@ h2:hover > .off {
 .value img {
   height: 100px;
 }
-
 
 .value-row-1 {
   width: 70%;
@@ -166,7 +168,7 @@ h2:hover > .off {
 }
 
 .team-photos::before {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 100%;
   grid-row: 1 / 1;
@@ -187,7 +189,7 @@ h2:hover > .off {
   .team-photos {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .value-row-1 {
     width: 85%;
   }
@@ -195,12 +197,11 @@ h2:hover > .off {
   .value-row-2 {
     width: 60%;
   }
-
 }
 
 @media screen and (max-width: 800px) {
   .links {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .about-top-panel-img {
@@ -257,7 +258,7 @@ h2:hover > .off {
     margin: 30px auto;
   }
 
-  .value h2 { 
+  .value h2 {
     margin: 10px;
     font-size: 22px;
   }
@@ -281,7 +282,7 @@ h2:hover > .off {
     font-size: 14px;
     text-align: center;
     width: 85%;
-  }  
+  }
 
   .our-values-panel h1 {
     font-size: 32px;
@@ -290,7 +291,7 @@ h2:hover > .off {
 
 @media screen and (max-width: 680px) {
   .team-photos {
-      grid-template-columns: 1fr;
-      grid-auto-rows: 247px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 247px;
   }
 }
