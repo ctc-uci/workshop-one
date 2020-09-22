@@ -1,6 +1,11 @@
 import React from 'react';
 import './Footer.css';
 import ctcLogo from '../../../images/logo/white-ctc.svg';
+import iglogo from '../../../images/home/instagramlogo.svg';
+import fblogo from '../../../images/home/facebooklogo.svg';
+import mediumlogo from '../../../images/home/mediumlogo.svg';
+import linkedinlogo from '../../../images/home/linkedinlogo.svg';
+import maillogo from '../../../images/home/envelope-solid.svg';
 
 function Footer() {
   return (
@@ -23,19 +28,19 @@ function Footer() {
           <img className="footer-logo" src={ctcLogo} alt="ctc logo" />
           <h2>Tech with Purpose.</h2>
           <a href="mailto:committhechange.uci@gmail.com" target="_top">
-            <i className="fa fa-envelope fa-lg" />
+            <img src={maillogo} alt="mail-logo" className="social-logos-mail social-logos" />
           </a>
           <a href="https://www.facebook.com/ctc.uci/" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-facebook-square fa-lg" />
+            <img src={fblogo} alt="fb-logo" className="social-logos" />
           </a>
           <a href="https://www.instagram.com/ctc.uci/" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-instagram fa-lg" />
+            <img src={iglogo} alt="ig-logo" className="social-logos" />
           </a>
           <a href="https://www.linkedin.com/company/commit-the-change-uci/" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-linkedin-square fa-lg" />
+            <img src={linkedinlogo} alt="linkedin-logo" className="social-logos" />
           </a>
           <a href="https://medium.com/@committhechange.uci" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-medium fa-lg" />
+            <img src={mediumlogo} alt="medium-logo" className="social-logos-medium social-logos" />
           </a>
         </div>
         <div className="right-column">

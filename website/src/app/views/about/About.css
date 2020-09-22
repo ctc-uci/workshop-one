@@ -150,6 +150,7 @@ h2:hover > .off {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .our-team-panel > h1 {

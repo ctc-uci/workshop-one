@@ -7,6 +7,10 @@ import VisibilitySensor from 'react-visibility-sensor';
 import animationConfig from '../animationConstants';
 import Timeline from '../../components/Timeline/Timeline';
 import homeLandingPic from '../../../images/home/home-top-panel.svg';
+import fblogo from '../../../images/home/facebooklogo.svg';
+import instagramlogo from '../../../images/home/instagramlogo.svg';
+import mediumlogo from '../../../images/home/mediumlogo.svg';
+import linkedinlogo from '../../../images/home/linkedinlogo.svg';
 
 function Home() {
   const [middleViewCount, setMiddleVisible] = useState(0);
@@ -20,7 +24,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <i className="fa fa-facebook-square fa-4x" />
+      <img src={fblogo} alt="fb-logo" className="social-logo" />
       <p id="link-name">Facebook</p>
     </a>,
     <a
@@ -28,7 +32,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <i className="fa fa-instagram fa-4x" />
+      <img src={instagramlogo} alt="ig-logo" className="social-logo" />
       <p id="link-name">Instagram</p>
     </a>,
     <a
@@ -36,7 +40,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <i className="fa fa-linkedin-square fa-4x" />
+      <img src={linkedinlogo} alt="linkedin-logo" className="social-logo" />
       <p id="link-name">Linkedin</p>
     </a>,
     <a
@@ -44,7 +48,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <i className="fa fa-medium fa-4x" />
+      <img src={mediumlogo} alt="medium-logo" className="medium-logo social-logo" />
       <p id="link-name">Medium</p>
     </a>,
   ];

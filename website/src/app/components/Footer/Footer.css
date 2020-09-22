@@ -40,7 +40,7 @@
     line-height: 15px;
 }
 
-.middle-column img{
+.footer-logo{
     width: 100px;
     height: auto;
     padding-bottom: 10px;
@@ -53,6 +53,19 @@
 .middle-column a{
     margin: 0px 10px;
     color: #f2f2f2;
+}
+
+.social-logos {
+    width: 20px;
+    filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+.social-logos-medium{
+    width: 23px;
+}
+
+.social-logos-mail{
+    width: 23px;
 }
 
 .middle-column a:hover {
@@ -115,7 +128,7 @@
         line-height: 1em;
     } */
 
-    .middle-column img{
+    .footer-logo{
         width: 100px;
         height: auto;
     }
