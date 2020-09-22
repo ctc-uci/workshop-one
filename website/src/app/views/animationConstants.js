@@ -54,7 +54,8 @@ const animationConfigs = {
     config: config.default,
     opacity: state ? 1 : 0,
     transform: state ? 'translate(0)' : 'translateY(-500px)',
-    from: { opacity: 0, transform: 'translateY(-500px)' },
+    display: state ? 'block' : 'none',
+    from: { opacity: 0, transform: 'translateY(-500px)', display: 'none' },
   }),
 };
 
