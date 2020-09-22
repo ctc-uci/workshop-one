@@ -8,6 +8,7 @@
   min-width: 240px;
   max-height: 415px;
   position: relative;
+  background-color: white;
 }
 
 .project-name {
