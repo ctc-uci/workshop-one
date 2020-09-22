@@ -43,11 +43,12 @@ const animationConfigs = {
     opacity: state ? 1 : 0,
     from: { opacity: 0 },
   }),
-  slideDownNav: (state) => ({
-    config: config.slow,
+  openQuestion: (state) => ({
+    config: config.default,
     opacity: state ? 1 : 0,
-    transform: state ? 'translate(0)' : 'translateY(-500px)',
-    from: { opacity: 0, transform: 'translateY(-500px)' },
+    'max-height': state ? '500px' : '0px',
+    display: 'block',
+    from: { opacity: 0, 'max-height': '0px' },
   }),
 };
 

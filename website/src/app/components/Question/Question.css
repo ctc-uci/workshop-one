@@ -1,9 +1,10 @@
 .question-card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
     width: 100%;
-    margin: 25px 10px;
+    margin: 25px 80px;
+    max-width: 700px;
 }
 
 .question-card:focus {
@@ -15,9 +16,9 @@
 }
 
 .symbol {
-    flex: 0 0 100px;
+    flex: 0 0 50px;
     display: inline-flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .expand-symbol {
@@ -28,7 +29,7 @@
 .top-half {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .top-half h2 {
@@ -48,25 +49,19 @@
 
 
 .bottom-half p {
-    margin-left: 40px;
+    margin-left: 54px;
 }
 
-.hidden {
-    display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .symbol {
+/* @media screen and (max-width: 600px) {
+    /* .symbol {
         flex: 0 0 50px;
-    }
+    } */
 
-    .top-half h2 {
-        font-size: 18px;
-    }
+    /* .bottom-half p {
+        margin-left: 25px;
+    } */
 
-    .bottom-half p {
-        font-size: 16px;
-        margin-left: 20px;
-        padding: 5px;
-    }
+
+.minus{
+    transform: translate(4px, -4px);
 }
