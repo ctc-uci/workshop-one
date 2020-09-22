@@ -37,6 +37,124 @@ html {
   justify-content: center;
 }
 
+@media screen and (max-width:768px){
+    .title-div{
+      flex-basis: 70%;
+    }
+  }
+  @media screen and (max-width:846px){
+    .our-work-img{
+        height: 40%;
+    }
+  }
+
+.upcoming-projects{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #ED315D;
+    margin: 6%;
+}
+
+#middle-our-work{
+    /* height:100vh; */
+    padding: 100px 0 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:initial;
+    position: relative;
+    background:url('../../../images/ourWork/solid-1.svg'), url('../../../images/ourWork/clear-1.svg'),url('../../../images/ourWork/solid-2.svg'), url('../../../images/ourWork/clear-2.svg'),url('../../../images/ourWork/solid-3.svg'), url('../../../images/ourWork/clear-3.svg'),url('../../../images/ourWork/solid-4.svg'), url('../../../images/ourWork/clear-4.svg');
+    background-position: 
+        10% 5%, 
+        calc(10% - 100px) calc(5% + 50px), 
+        95% 20%, 
+        calc(95% - 50px) calc(20% - 50px), 
+        5% 90%, 
+        5% 90%, 
+        90% 90%, 
+        calc(90% - 0px) calc(90% + 70px);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 
+        170px, 
+        300px,
+        170px,
+        300px, 
+        170px, 
+        300px, 
+        170px, 
+        300px;
+}
+
+/* Taking out triangle animations for now */
+/* #middle-our-work:hover{
+    animation: animateShapes 0.5s ease-out;
+    animation-delay: 0.5s;
+} */
+
+@keyframes animateShapes {
+    0% { background-position: 
+        10% 5%, 
+        calc(10% - 100px) calc(5% + 50px), 
+        95% 20%, 
+        calc(95% - 50px) calc(20% - 50px), 
+        5% 90%, 
+        5% 90%, 
+        90% 90%, 
+        calc(90% - 0px) calc(90% + 100px); }
+    25% { background-position: 
+        11% 4%, 
+        calc(9% - 100px) calc(8% + 50px), 
+        95% 20%, 
+        calc(95% - 50px) calc(20% - 50px), 
+        7% 90%, 
+        5% 90%, 
+        90% 90%, 
+        calc(90% - 0px) calc(90% + 100px); }
+    50% { background-position: 
+        9.7% 5.3%, 
+        calc(10.7% - 100px) calc(4.3% + 50px), 
+        95% 20%, 
+        calc(95% - 50px) calc(20% - 50px),  
+        5% 90%, 
+        5% 90%, 
+        89.5% 89,5%, 
+        calc(91% - 0px) calc(91% + 100px);}
+    75% { background-position: 
+        10% 5%, 
+        calc(10% - 100px) calc(5% + 50px), 
+        95% 20%, 
+        calc(95% - 50px) calc(10% - 50px),  
+        5% 90%, 
+        5% 90%, 
+        89% 89%, 
+        calc(91.5% - 0px) calc(91.5% + 100px);}    
+    100% { background-position: 
+        10% 5%, 
+        calc(10% - 100px) calc(5% + 50px), 
+        95% 20%, 
+        calc(95% - 50px) calc(20% - 50px), 
+        5% 90%, 
+        5% 90%, 
+        90% 90%, 
+        calc(90% - 0px) calc(90% + 100px); }
+}
+
+@media only screen and (max-width: 1300px) {
+    #middle-our-work{
+        background-size: 
+        130px, 
+        200px,
+        130px, 
+        200px,
+        130px, 
+        200px,
+        130px, 
+        200px;
+    }
+}
+    
 .past-project-section {
   max-width: 2000px;
   margin: 120px auto;
@@ -58,6 +176,24 @@ html {
   max-width: 800px;
   width: 90%;
   float: left;
+}
+
+@media screen and (min-width:2100px) {
+  .upcoming-projects {
+    margin: 3%;
+  }
+}
+
+@media screen and (max-width:768px) {
+    .projects {
+        display:flex;
+        flex-direction: column;
+    }
+
+    #middle-our-work {
+        height: auto;
+        background-image:none;
+    }
 }
 
 .past-project-content {
