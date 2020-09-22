@@ -44,11 +44,7 @@ function ContactUs() {
           </div>
         </div>
         <div className="top-panel-pic">
-          <img
-            src={contactUsImage}
-            alt="undraw"
-            className="contact-us-top-panel-img"
-          />
+          <img src={contactUsImage} alt="undraw" className="contact-us-top-panel-img" />
         </div>
       </animated.div>
       <div className="contact-us-middle-third">
@@ -75,18 +71,13 @@ function ContactUs() {
         </div>
       </div>
       <div id="contact-us-bottom-third">
-        <h1 className="faq-title">Frequently Asked Questions</h1>
+        <h1>Frequently Asked Questions</h1>
         <div className="contact-us-bottom-third-items">
-          {QuestionData.map((el, index) => (
-            <Question
-              index={index}
-              key={index.toString()}
-              questionText={el.question}
-              answerText={el.answer}
-              expanded={index === expandedIndex}
-              handleClick={handleClick}
-            />
-          ))}
+          {
+            QuestionData.map((el, index) => (
+              <Question key={index.toString()} index={index} questionText={el.question} answerText={el.answer} expanded={index === expandedIndex} handleClick={handleClick} />
+            ))
+          }
         </div>
       </div>
     </div>
