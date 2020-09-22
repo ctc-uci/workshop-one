@@ -37,7 +37,7 @@ h2:hover > .off {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: rgb(128, 88, 222);
+  background: linear-gradient(149deg, rgba(128,88,222,1) 0%, rgba(227,177,177,1) 100%);
 }
 
 .mission-text {
@@ -179,11 +179,6 @@ h2:hover > .off {
 }
 
 @media screen and (max-width: 1290px) {
-  .links {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .links a {
     padding: 0em 1em;
     text-align: center;
@@ -204,6 +199,10 @@ h2:hover > .off {
 }
 
 @media screen and (max-width: 800px) {
+  .links {
+    font-size: 10px;
+  }
+
   .about-top-panel-img {
     width: 70%;
   }
@@ -211,6 +210,7 @@ h2:hover > .off {
   .mission-text h1 {
     text-align: center;
     font-size: 32px;
+    padding-top: 0;
   }
 
   .mission-text {
