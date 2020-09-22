@@ -88,6 +88,7 @@ h2:hover > .off {
 .our-values-panel h1 {
   color: var(--dark-purple);
   font-size: 40px;
+  text-shadow: 1px 0 var(--dark-purple);
 }
 
 .values-description {
@@ -157,6 +158,7 @@ h2:hover > .off {
   font-size: 40px;
   text-align: center;
   color: var(--dark-purple);
+  text-shadow: 1px 0 var(--dark-purple);
 }
 
 .our-team-description {

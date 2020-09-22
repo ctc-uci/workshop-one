@@ -106,7 +106,7 @@ function Home() {
           >
             <animated.div style={fadeInMiddle}>
               <h2>Connect With Us!</h2>
-              <p>
+              <p className="social-media-description">
                 Stay in the loop with us on our mission to create
                 <br />
                 <b>Tech With Purpose.</b>
