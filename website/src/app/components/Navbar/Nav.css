@@ -1,0 +1,148 @@
+nav {
+  max-width: 2000px;
+  margin: auto;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+  width: 86px;
+  height: 58px;
+  margin: 20px 35px;
+}
+
+.logo:hover {
+  color: var(--light-purple);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--dark-purple);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  color: #9d7ee7;
+}
+
+.elem {
+  margin: 0 70px 0 70px;
+  white-space: nowrap;
+}
+
+.apply-button {
+  background: var(--dark-purple);
+  border-radius: 30px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+#apply-link {
+  color: white;
+  font-weight: bold;
+  line-height: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.mobile-nav {
+  display: none;
+  margin: 20px 35px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.mobile-nav:focus {
+  outline: none;
+}
+
+.hamburger {
+  color: white;
+}
+
+.mobile-nav-links-container {
+  display: none;
+  z-index: 100;
+}
+
+@media screen and (max-width: 850px) {
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block !important;
+  }
+
+  .elem {
+    margin: 0px 12px;
+    font-size: 5px;
+  }
+
+  .apply-button {
+    width: 0px;
+  }
+
+  .mobile-nav-links-container {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    background-color: #6331D8;
+  }
+  
+  .mobile-nav-links-container a {
+    margin: 10px 35px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .mobile-nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .mobile-nav-links {
+    margin: 30px 30px;
+    white-space: nowrap;
+  }
+  
+  .mobile-nav-close-icon {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(98deg) brightness(103%) contrast(107%);
+  }
+}
