@@ -65,14 +65,14 @@
   text-shadow: 1px 0 var(--dark-purple)
 }
 
-#contact-us-bottom-third {
+.contact-us-bottom-third {
   margin: 120px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#contact-us-bottom-third h1 {
+.contact-us-bottom-third h1 {
   color: var(--dark-pink);
   text-align: center;
 }
@@ -99,11 +99,15 @@
   }
 
   .contact-us-bottom-third-items {
-    width: 70% !important;
+    width: 80% !important;
   }
 
   .middle-contact-title {
     font-size: 36px;
+  }
+
+  .question-card {
+    width: 100%;
   }
 }
 
@@ -125,7 +129,7 @@
 
 @media screen and (max-width: 800px) {
   .heart-logo {
-    width: 0%;
+    display: none;
   }
 
   .contact-us-top-panel-img {
