@@ -8,7 +8,7 @@ function ProfileCard(props) {
     imageURL, name, position, linkedinURL,
   } = props;
   return (
-    <div className="card">
+    <div className="card-container">
       <img className="profile-img" src={imageURL} alt="personImage" />
       <div className="card-bottom">
         <div className="info">

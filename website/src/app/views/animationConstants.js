@@ -15,6 +15,12 @@ const animationConfigs = {
     transform: state ? 'translate(0)' : 'translateX(-50px)',
     from: { opacity: 0, transform: 'translateX(-50px)' },
   }),
+  slideInRight: (state) => ({
+    config: config.wobbly,
+    opacity: state ? 1 : 0,
+    transform: state ? 'translate(0)' : 'translateX(50px)',
+    from: { opacity: 0, transform: 'translateX(50px)' },
+  }),
   trail: (state) => ({
     config: config.wobbly,
     from: {
