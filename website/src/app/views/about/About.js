@@ -26,25 +26,14 @@ function About() {
   const profileImages = grid.map((props, index) => {
     const person = teamData[index];
     return (
-
-      <ProfileCard
-        imageURL={pathToAssets(person.imageURL)}
-        name={person.name}
-        position={person.position}
-        linkedinURL={person.linkedinURL}
-      />
-    // <animated.div style={props} className="person">
-
-    //   {/* <div className="person-card">
-    //     <ProfileCard
-    //       imageURL={pathToAssets(person.imageURL)}
-    //       name={person.name}
-    //       position={person.position}
-    //       linkedinURL={person.linkedinURL}
-
-    //     />
-    //   </div> */}
-    // </animated.div>
+      <animated.div className="card" style={props}>
+        <ProfileCard
+          imageURL={pathToAssets(person.imageURL)}
+          name={person.name}
+          position={person.position}
+          linkedinURL={person.linkedinURL}
+        />
+      </animated.div>
     );
   });
 
