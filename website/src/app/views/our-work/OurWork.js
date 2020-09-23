@@ -78,12 +78,12 @@ function OurWork() {
                 accessible and to decrease the printing cost of the pamplets.
               </p>
               <a
-                href="https://www.google.com/"
+                href="https://medium.com/@committhechange.uci/past-project-reveal-with-crime-survivors-ba557206ee10"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="common-pink-button"
               >
-                View Project
+                Read More
               </a>
             </animated.div>
           </div>

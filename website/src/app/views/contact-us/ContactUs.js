@@ -90,7 +90,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div id="contact-us-bottom-third">
+      <div className="contact-us-bottom-third">
         <h1 className="faq-title">Frequently Asked Questions</h1>
         <div className="contact-us-bottom-third-items">
           {QuestionData.map((el, index) => (
