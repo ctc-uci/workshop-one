@@ -5,16 +5,27 @@ import { animated } from 'react-spring';
 
 function ProjectCard(props) {
   const {
-    imageURL, projectName, description, projectURL, isAnimated, animationProps = {},
+    imageURL,
+    projectName,
+    description,
+    projectURL,
+    npoURL,
+    isAnimated,
+    animationProps = {},
   } = props;
   return (
-    <animated.div style={isAnimated ? animationProps : null} className="project-card">
+    <animated.div
+      style={isAnimated ? animationProps : null}
+      className="project-card"
+    >
       <div className="project-card-image-div">
-        <img
-          src={imageURL}
-          alt="projectImage"
-          className="upcoming-project-card-image"
-        />
+        <a href={npoURL} target="_blank" rel="noopener noreferrer">
+          <img
+            src={imageURL}
+            alt="projectImage"
+            className="upcoming-project-card-image"
+          />
+        </a>
       </div>
       <div className="project-card-text">
         <h1 className="project-name">{projectName}</h1>
@@ -26,7 +37,10 @@ function ProjectCard(props) {
         rel="noopener noreferrer"
         className="project-card-more"
       >
-        Read More
+        <p className="read-more">
+          Read More &#62;
+          <span className="project-off">&#62;</span>
+        </p>
       </a>
     </animated.div>
   );
@@ -37,6 +51,7 @@ ProjectCard.propTypes = {
   projectName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   projectURL: PropTypes.string.isRequired,
+  npoURL: PropTypes.string.isRequired,
   isAnimated: PropTypes.bool.isRequired,
   animationProps: PropTypes.shape,
 };

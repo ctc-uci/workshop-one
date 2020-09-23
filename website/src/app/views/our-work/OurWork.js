@@ -15,7 +15,7 @@ function OurWork() {
   const slideUpTop = useSpring(animationConfig.slideUp(true));
   const slideUpMiddle = useSpring(animationConfig.slideUp(middleViewCount > 0));
   const activeProjectsTrail = useTrail(projects.active.length, animationConfig.trail(middleViewCount > 0));
-  const slideUpInactiveProjects = useSpring(animationConfig.slideUp(bottomViewCount > 0, 500));
+  const fadeInProjects = useSpring(animationConfig.slideUp(bottomViewCount > 0, 500));
   const slideInBottomText = useSpring(animationConfig.slideInLeft(bottomViewCount > 0));
 
   const activeProjectsAnimation = activeProjectsTrail.map((props, index) => {
@@ -26,6 +26,7 @@ function OurWork() {
         projectName={project.projectName}
         description={project.description}
         projectURL={project.projectURL}
+        npoURL={project.npoURL}
         animationProps={props}
         isAnimated
       />
@@ -90,7 +91,7 @@ function OurWork() {
         </VisibilitySensor>
 
         <div className="bottom-card-div">
-          <animated.div style={slideUpInactiveProjects} className="bottom-card">
+          <animated.div style={fadeInProjects} className="bottom-card">
             <ProjectCardPurple
               projectName={projects.inactive[0].projectName}
               imageURL={projects.inactive[0].imageURL}
