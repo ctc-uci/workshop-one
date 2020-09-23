@@ -10,21 +10,21 @@ const projects = {
       projectName: 'Child Creativity Lab',
       description:
         'We will create an online waiver system and a platform to sell educational kits for children.',
-      projectURL: 'https://google.com',
+      projectURL: 'https://medium.com/@committhechange.uci/upcoming-project-1-reveal-with-child-creativity-lab-e9fb41fe7835',
     },
     {
       imageURL: jff,
       projectName: 'Justice for Families',
       description:
-        'We will create a mobile application for the families of incarcerated loved ones to connect.',
-      projectURL: 'https://google.com',
+        'We will create a mobile application for the families of incarcerated loved ones to find community and support.',
+      projectURL: 'https://medium.com/@committhechange.uci/upcoming-project-2-reveal-with-justice-for-families-57f91752635d',
     },
     {
       imageURL: wm,
       projectName: 'Waymakers',
       description:
-        'We will create a platform to electronically capture volunteer and inventory data about their programs.',
-      projectURL: 'https://google.com',
+        'We will create a platform to electronically capture volunteer and inventory data about their different programs.',
+      projectURL: 'https://medium.com/@committhechange.uci/upcoming-project-3-reveal-with-waymakers-4be6f2915c83',
     },
   ],
   inactive: [
