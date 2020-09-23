@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 4%;
+}
+
+.card-container{
+  margin: auto;
+}
+
+.card .profile-img {
+  max-width: 280px;
+  max-height: 280px;
+  flex: 1 1 280px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #aaaaaa;
+  margin: auto;
+}
+
+.card-bottom {
+  display: flex;
+  width: 280px;
+  /* margin: auto; */
+}
+
+.info {
+  flex: 1 auto;
+}
+
+.card h3 {
+  margin: 10px 0px 0px 5px;
+}
+
+.card p {
+  margin: 2px 5px;
+}
+
+.logoborder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.logoborder img {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.card button:hover, a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    margin: 30px 4%;
+  }
+
+  .card .profile-img {
+    max-width: 260px;
+    max-height: 260px;
+  }
+
+  .card-bottom {
+    width: 260px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .card {
+    margin: 30px 2%;
+  }
+
+  .card .profile-img {
+    max-width: 260px;
+    max-height: 260px;
+  }
+
+  .card-bottom {
+    width: 260px;
+  }
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
