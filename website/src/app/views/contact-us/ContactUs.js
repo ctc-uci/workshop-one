@@ -13,7 +13,7 @@ function ContactUs() {
   const slideUp = useSpring(animationConfig.slideUp(true));
   const [middleViewCount, setMiddleVisible] = useState(0);
   const slideUpInactiveNpo = useSpring(
-    animationConfig.slideInRight(middleViewCount > 0, 500),
+    animationConfig.slideInRight(middleViewCount > 0),
   );
 
   const [expandedIndex, setExpandedIndex] = useState(null);
