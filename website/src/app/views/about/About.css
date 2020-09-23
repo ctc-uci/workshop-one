@@ -151,6 +151,7 @@ h2:hover > .off {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
   min-height: 100vh;
 }
 
@@ -167,34 +168,44 @@ h2:hover > .off {
 }
 
 .team-photos {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(220px, 350px));
-  grid-auto-rows: 1fr;
-  gap: 4rem;
-  margin: 4rem;
+  max-width: 2000px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.team-photos::before {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
+.empty-placeholder {
+  height: 280px;
+  width: 280px;
+  margin: 4%;
 }
 
-.team-photos > *:first-child {
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
+@media screen and (max-width: 692px) {
+
+  .team-photos {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .empty-placeholder {
+    display: none;
+  }
+
+}
+
+@media screen and (max-height: 500px) {
+  .empty-placeholder {
+    height: 260px;
+    width: 260px;
+    margin: 2%;
+  }    
 }
 
 @media screen and (max-width: 1290px) {
   .links a {
     padding: 0em 1em;
     text-align: center;
-  }
-
-  .team-photos {
-    grid-template-columns: 1fr 1fr;
   }
 
   .value-row-1 {
@@ -293,12 +304,5 @@ h2:hover > .off {
 
   .our-values-panel h1 {
     font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .team-photos {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 247px;
   }
 }
