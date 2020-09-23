@@ -96,6 +96,7 @@
 
   .middle-third-info {
     flex-basis: 70%;
+    width: 80%;
   }
 
   .contact-us-bottom-third-items {
