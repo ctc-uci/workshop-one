@@ -51,7 +51,7 @@ function ContactUs() {
         <div className="top-panel-pic">
           <img
             src={contactUsImage}
-            alt="undraw"
+            alt="Join the Commit the Change team"
             className="contact-us-top-panel-img"
           />
         </div>
@@ -59,7 +59,7 @@ function ContactUs() {
 
       <div className="contact-us-middle-third">
         <div className="contact-us-middle-items">
-          <img src={purpleLogo} alt="undraw" className="heart-logo" />
+          <img src={purpleLogo} alt="Commit the Change purple heart logo" className="heart-logo" />
           <animated.div
             style={slideUpInactiveNpo}
             className="middle-third-info"

@@ -5,7 +5,8 @@ import { animated } from 'react-spring';
 
 function ProjectCard(props) {
   const {
-    imageURL,
+    src,
+    alt,
     projectName,
     description,
     projectURL,
@@ -21,8 +22,8 @@ function ProjectCard(props) {
       <div className="project-card-image-div">
         <a href={npoURL} target="_blank" rel="noopener noreferrer">
           <img
-            src={imageURL}
-            alt="projectImage"
+            src={src}
+            alt={alt}
             className="upcoming-project-card-image"
           />
         </a>
@@ -47,7 +48,8 @@ function ProjectCard(props) {
 }
 
 ProjectCard.propTypes = {
-  imageURL: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   projectURL: PropTypes.string.isRequired,

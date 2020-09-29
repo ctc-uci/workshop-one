@@ -94,7 +94,7 @@ function About() {
           <img
             src={aboutUsGraphic}
             className="about-top-panel-img"
-            alt="people collaborating"
+            alt="About the Commit the Change team"
           />
         </div>
       </animated.div>
@@ -136,7 +136,7 @@ function About() {
           </p>
         </div>
         <div className="ctc-logo">
-          <img src={whiteCtcLogo} alt="logo" />
+          <img src={whiteCtcLogo} alt="Commit the Change white heart logo" />
         </div>
       </div>
       <div className="our-values-panel" id="values">

@@ -22,7 +22,8 @@ function OurWork() {
     const project = projects.active[index];
     return (
       <ProjectCard
-        imageURL={project.imageURL}
+        src={project.src}
+        alt={project.alt}
         projectName={project.projectName}
         description={project.description}
         projectURL={project.projectURL}
@@ -51,7 +52,7 @@ function OurWork() {
           </div>
         </div>
         <div className="top-panel-pic">
-          <img src={ourWorkPic} alt="our-work" className="our-work-panel-img" />
+          <img src={ourWorkPic} alt="Commit the Change team working on projects" className="our-work-panel-img" />
         </div>
       </animated.div>
       <div id="middle-our-work">
@@ -94,7 +95,8 @@ function OurWork() {
           <animated.div style={fadeInProjects} className="bottom-card">
             <ProjectCardPurple
               projectName={projects.inactive[0].projectName}
-              imageURL={projects.inactive[0].imageURL}
+              src={projects.inactive[0].src}
+              alt={projects.inactive[0].alt}
               description={projects.inactive[0].description}
               projectURL={projects.inactive[0].projectURL}
             />
