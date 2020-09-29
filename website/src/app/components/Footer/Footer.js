@@ -28,19 +28,19 @@ function Footer() {
           <img className="footer-logo" src={ctcLogo} alt="ctc logo" />
           <h2>Tech with Purpose.</h2>
           <a href="mailto:committhechange.uci@gmail.com" target="_top">
-            <img src={maillogo} alt="mail-logo" className="social-logos-mail social-logos" />
+            <img src={maillogo} alt="email icon" className="social-logos-mail social-logos" />
           </a>
           <a href="https://www.facebook.com/ctc.uci/" target="_blank" rel="noopener noreferrer">
-            <img src={fblogo} alt="fb-logo" className="social-logos" />
+            <img src={fblogo} alt="facebook logo" className="social-logos" />
           </a>
           <a href="https://www.instagram.com/ctc.uci/" target="_blank" rel="noopener noreferrer">
-            <img src={iglogo} alt="ig-logo" className="social-logos" />
+            <img src={iglogo} alt="instagram logo" className="social-logos" />
           </a>
           <a href="https://www.linkedin.com/company/commit-the-change-uci/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedinlogo} alt="linkedin-logo" className="social-logos" />
+            <img src={linkedinlogo} alt="linkedin logo" className="social-logos" />
           </a>
           <a href="https://medium.com/@committhechange.uci" target="_blank" rel="noopener noreferrer">
-            <img src={mediumlogo} alt="medium-logo" className="social-logos-medium social-logos" />
+            <img src={mediumlogo} alt="medium logo" className="social-logos-medium social-logos" />
           </a>
         </div>
         <div className="right-column">

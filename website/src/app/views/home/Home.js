@@ -22,7 +22,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={fblogo} alt="fb-logo" className="social-logo" />
+      <img src={fblogo} alt="facebook logo" className="social-logo" />
       <p id="link-name">Facebook</p>
     </a>,
     <a
@@ -30,7 +30,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={instagramlogo} alt="ig-logo" className="social-logo" />
+      <img src={instagramlogo} alt="instagram logo" className="social-logo" />
       <p id="link-name">Instagram</p>
     </a>,
     <a
@@ -38,7 +38,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={linkedinlogo} alt="linkedin-logo" className="social-logo" />
+      <img src={linkedinlogo} alt="linkedin logo" className="social-logo" />
       <p id="link-name">Linkedin</p>
     </a>,
     <a
@@ -46,7 +46,7 @@ function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={mediumlogo} alt="medium-logo" className="medium-logo social-logo" />
+      <img src={mediumlogo} alt="medium logo" className="medium-logo social-logo" />
       <p id="link-name">Medium</p>
     </a>,
   ];
@@ -93,7 +93,7 @@ function Home() {
           <img
             src={homeLandingPic}
             className="home-top-panel-img"
-            alt="Person"
+            alt="Commit the Change team collaborating"
           />
         </div>
       </animated.div>
