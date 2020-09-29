@@ -81,7 +81,7 @@ function Nav() {
         <animated.div style={slideDown} className="nav-bar">
           <div className="left">
             <Link to="/">
-              <img className="logo" src={ctcLogo} alt="ctc logo" />
+              <img className="logo" src={ctcLogo} alt="Commit the Change logo" />
             </Link>
           </div>
           <ul className="navigation">

@@ -4,11 +4,11 @@ import './ProjectCardPurple.css';
 
 function ProjectCardPurple(props) {
   const {
-    imageURL, projectName, description,
+    src, alt, projectName, description,
   } = props;
   return (
     <div className="project-card-purple">
-      <img src={imageURL} alt="projectImage" className="project-card-image" />
+      <img src={src} alt={alt} className="project-card-image" />
       <h1 className="project-name-purple">{projectName}</h1>
       <p className="description-purple">{description}</p>
     </div>
@@ -16,7 +16,8 @@ function ProjectCardPurple(props) {
 }
 
 ProjectCardPurple.propTypes = {
-  imageURL: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

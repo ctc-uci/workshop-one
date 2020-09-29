@@ -6,7 +6,8 @@ import wm from '../../../images/nonprofits/Waymakers.png';
 const projects = {
   active: [
     {
-      imageURL: ccl,
+      src: ccl,
+      alt: 'Child Creativity Lab incoming project',
       projectName: 'Child Creativity Lab',
       description:
         'We will create an online waiver system and a platform to sell educational kits for children.',
@@ -14,7 +15,8 @@ const projects = {
       npoURL: 'https://www.childcreativitylab.org/',
     },
     {
-      imageURL: jff,
+      src: jff,
+      alt: 'Justice for Families incoming project',
       projectName: 'Justice for Families',
       description:
         'We will create a mobile application for the families of incarcerated loved ones to find community and support.',
@@ -22,7 +24,8 @@ const projects = {
       npoURL: 'https://www.justice4families.org/',
     },
     {
-      imageURL: wm,
+      src: wm,
+      alt: 'Waymakers incoming project',
       projectName: 'Waymakers',
       description:
         'We will create a platform to electronically capture volunteer and inventory data about their different programs.',
@@ -32,7 +35,8 @@ const projects = {
   ],
   inactive: [
     {
-      imageURL: crimesurvivors,
+      src: crimesurvivors,
+      alt: 'Crime Survivors past project',
       projectName: 'Crime Survivors',
       description:
         'We created a website to replace their paper pamphlets that detail important resources and information for crime victims in different counties throughout Southern California. This project will save the organization thousands of dollars every year in printing and distribution costs, which will go directly back into helping survivors get necessity items.',
