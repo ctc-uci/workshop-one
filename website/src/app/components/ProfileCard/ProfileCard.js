@@ -5,11 +5,11 @@ import './ProfileCard.css';
 
 function ProfileCard(props) {
   const {
-    imageURL, name, position, linkedinURL,
+    name, position, linkedinURL, imageURL,
   } = props;
   return (
     <div className="card-container">
-      <img className="profile-img" src={imageURL} alt="personImage" />
+      <img className="profile-img" src={imageURL} alt="team member" />
       <div className="card-bottom">
         <div className="info">
           <h3>{name}</h3>
@@ -24,10 +24,10 @@ function ProfileCard(props) {
 }
 
 ProfileCard.propTypes = {
-  imageURL: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
   linkedinURL: PropTypes.string.isRequired,
+  imageURL: PropTypes.string.isRequired,
 };
 
 export default ProfileCard;
