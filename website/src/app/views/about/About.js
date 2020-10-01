@@ -4,43 +4,40 @@ import VisibilitySensor from 'react-visibility-sensor';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import aboutUsGraphic from '../../../images/about/about-us.svg';
 import whiteCtcLogo from '../../../images/logo/cropped-white-ctc.svg';
-import teamData from './data.json';
+import membersData from './members';
 import values from './values';
 import animationConfig from '../animationConstants';
 import './About.css';
 
 function About() {
-  const pathToAssets = require.context('../../../images/about/memberImages');
-
   const [teamViewCount, setTeamVisible] = useState(0);
   const [valuesViewCount, setValuesVisible] = useState(0);
   const slideUp = useSpring(animationConfig.slideUp(true));
   const slideUpValuesHeader = useSpring(
     animationConfig.slideUp(valuesViewCount > 0),
   );
+
+  // TEAM ***********************
   const grid = useTrail(
-    teamData.length,
+    membersData.info.length,
     animationConfig.fadeInStiff(teamViewCount > 0),
   );
 
   const profileImages = grid.map((props, index) => {
-    const person = teamData[index];
+    const person = membersData.info[index];
     return (
       <animated.div className="card" style={props}>
         <ProfileCard
-          imageURL={pathToAssets(person.imageURL)}
           name={person.name}
           position={person.position}
           linkedinURL={person.linkedinURL}
+          imageURL={person.imageURL}
         />
       </animated.div>
     );
   });
 
-  profileImages.push(
-    <div className="empty-placeholder" />,
-  );
-
+  // VALUES ***********************
   const valuesAnimationTopRow = useTrail(
     values.top.length,
     animationConfig.trail(valuesViewCount > 0),
@@ -71,6 +68,7 @@ function About() {
       </animated.div>
     );
   });
+  // ***********************
 
   return (
     <main>
