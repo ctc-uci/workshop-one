@@ -4,7 +4,7 @@ import { animated, useSpring } from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 import animationConfig from '../animationConstants';
 import ContactUsData from './ContactUs.json';
-import QuestionData from './FAQ.json';
+import QuestionData from './faq';
 import Question from '../../components/Question/Question';
 import contactUsImage from '../../../images/contactUs/contact-us-header.svg';
 import purpleLogo from '../../../images/contactUs/purple_ctc 2.svg';
@@ -39,12 +39,10 @@ function ContactUs() {
               {ContactUsData.topThird.description}
             </p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdhMFr1ZT8J5ENi2uEe62L54w-hNH8aVIAQLMDNqvPgWkhsWg/viewform?usp=sf_link"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#faq-section"
               className="common-pink-button"
             >
-              Apply Here
+              Read FAQ
             </a>
           </div>
         </div>
@@ -90,10 +88,10 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="contact-us-bottom-third">
+      <div className="contact-us-bottom-third" id="faq-section">
         <h1 className="faq-title">Frequently Asked Questions</h1>
         <div className="contact-us-bottom-third-items">
-          {QuestionData.map((el, index) => (
+          {QuestionData.current.map((el, index) => (
             <Question
               index={index}
               key={index.toString()}
