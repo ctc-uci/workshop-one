@@ -2,7 +2,7 @@
   "topThird":
   {
     "titleText":"Want to join the team?",
-    "description":"Commit the Change is recruiting NOW for passionate designers and developers to work on our project teams for the 2020-2021 school year. If you would like to learn new skills while working towards a good cause, submit your application via the link below by Saturday, October 10th. For more information, please read the FAQ at the bottom of this page."
+    "description":"Our application for designers and developers is now closed! As of now, we don't have plans for additional recruitment throughout the school year but make sure to follow us on our social medias for any updates. Thank you for your interest!"
   },
   "middleThird":
   {
@@ -10,11 +10,5 @@
     "topTitle":"Have a project in mind?",
     "topDescription":"We work with non-profit organizations throughout the school year (September 2020 - June 2021) on a software project that has a meaningful, positive impact and will be a good learning experience for our team.",
     "bottomDescription":"We have already finalized the projects for the 2020-2021 school year, but if you would like to learn more about our organization or talk about how we can partner together in the future, please email us at committhechange.uci@gmail.com"
-  },
-  "bottomThird":
-  {
-    "header":"STUDENTS",
-    "titleText":"Want to join the team?",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi at libero vehicula blandit ut ac sem. Aenean luctus elit eget libero aliquam, eu finibus est eleifend. Phasellus dolor metus, porta et semper quis, varius euismod tellus."
   }
 }
