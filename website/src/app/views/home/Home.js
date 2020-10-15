@@ -154,14 +154,14 @@ function Home() {
               >
                 View Projects
               </a>
-              <a
+              {/* <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdhMFr1ZT8J5ENi2uEe62L54w-hNH8aVIAQLMDNqvPgWkhsWg/viewform?usp=sf_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="timeline-btn apply-btn"
               >
                 Apply Here!
-              </a>
+              </a> */}
             </animated.div>
           </VisibilitySensor>
         </div>

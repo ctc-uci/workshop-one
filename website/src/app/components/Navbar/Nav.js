@@ -98,7 +98,7 @@ function Nav() {
             <li>
               <button type="button" className="elem apply-button">
                 <Link to="/contact" id="apply-link">
-                  Apply Now
+                  Contact Us
                 </Link>
               </button>
             </li>
