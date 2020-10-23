@@ -10,6 +10,7 @@ import sonali from '../../../images/about/memberImages/sonali.jpg';
 import kamille from '../../../images/about/memberImages/kamille.png';
 import ryan from '../../../images/about/memberImages/ryan.jpg';
 import rebecca from '../../../images/about/memberImages/rebecca.jpg';
+import joshualiu from '../../../images/about/memberImages/joshualiu.jpg';
 import megha from '../../../images/about/memberImages/megha.jpeg';
 import xuan from '../../../images/about/memberImages/xuan.png';
 
@@ -86,6 +87,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/leungrebecca/',
       imageURL: rebecca,
+    },
+    {
+      name: 'Joshua Liu',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/joshua-liu/',
+      imageURL: joshualiu,
     },
     {
       name: 'Megha Kak',
