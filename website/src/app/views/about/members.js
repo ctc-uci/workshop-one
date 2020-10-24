@@ -15,6 +15,7 @@ import megha from '../../../images/about/memberImages/megha.jpeg';
 import xuan from '../../../images/about/memberImages/xuan.png';
 import joshuachan from '../../../images/about/memberImages/joshuachan.jpg';
 import phillip from '../../../images/about/memberImages/phillip.jpg';
+import zubair from '../../../images/about/memberImages/zubair.jpg';
 
 const members = {
   info: [
@@ -119,6 +120,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/chnphllp/',
       imageURL: phillip,
+    },
+    {
+      name: 'Zubair Sidhu',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/zubair-sidhu/',
+      imageURL: zubair,
     },
   ],
 };
