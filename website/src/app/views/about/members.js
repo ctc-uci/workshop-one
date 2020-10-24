@@ -13,6 +13,7 @@ import rebecca from '../../../images/about/memberImages/rebecca.jpg';
 import joshualiu from '../../../images/about/memberImages/joshualiu.jpg';
 import megha from '../../../images/about/memberImages/megha.jpeg';
 import xuan from '../../../images/about/memberImages/xuan.png';
+import joshuachan from '../../../images/about/memberImages/joshuachan.jpg';
 
 const members = {
   info: [
@@ -105,6 +106,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/xuanbvu/',
       imageURL: xuan,
+    },
+    {
+      name: 'Joshua Chan',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/joshualchan/',
+      imageURL: joshuachan,
     },
   ],
 };
