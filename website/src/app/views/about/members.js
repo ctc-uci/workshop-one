@@ -16,6 +16,7 @@ import xuan from '../../../images/about/memberImages/xuan.png';
 import joshuachan from '../../../images/about/memberImages/joshuachan.jpg';
 import phillip from '../../../images/about/memberImages/phillip.jpg';
 import zubair from '../../../images/about/memberImages/zubair.jpg';
+import ashley from '../../../images/about/memberImages/ashley.jpg';
 import iqra from '../../../images/about/memberImages/iqra.jpg';
 
 const members = {
@@ -127,6 +128,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/zubair-sidhu/',
       imageURL: zubair,
+    },
+    {
+      name: 'Ashley Liu',
+      position: 'Developer',
+      linkedinURL: 'www.linkedin.com/in/ashley-liu-6314731b9/',
+      imageURL: ashley,
     },
     {
       name: 'Iqra Abbaali',
