@@ -20,6 +20,7 @@ import ashley from '../../../images/about/memberImages/ashley.jpg';
 import iqra from '../../../images/about/memberImages/iqra.jpg';
 import alec from '../../../images/about/memberImages/alec.jpg';
 import claude from '../../../images/about/memberImages/claude.png';
+import harkirat from '../../../images/about/memberImages/harkirat.jpg';
 
 const members = {
   info: [
@@ -154,6 +155,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/claude-yan-b41a3216a/',
       imageURL: claude,
+    },
+    {
+      name: 'Harkirat Sachdeva',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/harkirat-sachdeva/',
+      imageURL: harkirat,
     },
   ],
 };
