@@ -22,6 +22,7 @@ import alec from '../../../images/about/memberImages/alec.jpg';
 import claude from '../../../images/about/memberImages/claude.png';
 import harkirat from '../../../images/about/memberImages/harkirat.jpg';
 import alan from '../../../images/about/memberImages/alan.jpg';
+import sydney from '../../../images/about/memberImages/sydney.jpg';
 
 const members = {
   info: [
@@ -168,6 +169,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/alanchang2020/',
       imageURL: alan,
+    },
+    {
+      name: 'Sydney Chiang',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/sydneychiang/',
+      imageURL: sydney,
     },
   ],
 };
