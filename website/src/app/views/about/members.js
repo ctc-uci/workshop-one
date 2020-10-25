@@ -18,6 +18,7 @@ import phillip from '../../../images/about/memberImages/phillip.jpg';
 import zubair from '../../../images/about/memberImages/zubair.jpg';
 import ashley from '../../../images/about/memberImages/ashley.jpg';
 import iqra from '../../../images/about/memberImages/iqra.jpg';
+import alec from '../../../images/about/memberImages/alec.jpg';
 
 const members = {
   info: [
@@ -140,6 +141,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/iqra-abbaali/',
       imageURL: iqra,
+    },
+    {
+      name: 'Alec Chen',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/alecc3/',
+      imageURL: alec,
     },
   ],
 };
