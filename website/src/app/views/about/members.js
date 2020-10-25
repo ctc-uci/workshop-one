@@ -21,6 +21,7 @@ import iqra from '../../../images/about/memberImages/iqra.jpg';
 import alec from '../../../images/about/memberImages/alec.jpg';
 import claude from '../../../images/about/memberImages/claude.png';
 import harkirat from '../../../images/about/memberImages/harkirat.jpg';
+import alan from '../../../images/about/memberImages/alan.jpg';
 
 const members = {
   info: [
@@ -161,6 +162,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/harkirat-sachdeva/',
       imageURL: harkirat,
+    },
+    {
+      name: 'Alan Chang',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/alanchang2020/',
+      imageURL: alan,
     },
   ],
 };
