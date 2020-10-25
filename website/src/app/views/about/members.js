@@ -28,6 +28,7 @@ import hang from '../../../images/about/memberImages/hang.jpg';
 import chase from '../../../images/about/memberImages/chase.jpg';
 import duron from '../../../images/about/memberImages/duron.jpg';
 import rashmi from '../../../images/about/memberImages/rashmi.jpg';
+import angela from '../../../images/about/memberImages/angela.png';
 
 const members = {
   info: [
@@ -210,6 +211,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/rashmi-sharma-432b31178/',
       imageURL: rashmi,
+    },
+    {
+      name: 'Angela Qiao',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/angela-qiao/',
+      imageURL: angela,
     },
   ],
 };
