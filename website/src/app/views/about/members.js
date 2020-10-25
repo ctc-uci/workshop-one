@@ -23,6 +23,7 @@ import claude from '../../../images/about/memberImages/claude.png';
 import harkirat from '../../../images/about/memberImages/harkirat.jpg';
 import alan from '../../../images/about/memberImages/alan.jpg';
 import sydney from '../../../images/about/memberImages/sydney.jpg';
+import rostam from '../../../images/about/memberImages/rostam.png';
 
 const members = {
   info: [
@@ -175,6 +176,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/sydneychiang/',
       imageURL: sydney,
+    },
+    {
+      name: 'Rostam Vakhshoori',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/rostamvakhshoori/',
+      imageURL: rostam,
     },
   ],
 };
