@@ -26,6 +26,7 @@ import sydney from '../../../images/about/memberImages/sydney.jpg';
 import rostam from '../../../images/about/memberImages/rostam.png';
 import hang from '../../../images/about/memberImages/hang.jpg';
 import chase from '../../../images/about/memberImages/chase.jpg';
+import duron from '../../../images/about/memberImages/duron.jpg';
 import rashmi from '../../../images/about/memberImages/rashmi.jpg';
 
 const members = {
@@ -197,6 +198,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/chasecarnaroli/',
       imageURL: chase,
+    },
+    {
+      name: 'Duron Gardezi',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/durongardezi/',
+      imageURL: duron,
     },
     {
       name: 'Rashmi Sharma',
