@@ -19,6 +19,7 @@ import zubair from '../../../images/about/memberImages/zubair.jpg';
 import ashley from '../../../images/about/memberImages/ashley.jpg';
 import iqra from '../../../images/about/memberImages/iqra.jpg';
 import alec from '../../../images/about/memberImages/alec.jpg';
+import claude from '../../../images/about/memberImages/claude.png';
 
 const members = {
   info: [
@@ -147,6 +148,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/alecc3/',
       imageURL: alec,
+    },
+    {
+      name: 'Claude Yan',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/claude-yan-b41a3216a/',
+      imageURL: claude,
     },
   ],
 };
