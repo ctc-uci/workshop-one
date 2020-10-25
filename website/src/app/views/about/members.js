@@ -25,6 +25,7 @@ import alan from '../../../images/about/memberImages/alan.jpg';
 import sydney from '../../../images/about/memberImages/sydney.jpg';
 import rostam from '../../../images/about/memberImages/rostam.png';
 import hang from '../../../images/about/memberImages/hang.jpg';
+import chase from '../../../images/about/memberImages/chase.jpg';
 
 const members = {
   info: [
@@ -189,6 +190,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/hang-m-cao/',
       imageURL: hang,
+    },
+    {
+      name: 'Chase Carnaroli',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/chasecarnaroli/',
+      imageURL: chase,
     },
   ],
 };
