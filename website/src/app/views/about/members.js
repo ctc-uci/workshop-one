@@ -30,6 +30,7 @@ import duron from '../../../images/about/memberImages/duron.jpg';
 import rashmi from '../../../images/about/memberImages/rashmi.jpg';
 import angela from '../../../images/about/memberImages/angela.png';
 import jenny from '../../../images/about/memberImages/jenny.jpg';
+import henry from '../../../images/about/memberImages/henry.jpg';
 
 const members = {
   info: [
@@ -224,6 +225,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/jenny-lee-6630201b2',
       imageURL: jenny,
+    },
+    {
+      name: 'Henry Gip',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/henry--gip/',
+      imageURL: henry,
     },
   ],
 };
