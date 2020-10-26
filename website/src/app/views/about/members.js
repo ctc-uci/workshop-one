@@ -34,6 +34,7 @@ import henry from '../../../images/about/memberImages/henry.jpg';
 import chris from '../../../images/about/memberImages/chris.png';
 import preston from '../../../images/about/memberImages/preston.jpg';
 import maria from '../../../images/about/memberImages/maria.jpg';
+import kasey from '../../../images/about/memberImages/kasey.jpg';
 
 const members = {
   info: [
@@ -252,6 +253,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/maria-botross-0b62b8160/',
       imageURL: maria,
+    },
+    {
+      name: 'Kasey Chuang',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/kaseyychuang',
+      imageURL: kasey,
     },
   ],
 };
