@@ -33,6 +33,7 @@ import jenny from '../../../images/about/memberImages/jenny.jpg';
 import henry from '../../../images/about/memberImages/henry.jpg';
 import chris from '../../../images/about/memberImages/chris.png';
 import preston from '../../../images/about/memberImages/preston.jpg';
+import maria from '../../../images/about/memberImages/maria.jpg';
 
 const members = {
   info: [
@@ -245,6 +246,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/preston-c-young/',
       imageURL: preston,
+    },
+    {
+      name: 'Maria Botross',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/maria-botross-0b62b8160/',
+      imageURL: maria,
     },
   ],
 };
