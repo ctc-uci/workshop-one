@@ -36,6 +36,7 @@ import preston from '../../../images/about/memberImages/preston.jpg';
 import maria from '../../../images/about/memberImages/maria.jpg';
 import kasey from '../../../images/about/memberImages/kasey.jpg';
 import sylvester from '../../../images/about/memberImages/sylvester.jpg';
+import jane from '../../../images/about/memberImages/jane.jpeg';
 
 const members = {
   info: [
@@ -266,6 +267,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/sylvester-yue/',
       imageURL: sylvester,
+    },
+    {
+      name: 'Jane Vo',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/janehv/',
+      imageURL: jane,
     },
   ],
 };
