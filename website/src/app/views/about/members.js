@@ -37,6 +37,7 @@ import maria from '../../../images/about/memberImages/maria.jpg';
 import kasey from '../../../images/about/memberImages/kasey.jpg';
 import sylvester from '../../../images/about/memberImages/sylvester.jpg';
 import jane from '../../../images/about/memberImages/jane.jpeg';
+import zoya from '../../../images/about/memberImages/zoya.jpg';
 
 const members = {
   info: [
@@ -273,6 +274,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/janehv/',
       imageURL: jane,
+    },
+    {
+      name: 'Zoya Hajee',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/zoyahajee/',
+      imageURL: zoya,
     },
   ],
 };
