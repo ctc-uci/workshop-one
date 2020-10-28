@@ -39,6 +39,7 @@ import sylvester from '../../../images/about/memberImages/sylvester.jpg';
 import jane from '../../../images/about/memberImages/jane.jpeg';
 import zoya from '../../../images/about/memberImages/zoya.jpg';
 import jules from '../../../images/about/memberImages/jules.JPG';
+import alvin from '../../../images/about/memberImages/alvin.JPG';
 
 const members = {
   info: [
@@ -287,6 +288,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/juleslabador',
       imageURL: jules,
+    },
+    {
+      name: 'Alvin Chen',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/alvinchenn',
+      imageURL: alvin,
     },
   ],
 };
