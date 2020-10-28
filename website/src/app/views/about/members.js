@@ -40,6 +40,7 @@ import jane from '../../../images/about/memberImages/jane.jpeg';
 import zoya from '../../../images/about/memberImages/zoya.jpg';
 import jules from '../../../images/about/memberImages/jules.JPG';
 import alvin from '../../../images/about/memberImages/alvin.JPG';
+import allen from '../../../images/about/memberImages/allen.jpg';
 
 const members = {
   info: [
@@ -294,6 +295,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/alvinchenn',
       imageURL: alvin,
+    },
+    {
+      name: 'Allen Luo',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/allenxluo',
+      imageURL: allen,
     },
   ],
 };
