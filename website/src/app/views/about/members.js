@@ -41,6 +41,7 @@ import zoya from '../../../images/about/memberImages/zoya.jpg';
 import jules from '../../../images/about/memberImages/jules.JPG';
 import alvin from '../../../images/about/memberImages/alvin.JPG';
 import allen from '../../../images/about/memberImages/allen.jpg';
+import cyre from '../../../images/about/memberImages/cyre.jpg';
 
 const members = {
   info: [
@@ -302,6 +303,13 @@ const members = {
       linkedinURL: 'https://www.linkedin.com/in/allenxluo',
       imageURL: allen,
     },
+    {
+      name: 'Cyre Jorin To',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/cyrejorin/',
+      imageURL: cyre,
+    },
+
   ],
 };
 
