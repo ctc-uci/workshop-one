@@ -42,6 +42,7 @@ import jules from '../../../images/about/memberImages/jules.JPG';
 import alvin from '../../../images/about/memberImages/alvin.JPG';
 import allen from '../../../images/about/memberImages/allen.jpg';
 import cyre from '../../../images/about/memberImages/cyre.jpg';
+import kela from '../../../images/about/memberImages/cullenmoana.jpg';
 
 const members = {
   info: [
@@ -309,7 +310,12 @@ const members = {
       linkedinURL: 'https://www.linkedin.com/in/cyrejorin/',
       imageURL: cyre,
     },
-
+    {
+      name: 'Po\'okela Moana',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/cullen-moana/',
+      imageURL: kela,
+    },
   ],
 };
 
