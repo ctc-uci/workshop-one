@@ -26,8 +26,8 @@ import sydney from '../../../images/about/memberImages/sydney.jpg';
 import rostam from '../../../images/about/memberImages/rostam.png';
 import hang from '../../../images/about/memberImages/hang.jpg';
 import chase from '../../../images/about/memberImages/chase.jpg';
-import duron from '../../../images/about/memberImages/duron.jpg';
 import rashmi from '../../../images/about/memberImages/rashmi.jpg';
+import duron from '../../../images/about/memberImages/duron.jpg';
 import angela from '../../../images/about/memberImages/angela.png';
 import jenny from '../../../images/about/memberImages/jenny.jpg';
 import henry from '../../../images/about/memberImages/henry.jpg';
@@ -45,6 +45,7 @@ import cyre from '../../../images/about/memberImages/cyre.jpg';
 import kela from '../../../images/about/memberImages/cullenmoana.jpg';
 import preetham from '../../../images/about/memberImages/preetham.jpg';
 import vinita from '../../../images/about/memberImages/vinita.jpg';
+import ria from '../../../images/about/memberImages/ria.jpeg';
 
 const members = {
   info: [
@@ -329,6 +330,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/vinita-santhosh/',
       imageURL: vinita,
+    },
+    {
+      name: 'Ria Saxena',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/riasaxena/',
+      imageURL: ria,
     },
   ],
 };
