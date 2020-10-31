@@ -44,6 +44,7 @@ import allen from '../../../images/about/memberImages/allen.jpg';
 import cyre from '../../../images/about/memberImages/cyre.jpg';
 import kela from '../../../images/about/memberImages/cullenmoana.jpg';
 import preetham from '../../../images/about/memberImages/preetham.jpg';
+import vinita from '../../../images/about/memberImages/vinita.jpg';
 
 const members = {
   info: [
@@ -322,6 +323,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/preetham-srinivasan/',
       imageURL: preetham,
+    },
+    {
+      name: 'Vinita Santhosh',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/vinita-santhosh/',
+      imageURL: vinita,
     },
   ],
 };
