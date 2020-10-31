@@ -46,6 +46,7 @@ import kela from '../../../images/about/memberImages/cullenmoana.jpg';
 import preetham from '../../../images/about/memberImages/preetham.jpg';
 import vinita from '../../../images/about/memberImages/vinita.jpg';
 import ria from '../../../images/about/memberImages/ria.jpeg';
+import anikait from '../../../images/about/memberImages/anikait.png';
 
 const members = {
   info: [
@@ -336,6 +337,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/riasaxena/',
       imageURL: ria,
+    },
+    {
+      name: 'Anikait Rao',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/anikait-rao/',
+      imageURL: anikait,
     },
   ],
 };
