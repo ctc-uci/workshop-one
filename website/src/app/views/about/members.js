@@ -47,6 +47,7 @@ import preetham from '../../../images/about/memberImages/preetham.jpg';
 import vinita from '../../../images/about/memberImages/vinita.jpg';
 import ria from '../../../images/about/memberImages/ria.jpeg';
 import anikait from '../../../images/about/memberImages/anikait.png';
+import bing from '../../../images/about/memberImages/bing.JPG';
 
 const members = {
   info: [
@@ -343,6 +344,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/anikait-rao/',
       imageURL: anikait,
+    },
+    {
+      name: 'Bing Mo',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/bingmo',
+      imageURL: bing,
     },
   ],
 };
