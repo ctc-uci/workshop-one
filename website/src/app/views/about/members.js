@@ -48,6 +48,7 @@ import vinita from '../../../images/about/memberImages/vinita.jpg';
 import ria from '../../../images/about/memberImages/ria.jpeg';
 import anikait from '../../../images/about/memberImages/anikait.png';
 import bing from '../../../images/about/memberImages/bing.JPG';
+import lily from '../../../images/about/memberImages/lily.jpg';
 
 const members = {
   info: [
@@ -350,6 +351,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/bingmo',
       imageURL: bing,
+    },
+    {
+      name: 'Lily He',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/lily-he-/',
+      imageURL: lily,
     },
   ],
 };
