@@ -17,7 +17,6 @@ import joshuachan from '../../../images/about/memberImages/joshuachan.jpg';
 import phillip from '../../../images/about/memberImages/phillip.jpg';
 import zubair from '../../../images/about/memberImages/zubair.jpg';
 import ashley from '../../../images/about/memberImages/ashley.jpg';
-import iqra from '../../../images/about/memberImages/iqra.jpg';
 import alec from '../../../images/about/memberImages/alec.jpg';
 import claude from '../../../images/about/memberImages/claude.png';
 import harkirat from '../../../images/about/memberImages/harkirat.png';
@@ -65,6 +64,7 @@ import selina from '../../../images/about/memberImages/Selina Tieu.jpg';
 import vani from '../../../images/about/memberImages/Vani Anilkumar.jpg';
 import vincent from '../../../images/about/memberImages/Vincent-Tran.JPG';
 import vivian from '../../../images/about/memberImages/Vivian Chu.JPG';
+import jordan from '../../../images/about/memberImages/jordan.jpg';
 
 const members = {
   info: [
@@ -244,12 +244,6 @@ const members = {
       imageURL: henry,
     },
     {
-      name: 'Iqra Abbaali',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/iqra-abbaali/',
-      imageURL: iqra,
-    },
-    {
       name: 'Jane Vo',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/janehv/',
@@ -260,6 +254,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/jenny-lee-6630201b2',
       imageURL: jenny,
+    },
+    {
+      name: 'Jordan Young',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/jordanbyoung19/',
+      imageURL: jordan,
     },
     {
       name: 'Joshua Chan',
