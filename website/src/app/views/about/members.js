@@ -17,7 +17,6 @@ import joshuachan from '../../../images/about/memberImages/joshuachan.jpg';
 import phillip from '../../../images/about/memberImages/phillip.jpg';
 import zubair from '../../../images/about/memberImages/zubair.jpg';
 import ashley from '../../../images/about/memberImages/ashley.jpg';
-import iqra from '../../../images/about/memberImages/iqra.jpg';
 import alec from '../../../images/about/memberImages/alec.jpg';
 import claude from '../../../images/about/memberImages/claude.png';
 import harkirat from '../../../images/about/memberImages/harkirat.png';
@@ -243,12 +242,6 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/henry--gip/',
       imageURL: henry,
-    },
-    {
-      name: 'Iqra Abbaali',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/iqra-abbaali/',
-      imageURL: iqra,
     },
     {
       name: 'Jane Vo',
