@@ -3,34 +3,34 @@ import justine from '../../../images/about/memberImages/justine.jpeg';
 import kayla from '../../../images/about/memberImages/kayla.jpg';
 import harrison from '../../../images/about/memberImages/harrison.jpg';
 import leon from '../../../images/about/memberImages/leon.jpg';
-import paul from '../../../images/about/memberImages/paul.png';
+import paul from '../../../images/about/memberImages/paul.jpg';
 import ethan from '../../../images/about/memberImages/ethan.jpg';
 import mingjia from '../../../images/about/memberImages/mingjia.jpg';
 import sonali from '../../../images/about/memberImages/sonali.jpg';
-import kamille from '../../../images/about/memberImages/kamille.png';
+import kamille from '../../../images/about/memberImages/kamille.jpg';
 import ryan from '../../../images/about/memberImages/ryan.jpg';
 import rebecca from '../../../images/about/memberImages/rebecca.jpg';
 import joshualiu from '../../../images/about/memberImages/joshualiu.jpg';
 import megha from '../../../images/about/memberImages/megha.jpeg';
-import xuan from '../../../images/about/memberImages/xuan.png';
+import xuan from '../../../images/about/memberImages/xuan.jpg';
 import joshuachan from '../../../images/about/memberImages/joshuachan.jpg';
 import phillip from '../../../images/about/memberImages/phillip.jpg';
 import zubair from '../../../images/about/memberImages/zubair.jpg';
 import ashley from '../../../images/about/memberImages/ashley.jpg';
 import alec from '../../../images/about/memberImages/alec.jpg';
-import claude from '../../../images/about/memberImages/claude.png';
-import harkirat from '../../../images/about/memberImages/harkirat.png';
+import claude from '../../../images/about/memberImages/claude.jpg';
+import harkirat from '../../../images/about/memberImages/harkirat.jpg';
 import alan from '../../../images/about/memberImages/alan.jpg';
 import sydney from '../../../images/about/memberImages/sydney.jpg';
-import rostam from '../../../images/about/memberImages/rostam.png';
+import rostam from '../../../images/about/memberImages/rostam.jpg';
 import hang from '../../../images/about/memberImages/hang.jpg';
 import chase from '../../../images/about/memberImages/chase.jpg';
 import rashmi from '../../../images/about/memberImages/rashmi.jpg';
 import duron from '../../../images/about/memberImages/duron.jpg';
-import angela from '../../../images/about/memberImages/angela.png';
+import angela from '../../../images/about/memberImages/angela.jpg';
 import jenny from '../../../images/about/memberImages/jenny.jpg';
 import henry from '../../../images/about/memberImages/henry.jpg';
-import chris from '../../../images/about/memberImages/chris.png';
+import chris from '../../../images/about/memberImages/chris.jpg';
 import preston from '../../../images/about/memberImages/preston.jpg';
 import maria from '../../../images/about/memberImages/maria.jpg';
 import kasey from '../../../images/about/memberImages/kasey.jpg';
@@ -45,9 +45,8 @@ import kela from '../../../images/about/memberImages/cullenmoana.jpg';
 import preetham from '../../../images/about/memberImages/preetham.jpg';
 import vinita from '../../../images/about/memberImages/vinita.jpg';
 import ria from '../../../images/about/memberImages/ria.jpeg';
-import anikait from '../../../images/about/memberImages/anikait.png';
+import anikait from '../../../images/about/memberImages/anikait.jpg';
 import bing from '../../../images/about/memberImages/bing.JPG';
-import lily from '../../../images/about/memberImages/lily.jpg';
 import becky from '../../../images/about/memberImages/becky.jpg';
 import angeline from '../../../images/about/memberImages/Angeline Pho.jpg';
 import chloe from '../../../images/about/memberImages/Chloe Chua.jpg';
@@ -180,7 +179,7 @@ const members = {
     {
       name: 'Ashley Liu',
       position: 'Developer',
-      linkedinURL: 'www.linkedin.com/in/ashley-liu-6314731b9/',
+      linkedinURL: 'https://www.linkedin.com/in/ashley-liu-6314731b9/',
       imageURL: ashley,
     },
     {
@@ -284,12 +283,6 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/kaseyychuang',
       imageURL: kasey,
-    },
-    {
-      name: 'Lily He',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/lily-he-/',
-      imageURL: lily,
     },
     {
       name: 'Maria Botross',
