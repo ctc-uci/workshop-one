@@ -13,9 +13,9 @@ function Footer() {
       <div className="columns">
         <div className="left-column">
           <div className="inner-left">
-            Copyright Commit the Change
+            © Commit the Change
             <br />
-            Icons made by
+            Icons by
             {' '}
             <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons" style={{ color: 'white' }}>Flat Icons</a>
             <br />
