@@ -127,10 +127,58 @@ const members = {
     {
       name: 'Alan Chang',
       position: 'VP of Outreach, Developer',
-      linkedinURL: 'https://www.linkedin.com/in/alanchang2020/',
+      linkedinURL: 'https://www.linkedin.com/in/acxyz/',
       imageURL: alan,
     },
 
+    {
+      name: 'Allen Luo',
+      position: 'Tech Lead',
+      linkedinURL: 'https://www.linkedin.com/in/allenxluo',
+      imageURL: allen,
+    },
+    {
+      name: 'Anikait Rao',
+      position: 'Tech Lead',
+      linkedinURL: 'https://www.linkedin.com/in/anikait-rao/',
+      imageURL: anikait,
+    },
+    {
+      name: 'Chris Tian',
+      position: 'Tech Lead',
+      linkedinURL: 'https://www.linkedin.com/in/cwtian/',
+      imageURL: chris,
+    },
+    {
+      name: 'Henry Gip',
+      position: 'Tech Lead',
+      linkedinURL: 'https://www.linkedin.com/in/henry--gip/',
+      imageURL: henry,
+    },
+    {
+      name: 'Megha Kak',
+      position: 'Tech Lead',
+      linkedinURL: 'https://www.linkedin.com/in/megha-kak/',
+      imageURL: megha,
+    },
+    {
+      name: 'Meredith Quintana',
+      position: 'Design Lead',
+      linkedinURL: 'https://www.linkedin.com/in/meredith-quintana-95880619b/',
+      imageURL: meredith,
+    },
+    {
+      name: 'Sabrina Nguyen Hoang',
+      position: 'Design Lead',
+      linkedinURL: 'https://www.linkedin.com/in/sabrina-nguyen-hoang/',
+      imageURL: sabrina,
+    },
+    {
+      name: 'Sylvester Yue',
+      position: 'Tech Lead',
+      linkedinURL: 'https://www.linkedin.com/in/sylvester-yue/',
+      imageURL: sylvester,
+    },
     {
       name: 'Alec Chen',
       position: 'Developer',
@@ -138,22 +186,10 @@ const members = {
       imageURL: alec,
     },
     {
-      name: 'Allen Luo',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/allenxluo',
-      imageURL: allen,
-    },
-    {
       name: 'Alvin Chen',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/alvinchenn',
       imageURL: alvin,
-    },
-    {
-      name: 'Anikait Rao',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/anikait-rao/',
-      imageURL: anikait,
     },
     {
       name: 'Ashley Liu',
@@ -166,12 +202,6 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/becky-dinh-27b85018b/',
       imageURL: becky,
-    },
-    {
-      name: 'Chris Tian',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/cwtian/',
-      imageURL: chris,
     },
     {
       name: 'Claude Yan',
@@ -190,12 +220,6 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/hang-m-cao/',
       imageURL: hang,
-    },
-    {
-      name: 'Henry Gip',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/henry--gip/',
-      imageURL: henry,
     },
     {
       name: 'Jenny Lee',
@@ -228,12 +252,6 @@ const members = {
       imageURL: kasey,
     },
     {
-      name: 'Megha Kak',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/megha-kak/',
-      imageURL: megha,
-    },
-    {
       name: 'Phillip Chan',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/chnphllp/',
@@ -256,12 +274,6 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/rashmi-sharma-432b31178/',
       imageURL: rashmi,
-    },
-    {
-      name: 'Sylvester Yue',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/sylvester-yue/',
-      imageURL: sylvester,
     },
     {
       name: 'Xuan Vu',
@@ -294,22 +306,10 @@ const members = {
       imageURL: lancy,
     },
     {
-      name: 'Meredith Quintana',
-      position: 'Designer',
-      linkedinURL: 'https://www.linkedin.com/in/meredith-quintana-95880619b/',
-      imageURL: meredith,
-    },
-    {
       name: 'Michelle Huynh',
       position: 'Designer',
       linkedinURL: 'https://www.linkedin.com/in/michelleyhuynh/',
       imageURL: michelle,
-    },
-    {
-      name: 'Sabrina Nguyen Hoang',
-      position: 'Designer',
-      linkedinURL: 'https://www.linkedin.com/in/sabrina-nguyen-hoang/',
-      imageURL: sabrina,
     },
     {
       name: 'Vani Anilkumar',
