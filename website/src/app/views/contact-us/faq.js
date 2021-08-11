@@ -6,6 +6,11 @@ const faq = {
         'We look for passionate, committed UC Irvine students who are interested in learning new technical skills by working on projects for non-profit organizations with other like-minded peers. Ideally, students would be in an ICS or related major, but if not, they are expected to have skills to back themselves up. There are no specific technical experience requirements, but it definitely helps to have something that demonstrates your initiative to learn and be involved!',
     },
     {
+      question: 'How do I join a Commit the Change project team?',
+      answer:
+        "Fill out our application, which opens in late September! It's a simple form and a chance to pitch yourself to our organization. Some things we ask about are your level of experience, your reasons for applying, and more information about you, your studies, and your interests. Once all the applications are in, the Recruitment committee will reach out to you to schedule a coffee chat — not an interview, but a way for us to meet each other and to get to know you better. After that, we'll take some time to make our final decisions. While we would like to accept everyone who is interested, we have limited space on our project teams. Decisions will be sent out to everyone by mid-October.",
+    },
+    {
       question: 'What is a coffee chat?',
       answer:
         'A coffee chat is our way to get to know you better and for you to learn more about our organization in a more casual setting. Rather than your typical interviews or preparing technical challenges, we chose coffee chats so that our recruitment can be less daunting and more friendly to interested students!',
@@ -38,11 +43,6 @@ const faq = {
       question: 'Who can join Commit the Change and work on the projects?',
       answer:
         "We are looking for passionate, committed, UC Irvine students with an interest in learning new technical skills by working on projects for non-profit organizations with other like-minded peers. Ideally, students would be in an ICS or related major, but if not, they are expected to have skills to back themselves up. There are no specific technical experience requirements, but it definitely helps to have something that demonstrates your initiative to learn and be involved! We're currently seeking Designers and Developers for the upcoming school year, so if this sounds like you, don't hesitate to apply!",
-    },
-    {
-      question: 'How do I join a Commit the Change project team?',
-      answer:
-        "Fill out our application, due on Oct. 10th! It's a simple Google form and a chance to pitch yourself to our organization. Some things we ask about are your level of experience, your reasons for applying, and more information about you, your studies, and your interests. Once all the applications are in, the Recruitment committee will reach out to you to schedule a coffee chat — not an interview, but a way for us to meet each other and to get to know you better. After that, we'll take some time to make our final decisions. While we would like to accept everyone who is interested, we have limited space on our project teams. Decisions will be sent out to everyone by Oct. 18th.",
     },
   ],
 };

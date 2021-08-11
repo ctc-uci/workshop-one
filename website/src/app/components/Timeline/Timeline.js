@@ -14,21 +14,21 @@ function Timeline() {
       <p className="number">01</p>
       <div className="detail">
         <p className="event-title">APPLICATION</p>
-        <p className="event-date">Due 10/10</p>
+        <p className="event-date">Late Sep.</p>
       </div>
     </div>,
     <div>
       <p className="number">02</p>
       <div className="detail">
         <p className="event-title">COFFEE CHAT</p>
-        <p className="event-date">10/12 - 10/16</p>
+        <p className="event-date">Early Oct.</p>
       </div>
     </div>,
     <div>
       <p className="number">03</p>
       <div className="detail">
         <p className="event-title">DECISION</p>
-        <p className="event-date">By 10/18</p>
+        <p className="event-date">Mid Oct.</p>
       </div>
     </div>,
   ];
