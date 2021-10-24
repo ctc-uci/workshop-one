@@ -170,6 +170,12 @@ const members = {
       imageURL: meredith,
     },
     {
+      name: 'Rashmi Sharma',
+      position: 'Tech Lead',
+      linkedinURL: 'https://www.linkedin.com/in/rashmi-sharma-432b31178/',
+      imageURL: rashmi,
+    },
+    {
       name: 'Sabrina Nguyen Hoang',
       position: 'Design Lead',
       linkedinURL: 'https://www.linkedin.com/in/sabrina-nguyen-hoang/',
@@ -270,12 +276,6 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/preston-c-young/',
       imageURL: preston,
-    },
-    {
-      name: 'Rashmi Sharma',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/rashmi-sharma-432b31178/',
-      imageURL: rashmi,
     },
     {
       name: 'Xuan Vu',
