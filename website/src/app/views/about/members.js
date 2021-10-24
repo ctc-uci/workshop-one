@@ -188,12 +188,6 @@ const members = {
       imageURL: sylvester,
     },
     {
-      name: 'Alec Chen',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/alecc3/',
-      imageURL: alec,
-    },
-    {
       name: 'Alvin Chen',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/alvinchenn',
@@ -204,12 +198,6 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/ashley-liu-6314731b9/',
       imageURL: ashley,
-    },
-    {
-      name: 'Becky Dinh',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/becky-dinh-27b85018b/',
-      imageURL: becky,
     },
     {
       name: 'Claude Yan',
@@ -278,6 +266,18 @@ const members = {
       imageURL: preston,
     },
     {
+      name: 'Riley Champion',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/rileychampion/',
+      imageURL: rileychampion,
+    },
+    {
+      name: 'Sam Der',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/sam-der',
+      imageURL: sam,
+    },
+    {
       name: 'Xuan Vu',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/xuanbvu/',
@@ -290,22 +290,22 @@ const members = {
       imageURL: zoya,
     },
     {
-      name: 'Sam Der',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/sam-der',
-      imageURL: sam,
-    },
-    {
-      name: 'Riley Champion',
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/rileychampion/',
-      imageURL: rileychampion,
+      name: 'Alec Chen',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/alecc3/',
+      imageURL: alec,
     },
     {
       name: 'Angeline Pho',
       position: 'Designer',
       linkedinURL: 'https://www.linkedin.com/in/angeline-pho-19743319a/',
       imageURL: angeline,
+    },
+    {
+      name: 'Becky Dinh',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/becky-dinh-27b85018b/',
+      imageURL: becky,
     },
     {
       name: 'Hannah Limary',
