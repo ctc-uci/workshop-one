@@ -116,7 +116,7 @@ const members = {
     },
     {
       name: 'Jane Vo',
-      position: 'VP of Recruitment, Developer',
+      position: 'VP of Recruitment, Tech Lead',
       linkedinURL: 'https://www.linkedin.com/in/janehv/',
       imageURL: jane,
     },
