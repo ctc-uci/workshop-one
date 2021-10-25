@@ -47,6 +47,7 @@ import jordan from '../../../images/about/memberImages/jordan.jpg';
 import sam from '../../../images/about/memberImages/sam.jpg';
 import rileychampion from '../../../images/about/memberImages/rileychampion.jpg';
 import rileywong from '../../../images/about/memberImages/rileywong.jpg';
+import mia from '../../../images/about/memberImages/mia.jpg';
 
 const members = {
   info: [
@@ -249,11 +250,17 @@ const members = {
       linkedinURL: 'https://www.linkedin.com/in/kaseyychuang',
       imageURL: kasey,
     },
-    {
+    { 
       name: 'Madhusudhan Sharma',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/madhuxsharma/',
       imageURL: madhusudhan,
+    },
+    {
+      name: 'Mia Schroeder',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/mia-schroeder',
+      imageURL: mia,
     },
     {
       name: 'Phillip Chan',
