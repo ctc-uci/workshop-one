@@ -93,7 +93,6 @@ const projects = {
       projectName: 'Crime Survivors',
       description:
         'We created a website to replace their paper pamphlets with important resources and information for crime victims!',
-      // 'We created a website to replace their paper pamphlets that detail important resources and information for crime victims in different counties throughout Southern California. This project will save the organization thousands of dollars every year in printing and distribution costs, which will go directly back into helping survivors get necessity items!',
       mediumURL: 'https://medium.com/@committhechange.uci/past-project-reveal-with-crime-survivors-ba557206ee10',
       npoURL: 'https://crimesurvivors.org/',
       projectURL: 'https://github.com/ctc-uci/crime-survivors',
