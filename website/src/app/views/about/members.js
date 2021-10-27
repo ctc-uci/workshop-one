@@ -32,7 +32,6 @@ import jules from '../../../images/about/memberImages/jules.JPG';
 import alvin from '../../../images/about/memberImages/alvin.JPG';
 import allen from '../../../images/about/memberImages/allen.jpg';
 import cyre from '../../../images/about/memberImages/cyre.jpg';
-import kela from '../../../images/about/memberImages/cullenmoana.jpg';
 import anikait from '../../../images/about/memberImages/anikait.jpg';
 import becky from '../../../images/about/memberImages/becky.jpg';
 import angeline from '../../../images/about/memberImages/angeline.jpg';
@@ -48,7 +47,11 @@ import jordan from '../../../images/about/memberImages/jordan.jpg';
 import sam from '../../../images/about/memberImages/sam.jpg';
 import rileychampion from '../../../images/about/memberImages/rileychampion.jpg';
 import rileywong from '../../../images/about/memberImages/rileywong.jpg';
+import michelleblin from '../../../images/about/memberImages/michelleblin.jpg';
 import mia from '../../../images/about/memberImages/mia.jpg';
+import matthew from '../../../images/about/memberImages/matthew.jpg';
+import michellelin from '../../../images/about/memberImages/michellelin.jpg';
+import kei from '../../../images/about/memberImages/kei.jpg';
 
 const members = {
   info: [
@@ -252,10 +255,22 @@ const members = {
       imageURL: kasey,
     },
     {
+      name: 'Kei Asakawa',
+      position: 'Developer',
+      linkedinURL: 'www.linkedin.com/in/kei-asakawa',
+      imageURL: kei,
+    },
+    {
       name: 'Madhusudhan Sharma',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/madhuxsharma/',
       imageURL: madhusudhan,
+    },
+    {
+      name: 'Matthew Wu',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/matthew-caleb-wu/',
+      imageURL: matthew,
     },
     {
       name: 'Maxim Alayev',
@@ -270,16 +285,22 @@ const members = {
       imageURL: mia,
     },
     {
+      name: 'Michelle Lin',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/michellelinCA',
+      imageURL: michellelin,
+    },
+    {
+      name: 'Michelle Lin',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/michellelin1',
+      imageURL: michelleblin,
+    },
+    {
       name: 'Phillip Chan',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/chnphllp/',
       imageURL: phillip,
-    },
-    {
-      name: "Po'okela Moana",
-      position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/cullen-moana/',
-      imageURL: kela,
     },
     {
       name: 'Preston Young',
