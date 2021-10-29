@@ -56,6 +56,7 @@ import justin from '../../../images/about/memberImages/justin.jpg';
 import crystal from '../../../images/about/memberImages/crystal.jpg';
 import thomas from '../../../images/about/memberImages/thomas.jpg';
 import ted from '../../../images/about/memberImages/ted.jpg';
+import phil from '../../../images/about/memberImages/phil.jpg';
 
 const members = {
   info: [
@@ -317,6 +318,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/chnphllp/',
       imageURL: phillip,
+    },
+    {
+      name: 'Phil Truong',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/philip-truong/',
+      imageURL: phil,
     },
     {
       name: 'Preston Young',
