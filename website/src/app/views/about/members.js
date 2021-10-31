@@ -65,7 +65,7 @@ import olivia from '../../../images/about/memberImages/olivia.JPG';
 import rochelle from '../../../images/about/memberImages/rochelle.jpg';
 import hannahc from '../../../images/about/memberImages/hannahc.jpg';
 import kyle from '../../../images/about/memberImages/kyle.jpg';
-import dang from '../../../images/about/memberImages/dang.png';
+import dang from '../../../images/about/memberImages/dang.jpg';
 
 const members = {
   info: [
