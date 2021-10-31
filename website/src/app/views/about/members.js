@@ -71,6 +71,7 @@ import hannahc from '../../../images/about/memberImages/hannahc.jpg';
 import kyle from '../../../images/about/memberImages/kyle.jpg';
 import dang from '../../../images/about/memberImages/dang.jpg';
 import rachel from '../../../images/about/memberImages/rachel.jpg';
+import joshuamontellano from '../../../images/about/memberImages/joshuamontellano.jpg';
 
 const members = {
   info: [
@@ -314,6 +315,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/justin-liao-1949b3217/',
       imageURL: justin,
+    },
+    {
+      name: 'Joshua Montellano',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/joshua-montellano-b753391a3/',
+      imageURL: joshuamontellano,
     },
     {
       name: 'Kasey Chuang',
