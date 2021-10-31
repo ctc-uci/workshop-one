@@ -59,6 +59,7 @@ import ted from '../../../images/about/memberImages/ted.jpg';
 import michaelpien from '../../../images/about/memberImages/michaelpien.jpg';
 import phil from '../../../images/about/memberImages/phil.jpg';
 import kory from '../../../images/about/memberImages/kory.jpg';
+import anna from '../../../images/about/memberImages/anna.jpeg';
 import charles from '../../../images/about/memberImages/charles.jpg';
 import haydenp from '../../../images/about/memberImages/haydenp.jpg';
 import keagan from '../../../images/about/memberImages/keagan.jpg';
@@ -217,6 +218,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/alvinchenn',
       imageURL: alvin,
+    },
+    {
+      name: 'Anna Chan',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/anna-channa',
+      imageURL: anna,
     },
     {
       name: 'Ashley Liu',
