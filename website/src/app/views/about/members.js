@@ -71,6 +71,7 @@ import hannahc from '../../../images/about/memberImages/hannahc.jpg';
 import kyle from '../../../images/about/memberImages/kyle.jpg';
 import dang from '../../../images/about/memberImages/dang.jpg';
 import rachel from '../../../images/about/memberImages/rachel.jpg';
+import thien from '../../../images/about/memberImages/Thien.jpg';
 import joshuamontellano from '../../../images/about/memberImages/joshuamontellano.jpg';
 
 const members = {
@@ -477,6 +478,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/zoyahajee/',
       imageURL: zoya,
+    },
+    {
+      name: 'Thien Nguyen',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/thiennguyen2001/',
+      imageURL: thien,
     },
     {
       name: 'Alec Chen',
