@@ -56,6 +56,7 @@ import justin from '../../../images/about/memberImages/justin.jpg';
 import crystal from '../../../images/about/memberImages/crystal.jpg';
 import thomas from '../../../images/about/memberImages/thomas.jpg';
 import ted from '../../../images/about/memberImages/ted.jpg';
+import michaelpien from '../../../images/about/memberImages/michaelpien.jpg';
 import phil from '../../../images/about/memberImages/phil.jpg';
 import kory from '../../../images/about/memberImages/kory.jpg';
 import charles from '../../../images/about/memberImages/charles.jpg';
@@ -329,6 +330,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/mia-schroeder',
       imageURL: mia,
+    },
+    {
+      name: 'Michael Pien',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/michaelpien/',
+      imageURL: michaelpien,
     },
     {
       name: 'Michelle Lin',
