@@ -63,6 +63,7 @@ import anna from '../../../images/about/memberImages/anna.jpeg';
 import charles from '../../../images/about/memberImages/charles.jpg';
 import haydenp from '../../../images/about/memberImages/haydenp.jpg';
 import keagan from '../../../images/about/memberImages/keagan.jpg';
+import orvielalzate from '../../../images/about/memberImages/orvielalzate.jpg';
 import tony from '../../../images/about/memberImages/tonyliu.jpg';
 import austin from '../../../images/about/memberImages/austin.jpg';
 import olivia from '../../../images/about/memberImages/olivia.JPG';
@@ -400,6 +401,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/olivia-ih/',
       imageURL: olivia,
+    },
+    {
+      name: 'Orviel Alzate',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/orviel-marie-alzate-42898a224/',
+      imageURL: orvielalzate,
     },
     {
       name: 'Phillip Chan',
