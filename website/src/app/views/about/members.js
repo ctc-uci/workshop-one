@@ -62,6 +62,7 @@ import kory from '../../../images/about/memberImages/kory.jpg';
 import charles from '../../../images/about/memberImages/charles.jpg';
 import haydenp from '../../../images/about/memberImages/haydenp.jpg';
 import keagan from '../../../images/about/memberImages/keagan.jpg';
+import tony from '../../../images/about/memberImages/tonyliu.jpg';
 import austin from '../../../images/about/memberImages/austin.jpg';
 import olivia from '../../../images/about/memberImages/olivia.JPG';
 import rochelle from '../../../images/about/memberImages/rochelle.jpg';
@@ -444,6 +445,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/thomas-neill-038b65224/',
       imageURL: thomas,
+    },
+    {
+      name: 'Tony Liu',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/tonyliu02/',
+      imageURL: tony,
     },
     {
       name: 'Xuan Vu',
