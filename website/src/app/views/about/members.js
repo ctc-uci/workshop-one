@@ -60,6 +60,7 @@ import michaelpien from '../../../images/about/memberImages/michaelpien.jpg';
 import phil from '../../../images/about/memberImages/phil.jpg';
 import kory from '../../../images/about/memberImages/kory.jpg';
 import charles from '../../../images/about/memberImages/charles.jpg';
+import haydenp from '../../../images/about/memberImages/haydenp.jpg';
 import keagan from '../../../images/about/memberImages/keagan.jpg';
 import olivia from '../../../images/about/memberImages/olivia.JPG';
 import rochelle from '../../../images/about/memberImages/rochelle.jpg';
@@ -261,6 +262,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/hannahchang10',
       imageURL: hannahc,
+    },
+    {
+      name: 'Hayden Powers',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/hmpowers/',
+      imageURL: haydenp,
     },
     {
       name: 'Jenny Lee',
