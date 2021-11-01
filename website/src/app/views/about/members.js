@@ -82,6 +82,7 @@ import joshuamontellano from '../../../images/about/memberImages/joshuamontellan
 import sravantallapaka from '../../../images/about/memberImages/sravantallapaka.jpg';
 import mignonaprillee from '../../../images/about/memberImages/mignonaprillee.jpg';
 import andrea from '../../../images/about/memberImages/andrea.jpg';
+import lee from '../../../images/about/memberImages/lee.jpg';
 import yasperdejong from '../../../images/about/memberImages/yasperdejong.jpg';
 import johnny from '../../../images/about/memberImages/johnny.jpg';
 import ethanso from '../../../images/about/memberImages/ethanso.jpg';
@@ -400,6 +401,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/kylerpan/',
       imageURL: kyle,
+    },
+    {
+      name: 'Lee Bahir',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/lee-bahir/',
+      imageURL: lee,
     },
     {
       name: 'Madhusudhan Sharma',
