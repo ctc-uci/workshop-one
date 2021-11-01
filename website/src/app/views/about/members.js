@@ -65,6 +65,7 @@ import anna from '../../../images/about/memberImages/anna.jpeg';
 import charles from '../../../images/about/memberImages/charles.jpg';
 import haydenp from '../../../images/about/memberImages/haydenp.jpg';
 import keagan from '../../../images/about/memberImages/keagan.jpg';
+import pham from '../../../images/about/memberImages/pham.jpg';
 import meryl from '../../../images/about/memberImages/meryl.jpg';
 import orvielalzate from '../../../images/about/memberImages/orvielalzate.jpg';
 import tony from '../../../images/about/memberImages/tonyliu.jpg';
@@ -479,6 +480,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/parsa-karamat/',
       imageURL: parsa,
+    },
+    {
+      name: 'Pham',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/nicoleminhpham/',
+      imageURL: pham,
     },
     {
       name: 'Phillip Chan',
