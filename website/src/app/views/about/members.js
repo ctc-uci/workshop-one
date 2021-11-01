@@ -59,6 +59,7 @@ import ted from '../../../images/about/memberImages/ted.jpg';
 import michaelpien from '../../../images/about/memberImages/michaelpien.jpg';
 import phil from '../../../images/about/memberImages/phil.jpg';
 import kory from '../../../images/about/memberImages/kory.jpg';
+import parsa from '../../../images/about/memberImages/parsa.jpg';
 import anna from '../../../images/about/memberImages/anna.jpeg';
 import charles from '../../../images/about/memberImages/charles.jpg';
 import haydenp from '../../../images/about/memberImages/haydenp.jpg';
@@ -407,6 +408,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/orviel-marie-alzate-42898a224/',
       imageURL: orvielalzate,
+    },
+    {
+      name: 'Parsa Karamat',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/parsa-karamat/',
+      imageURL: parsa,
     },
     {
       name: 'Phillip Chan',
