@@ -72,6 +72,7 @@ import austin from '../../../images/about/memberImages/austin.jpg';
 import olivia from '../../../images/about/memberImages/olivia.JPG';
 import rochelle from '../../../images/about/memberImages/rochelle.jpg';
 import hannahc from '../../../images/about/memberImages/hannahc.jpg';
+import daniel from '../../../images/about/memberImages/daniel.jpg';
 import kyle from '../../../images/about/memberImages/kyle.jpg';
 import dang from '../../../images/about/memberImages/dang.jpg';
 import dingyi from '../../../images/about/memberImages/dingyi.jpg';
@@ -294,6 +295,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/dingyi-chang/',
       imageURL: dingyi,
+    },
+    {
+      name: 'Donghyun Daniel Koo',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/koo-donghyun/',
+      imageURL: daniel,
     },
     {
       name: 'Hang Cao',
