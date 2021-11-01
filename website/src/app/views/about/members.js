@@ -75,11 +75,9 @@ import dang from '../../../images/about/memberImages/dang.jpg';
 import rachel from '../../../images/about/memberImages/rachel.jpg';
 import thien from '../../../images/about/memberImages/Thien.jpg';
 import joshuamontellano from '../../../images/about/memberImages/joshuamontellano.jpg';
-<<<<<<< HEAD
+import sravantallapaka from '../../../images/about/memberImages/sravantallapaka.jpg';
 import mignonaprillee from '../../../images/about/memberImages/mignonaprillee.jpg'
-=======
 import andrea from '../../../images/about/memberImages/andrea.jpg';
->>>>>>> dev
 
 const members = {
   info: [
@@ -479,6 +477,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/sam-der',
       imageURL: sam,
+    },
+    {
+      name: 'Sravan Tallapaka',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/sravan-tallapaka-514288225/',
+      imageURL: sravantallapaka,
     },
     {
       name: 'Ted Kim',
