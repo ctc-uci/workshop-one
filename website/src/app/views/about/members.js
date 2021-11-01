@@ -83,6 +83,7 @@ import sravantallapaka from '../../../images/about/memberImages/sravantallapaka.
 import mignonaprillee from '../../../images/about/memberImages/mignonaprillee.jpg';
 import andrea from '../../../images/about/memberImages/andrea.jpg';
 import yasperdejong from '../../../images/about/memberImages/yasperdejong.jpg';
+import johnny from '../../../images/about/memberImages/johnny.jpg';
 
 const members = {
   info: [
@@ -326,6 +327,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/jenny-lee-6630201b2',
       imageURL: jenny,
+    },
+    {
+      name: 'Johnny Phan',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/jphan345/',
+      imageURL: johnny,
     },
     {
       name: 'Jordan Young',
