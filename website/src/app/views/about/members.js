@@ -35,6 +35,7 @@ import cyre from '../../../images/about/memberImages/cyre.jpg';
 import anikait from '../../../images/about/memberImages/anikait.jpg';
 import becky from '../../../images/about/memberImages/becky.jpg';
 import angeline from '../../../images/about/memberImages/angeline.jpg';
+import christine from '../../../images/about/memberImages/christine.jpg';
 import hannah from '../../../images/about/memberImages/hannah.jpg';
 import lancy from '../../../images/about/memberImages/lancy.JPG';
 import meghna from '../../../images/about/memberImages/meghna.jpg';
@@ -257,6 +258,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/charles-min-lee-978834214/',
       imageURL: charles,
+    },
+    {
+      name: 'Christine Nguyen',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/christine-nguyen-89abb4172/',
+      imageURL: christine,
     },
     {
       name: 'Claude Yan',
