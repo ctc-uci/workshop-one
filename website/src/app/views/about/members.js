@@ -74,6 +74,7 @@ import austin from '../../../images/about/memberImages/austin.jpg';
 import olivia from '../../../images/about/memberImages/olivia.JPG';
 import rochelle from '../../../images/about/memberImages/rochelle.jpg';
 import hannahc from '../../../images/about/memberImages/hannahc.jpg';
+import jose from '../../../images/about/memberImages/jose.jpg';
 import daniel from '../../../images/about/memberImages/daniel.jpg';
 import kyle from '../../../images/about/memberImages/kyle.jpg';
 import dang from '../../../images/about/memberImages/dang.jpg';
@@ -349,6 +350,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/jordanbyoung19/',
       imageURL: jordan,
+    },
+    {
+      name: 'Jose Martinez',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/jdmartinez4/',
+      imageURL: jose,
     },
     {
       name: 'Joshua Chan',
