@@ -89,6 +89,7 @@ import lee from '../../../images/about/memberImages/lee.jpg';
 import yasperdejong from '../../../images/about/memberImages/yasperdejong.jpg';
 import johnny from '../../../images/about/memberImages/johnny.jpg';
 import ethanso from '../../../images/about/memberImages/ethanso.jpg';
+import jared from '../../../images/about/memberImages/jared.jpg';
 
 const members = {
   info: [
@@ -332,6 +333,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/hmpowers/',
       imageURL: haydenp,
+    },
+    {
+      name: 'Jared Lai',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/jared-l-02aa8b126',
+      imageURL: jared,
     },
     {
       name: 'Jenny Lee',
