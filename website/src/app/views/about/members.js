@@ -66,6 +66,7 @@ import anna from '../../../images/about/memberImages/anna.jpeg';
 import charles from '../../../images/about/memberImages/charles.jpg';
 import haydenp from '../../../images/about/memberImages/haydenp.jpg';
 import keagan from '../../../images/about/memberImages/keagan.jpg';
+import melayna from '../../../images/about/memberImages/melayna.jpg';
 import pham from '../../../images/about/memberImages/pham.jpg';
 import meryl from '../../../images/about/memberImages/meryl.jpg';
 import orvielalzate from '../../../images/about/memberImages/orvielalzate.jpg';
@@ -457,6 +458,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/maximalayev/',
       imageURL: maxim,
+    },
+    {
+      name: 'Melayna Navarro',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/melayna-navarro/',
+      imageURL: melayna,
     },
     {
       name: 'Meryl Marasigan',
