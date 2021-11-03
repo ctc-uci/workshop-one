@@ -92,6 +92,7 @@ import johnny from '../../../images/about/memberImages/johnny.jpg';
 import ethanso from '../../../images/about/memberImages/ethanso.jpg';
 import danielian from '../../../images/about/memberImages/danielian.jpg';
 import jared from '../../../images/about/memberImages/jared.jpg';
+import ruslan from '../../../images/about/memberImages/ruslan.jpg';
 
 const members = {
   info: [
@@ -563,6 +564,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/rithvik-tirumala/',
       imageURL: rithvikT,
+    },
+    {
+      name: 'Ruslan Manoharan',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/ruslan-manoharan-3b18801a4/',
+      imageURL: ruslan,
     },
     {
       name: 'Sam Der',
