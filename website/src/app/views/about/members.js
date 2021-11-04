@@ -91,6 +91,28 @@ import andrea from '../../../images/about/memberImages/andrea.jpg';
 import rithvikT from '../../../images/about/memberImages/rithvikT.jpg';
 import lee from '../../../images/about/memberImages/lee.jpg';
 import yasperdejong from '../../../images/about/memberImages/yasperdejong.jpg';
+import allisonliu from '../../../images/about/memberImages/allison.jpg';
+import alyssa from '../../../images/about/memberImages/alyssa.png';
+import ashleyyeh from '../../../images/about/memberImages/ashley.png';
+import ashlyn from '../../../images/about/memberImages/ashlyn.png';
+import carlos from '../../../images/about/memberImages/carlos.jpg';
+import christina from '../../../images/about/memberImages/christinavu.jpg';
+import claire from '../../../images/about/memberImages/clairehyon.jpg';
+import erica from '../../../images/about/memberImages/ericayi.jpg';
+import fiona from '../../../images/about/memberImages/fionawu.jpg';
+import isabel from '../../../images/about/memberImages/isabelpham.png';
+import jacqueline from '../../../images/about/memberImages/jacquelinele.jpeg';
+import jade from '../../../images/about/memberImages/jadeluu.JPG';
+import james from '../../../images/about/memberImages/jamesmolamphy.jpg';
+import juhi from '../../../images/about/memberImages/juhipatel.jpg';
+import kaila from '../../../images/about/memberImages/kailalong.jpeg';
+import maireen from '../../../images/about/memberImages/maireenespiritu.jpg';
+import minh from '../../../images/about/memberImages/minhnguyen.jpg';
+import serena from '../../../images/about/memberImages/serenatrang.jpg';
+import vivianlin from '../../../images/about/memberImages/vivianlin.jpg';
+import viviannguyen from '../../../images/about/memberImages/viviannguyen.jpeg';
+import zoyasoy from '../../../images/about/memberImages/zoyasoy.png';
+import kaitlyn from '../../../images/about/memberImages/kaitlynsuzuki.jpg';
 import johnny from '../../../images/about/memberImages/johnny.jpg';
 import ethanso from '../../../images/about/memberImages/ethanso.jpg';
 import danielian from '../../../images/about/memberImages/danielian.jpg';
@@ -659,10 +681,34 @@ const members = {
       imageURL: alec,
     },
     {
+      name: 'Allison Liu',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/hiallisonliu/',
+      imageURL: allisonliu,
+    },
+    {
+      name: 'Alyssa Harvey',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/alyssajharvey/',
+      imageURL: alyssa,
+    },
+    {
       name: 'Angeline Pho',
       position: 'Designer',
       linkedinURL: 'https://www.linkedin.com/in/angeline-pho-19743319a/',
       imageURL: angeline,
+    },
+    {
+      name: 'Ashley Yeh',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/ashley-yeh/',
+      imageURL: ashleyyeh,
+    },
+    {
+      name: 'Ashlyn Riambon',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/ashlynriambon/',
+      imageURL: ashlyn,
     },
     {
       name: 'Becky Dinh',
@@ -671,10 +717,82 @@ const members = {
       imageURL: becky,
     },
     {
+      name: 'Carlos Lim',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/carlosalim7/',
+      imageURL: carlos,
+    },
+    {
+      name: 'Christina Vu',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/christina-vu-493560164/',
+      imageURL: christina,
+    },
+    {
+      name: 'Claire Hyon',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/clairehyon/',
+      imageURL: claire,
+    },
+    {
+      name: 'Erica Yi',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/ericakyi/',
+      imageURL: erica,
+    },
+    {
+      name: 'Fiona Wu',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/fiona-wu-0/',
+      imageURL: fiona,
+    },
+    {
       name: 'Hannah Limary',
       position: 'Designer',
       linkedinURL: 'https://www.linkedin.com/in/hannah-limary/',
       imageURL: hannah,
+    },
+    {
+      name: 'Isabel Pham',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/isabe1pham/',
+      imageURL: isabel,
+    },
+    {
+      name: 'Jacqueline Le',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/jacquelinexle/',
+      imageURL: jacqueline,
+    },
+    {
+      name: 'Jade Luu',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/jade-luu-883209203/',
+      imageURL: jade,
+    },
+    {
+      name: 'James Molamphy',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/james-molamphy/',
+      imageURL: james,
+    },
+    {
+      name: 'Juhi Patel',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/juhipatel21/',
+      imageURL: juhi,
+    },
+    {
+      name: 'Kailia Long',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/kaila-long-3952b7210/',
+      imageURL: kaila,
+    },
+    {
+      name: 'Kaitlyn Suzuki',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/kaitlyn-suzuki/',
+      imageURL: kaitlyn,
     },
     {
       name: 'Lancy Tan',
@@ -683,16 +801,52 @@ const members = {
       imageURL: lancy,
     },
     {
+      name: 'Maireen Espiritu',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/maireen-espiritu/',
+      imageURL: maireen,
+    },
+    {
       name: 'Michelle Huynh',
       position: 'Designer',
       linkedinURL: 'https://www.linkedin.com/in/michelleyhuynh/',
       imageURL: michelle,
     },
     {
+      name: 'Minh Nguyen',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/minh-nguyen16/',
+      imageURL: minh,
+    },
+    {
+      name: 'Serena Trang',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/serenatrang/',
+      imageURL: serena,
+    },
+    {
       name: 'Vani Anilkumar',
       position: 'Designer',
       linkedinURL: 'https://www.linkedin.com/in/vani-anilkumar-670819137/',
       imageURL: vani,
+    },
+    {
+      name: 'Vivian Lin',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/vivianplin/',
+      imageURL: vivianlin,
+    },
+    {
+      name: 'Vivian Nguyen',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/vivvnguyenn/',
+      imageURL: viviannguyen,
+    },
+    {
+      name: 'Zoya Soy',
+      position: 'Designer',
+      linkedinURL: 'https://www.linkedin.com/in/zoyasoy/',
+      imageURL: zoyasoy,
     },
   ],
 };
