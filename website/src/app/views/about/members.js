@@ -83,6 +83,7 @@ import celine from '../../../images/about/memberImages/celine.jpg';
 import dang from '../../../images/about/memberImages/dang.jpg';
 import dingyi from '../../../images/about/memberImages/dingyi.jpg';
 import rachel from '../../../images/about/memberImages/rachel.jpg';
+import david from '../../../images/about/memberImages/david.jpg';
 import thien from '../../../images/about/memberImages/Thien.jpg';
 import joshuamontellano from '../../../images/about/memberImages/joshuamontellano.jpg';
 import sravantallapaka from '../../../images/about/memberImages/sravantallapaka.jpg';
@@ -339,6 +340,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/daniel-ian-reyes-7a7378224',
       imageURL: danielian,
+    },
+    {
+      name: 'David Lu',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/david-lin-yi-lu/',
+      imageURL: david,
     },
     {
       name: 'Derek Lam',
