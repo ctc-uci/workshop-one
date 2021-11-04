@@ -75,6 +75,7 @@ import austin from '../../../images/about/memberImages/austin.jpg';
 import olivia from '../../../images/about/memberImages/olivia.JPG';
 import rochelle from '../../../images/about/memberImages/rochelle.jpg';
 import hannahc from '../../../images/about/memberImages/hannahc.jpg';
+import rayan from '../../../images/about/memberImages/rayan.jpg';
 import jose from '../../../images/about/memberImages/jose.jpg';
 import daniel from '../../../images/about/memberImages/daniel.jpg';
 import kyle from '../../../images/about/memberImages/kyle.jpg';
@@ -557,6 +558,11 @@ const members = {
       imageURL: preston,
     },
     {
+      name: 'Rayan Tighiouart',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/rayan-tighiouart-b36989224/',
+      imageURL: rayan,
+    },
       name: 'Rachel Villamor',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/rachel-villamor/',
