@@ -89,6 +89,7 @@ import joshuamontellano from '../../../images/about/memberImages/joshuamontellan
 import sravantallapaka from '../../../images/about/memberImages/sravantallapaka.jpg';
 import mignonaprillee from '../../../images/about/memberImages/mignonaprillee.jpg';
 import andrea from '../../../images/about/memberImages/andrea.jpg';
+import jackie from '../../../images/about/memberImages/jackie.jpg';
 import rithvikT from '../../../images/about/memberImages/rithvikT.jpg';
 import lee from '../../../images/about/memberImages/lee.jpg';
 import yasperdejong from '../../../images/about/memberImages/yasperdejong.jpg';
@@ -394,6 +395,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/hmpowers/',
       imageURL: haydenp,
+    },
+    {
+      name: 'Jacqueline Thai',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/jthai-1201/',
+      imageURL: jackie,
     },
     {
       name: 'Jared Lai',
