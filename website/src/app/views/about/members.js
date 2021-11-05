@@ -123,6 +123,7 @@ import danielian from '../../../images/about/memberImages/danielian.jpg';
 import jared from '../../../images/about/memberImages/jared.jpg';
 import ruslan from '../../../images/about/memberImages/ruslan.jpg';
 import derek from '../../../images/about/memberImages/derek.jpg';
+import kenny from '../../../images/about/memberImages/kenny.jpg';
 import duongvu from '../../../images/about/memberImages/duongvu.jpg';
 import evan from '../../../images/about/memberImages/evan.JPG';
 
@@ -493,6 +494,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'www.linkedin.com/in/kei-asakawa',
       imageURL: kei,
+    },
+    {
+      name: 'Kenny Tran',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/kenny-tran-3020a715a/',
+      imageURL: kenny,
     },
     {
       name: 'Kory Zhang',
