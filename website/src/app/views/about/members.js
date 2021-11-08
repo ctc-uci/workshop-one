@@ -134,6 +134,7 @@ import caroline from '../../../images/about/memberImages/caroline.jpeg';
 import kyledoliente from '../../../images/about/memberImages/kyledoliente.jpg';
 import kanu from '../../../images/about/memberImages/kanu.jpeg';
 import mazenghosn from '../../../images/about/memberImages/mazenghosn.jpg';
+import hassan from '../../../images/about/memberImages/hassan.jpg';
 
 const members = {
   info: [
@@ -424,6 +425,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/hanalee394/',
       imageURL: hana,
+    },
+    {
+      name: 'Hassan Al-Najjar',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/hassan-al-najjar-438184215/',
+      imageURL: hassan,
     },
     {
       name: 'Hang Cao',
