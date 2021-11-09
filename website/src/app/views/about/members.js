@@ -130,6 +130,7 @@ import duongvu from '../../../images/about/memberImages/duongvu.jpg';
 import evan from '../../../images/about/memberImages/evan.JPG';
 import hana from '../../../images/about/memberImages/hanalee.jpg';
 import kavan from '../../../images/about/memberImages/kavan.jpeg';
+import qiranwang from '../../../images/about/memberImages/qiranwang.png';
 import caroline from '../../../images/about/memberImages/caroline.jpeg';
 import kyledoliente from '../../../images/about/memberImages/kyledoliente.jpg';
 import kanu from '../../../images/about/memberImages/kanu.jpeg';
@@ -691,6 +692,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/preston-c-young/',
       imageURL: preston,
+    },
+    {
+      name: 'Qiran Wang',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/%E5%90%AF%E7%84%B6-%E6%B1%AA-7191b8225/',
+      imageURL: qiranwang,
     },
     {
       name: 'Rayan Tighiouart',
