@@ -135,6 +135,7 @@ import kyledoliente from '../../../images/about/memberImages/kyledoliente.jpg';
 import kanu from '../../../images/about/memberImages/kanu.jpeg';
 import mazenghosn from '../../../images/about/memberImages/mazenghosn.jpg';
 import hassan from '../../../images/about/memberImages/hassan.jpg';
+import edwardwu from '../../../images/about/memberImages/edwardwu.jpeg';
 import ryancho from '../../../images/about/memberImages/ryancho.jpg';
 
 const members = {
@@ -408,6 +409,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/duong-vu-641a861b2/',
       imageURL: duongvu,
+    },
+    {
+      name: 'Edward Wu',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/edward-william-wu/',
+      imageURL: edwardwu,
     },
     {
       name: 'Ethan So',
