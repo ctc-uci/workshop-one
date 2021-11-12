@@ -64,6 +64,7 @@ import kory from '../../../images/about/memberImages/kory.jpg';
 import parsa from '../../../images/about/memberImages/parsa.jpg';
 import anna from '../../../images/about/memberImages/anna.jpeg';
 import charles from '../../../images/about/memberImages/charles.jpg';
+import rongmu from '../../../images/about/memberImages/rongmu.jpg';
 import haydenp from '../../../images/about/memberImages/haydenp.jpg';
 import keagan from '../../../images/about/memberImages/keagan.jpg';
 import melayna from '../../../images/about/memberImages/melayna.jpg';
@@ -731,16 +732,22 @@ const members = {
       imageURL: rileywong,
     },
     {
+      name: 'Rithvik Tirumala',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/rithvik-tirumala/',
+      imageURL: rithvikT,
+    },
+    {
       name: 'Rochelle Nixon',
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/rochellenixon/',
       imageURL: rochelle,
     },
     {
-      name: 'Rithvik Tirumala',
+      name: 'Rong Mu',
       position: 'Developer',
-      linkedinURL: 'https://www.linkedin.com/in/rithvik-tirumala/',
-      imageURL: rithvikT,
+      linkedinURL: 'https://www.linkedin.com/in/rong-lynn-mu-028992180/',
+      imageURL: rongmu,
     },
     {
       name: 'Ruslan Manoharan',
