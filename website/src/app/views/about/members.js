@@ -132,6 +132,7 @@ import duongvu from '../../../images/about/memberImages/duongvu.jpg';
 import evan from '../../../images/about/memberImages/evan.JPG';
 import hana from '../../../images/about/memberImages/hanalee.jpg';
 import kavan from '../../../images/about/memberImages/kavan.jpeg';
+import krish from '../../../images/about/memberImages/krish.jpg';
 import qiranwang from '../../../images/about/memberImages/qiranwang.png';
 import caroline from '../../../images/about/memberImages/caroline.jpeg';
 import kyledoliente from '../../../images/about/memberImages/kyledoliente.jpg';
@@ -589,6 +590,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/kory-zhang-00b86718b/',
       imageURL: kory,
+    },
+    {
+      name: 'Krish Mehta',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/krish-mehta-3bb92519a/',
+      imageURL: krish,
     },
     {
       name: 'Kyle Pan',
