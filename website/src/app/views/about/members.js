@@ -140,6 +140,7 @@ import mazenghosn from '../../../images/about/memberImages/mazenghosn.jpg';
 import hassan from '../../../images/about/memberImages/hassan.jpg';
 import edwardwu from '../../../images/about/memberImages/edwardwu.jpeg';
 import ryancho from '../../../images/about/memberImages/ryancho.jpg';
+import charleswu from '../../../images/about/memberImages/charleswu.jpg';
 import ileen from '../../../images/about/memberImages/ileen.jpg';
 
 const members = {
@@ -347,6 +348,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/charles-min-lee-978834214/',
       imageURL: charles,
+    },
+    {
+      name: 'Charles Wu',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/charles-wu-b2ba09225/',
+      imageURL: charleswu,
     },
     {
       name: 'Christine Nguyen',
