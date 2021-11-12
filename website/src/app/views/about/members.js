@@ -140,6 +140,7 @@ import mazenghosn from '../../../images/about/memberImages/mazenghosn.jpg';
 import hassan from '../../../images/about/memberImages/hassan.jpg';
 import edwardwu from '../../../images/about/memberImages/edwardwu.jpeg';
 import ryancho from '../../../images/about/memberImages/ryancho.jpg';
+import kojihirai from '../../../images/about/memberImages/kojihirai.jpg';
 import charleswu from '../../../images/about/memberImages/charleswu.jpg';
 import ileen from '../../../images/about/memberImages/ileen.jpg';
 
@@ -576,6 +577,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/kenny-tran-3020a715a/',
       imageURL: kenny,
+    },
+    {
+      name: 'Koji Hirai',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/koji-hirai-5b508414a/',
+      imageURL: kojihirai,
     },
     {
       name: 'Kory Zhang',
