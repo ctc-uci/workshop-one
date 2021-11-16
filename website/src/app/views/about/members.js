@@ -130,6 +130,7 @@ import derek from '../../../images/about/memberImages/derek.jpg';
 import kenny from '../../../images/about/memberImages/kenny.jpg';
 import duongvu from '../../../images/about/memberImages/duongvu.jpg';
 import evan from '../../../images/about/memberImages/evan.JPG';
+import katie from '../../../images/about/memberImages/katie.jpg';
 import hana from '../../../images/about/memberImages/hanalee.jpg';
 import kavan from '../../../images/about/memberImages/kavan.jpeg';
 import krish from '../../../images/about/memberImages/krish.jpg';
@@ -561,6 +562,12 @@ const members = {
       position: 'Developer',
       linkedinURL: 'https://www.linkedin.com/in/kaseyychuang',
       imageURL: kasey,
+    },
+    {
+      name: 'Katie Chow',
+      position: 'Developer',
+      linkedinURL: 'https://www.linkedin.com/in/katie-chow-24a489166/',
+      imageURL: katie,
     },
     {
       name: 'Kavan Dharia',
