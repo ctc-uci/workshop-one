@@ -46,12 +46,14 @@ function ContactUs() {
             >
               Read FAQ
             </a>
-            {/* <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScraPyuZDOV2WQZXacd2QHPqf3qBFN9SpBT09z2VULVuJRaCg/viewform"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeP9T6ov7Q8Q6C6LSuvpHWy4Q_SIfATvWhkbMy6nzgsLaDOMQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="common-pink-button"
             >
               Interest Form
-            </a> */}
+            </a>
           </div>
         </div>
         <div className="top-panel-pic">
