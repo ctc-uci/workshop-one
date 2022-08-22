@@ -181,8 +181,8 @@ const Apply = () => {
                 {/* <div className="ctc-apply-1-apply">Apply Now</div> */}
                 <div className="ctc-apply-1-apply-disabled">
                   {width > 850
-                    ? "The 2022-23 application opens in late September!"
-                    : "Check back in late September!"}
+                    ? "The 2022-23 application opens September 18th!"
+                    : "Check back on September 18th!"}
                 </div>
               </a>
             </motion.div>
@@ -450,8 +450,8 @@ const Apply = () => {
               {/* <div className="ctc-apply-4-apply">Apply Now</div> */}
               <div className="ctc-apply-4-apply-disabled">
                 {width > 850
-                  ? "The 2022-23 application opens in late September!"
-                  : "Check back in late September!"}
+                  ? "The 2022-23 application opens September 18th!"
+                  : "Check back on September 18th!"}
               </div>
             </a>
           </div>
