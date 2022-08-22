@@ -21,7 +21,7 @@ const timelineValues = [
         recruitment.
         Applications open
         {' '}
-        <b>September 19th</b>
+        <b>September 18th</b>
         {' '}
         and will close
         {' '}
