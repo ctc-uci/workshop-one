@@ -25,7 +25,7 @@ const timelineValues = [
         {' '}
         and will close
         {' '}
-        <b>October 1st</b>
+        <b>September 30th</b>
         .
       </p>
     ),
