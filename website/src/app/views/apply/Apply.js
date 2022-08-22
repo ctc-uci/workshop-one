@@ -148,8 +148,8 @@ const Apply = () => {
               }}
             >
               Apply to join our team as a designer or developer for the
-              &apos;22-23 school year! Applications open around late September
-              and close mid-October.
+              &apos;22-23 school year! Applications open September 18th
+              and close September 30th.
             </motion.p>
             <motion.div
               className="ctc-apply-1-buttons"
