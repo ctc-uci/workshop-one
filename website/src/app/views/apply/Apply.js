@@ -30,7 +30,7 @@ const Apply = () => {
     }, 750);
     return () => clearTimeout(load);
   }, []);
-  const applicationLink = "https://tinyurl.com/ctc-app-2021";
+  // const applicationLink = "https://tinyurl.com/ctc-app-2021";
   const contactEmail = "ctc@uci.edu";
   const inlineEmail = (
     <a href={`mailto:${contactEmail}`} className="ctc-apply-email-link">
