@@ -1,5 +1,5 @@
 import jane from '../../../images/ourTeam/memberImages/jane.jpg';
-import maxim from '../../../images/ourTeam/memberImages/maxim.jpeg';
+import maxim from '../../../images/ourTeam/memberImages/maxim.png';
 import meghna from '../../../images/ourTeam/memberImages/meghna.jpg';
 import alan from '../../../images/ourTeam/memberImages/alan.jpg';
 import claude from '../../../images/ourTeam/memberImages/claude.jpg';
@@ -10,7 +10,7 @@ import justine from '../../../images/ourTeam/memberImages/justinechou.jpg';
 import david from '../../../images/ourTeam/memberImages/david.jpg';
 import matthew from '../../../images/ourTeam/memberImages/matthew.jpg';
 import michellelin from '../../../images/ourTeam/memberImages/michellelin.jpg';
-import noah from '../../../images/ourTeam/memberImages/noah.jpeg';
+import noah from '../../../images/ourTeam/memberImages/noah.jpg';
 
 import hang from '../../../images/ourTeam/memberImages/hang.jpg';
 import justin from '../../../images/ourTeam/memberImages/justin.jpg';
@@ -19,7 +19,7 @@ import jenny from '../../../images/ourTeam/memberImages/jenny.jpg';
 import ashley from '../../../images/ourTeam/memberImages/ashley.jpg';
 import allisonliu from '../../../images/ourTeam/memberImages/allison.jpg';
 import gurneetcheema from '../../../images/ourTeam/memberImages/gurneetcheema.jpeg';
-import madhusudhan from '../../../images/ourTeam/memberImages/madhusudhan.jpg';
+import madhusudhan from '../../../images/ourTeam/memberImages/madhu.jpg';
 import carlos from '../../../images/ourTeam/memberImages/carlos.jpg';
 
 import ethan from '../../../images/ourTeam/memberImages/ethan.jpg';
@@ -223,7 +223,7 @@ const members = {
     ],
   },
   npo1: {
-    name: 'NPO 1',
+    name: 'Patriots and Paws',
     members: [
       {
         name: 'Hang Cao',
@@ -246,7 +246,7 @@ const members = {
     ],
   },
   npo2: {
-    name: 'NPO 2',
+    name: 'Get Inspired',
     members: [
       {
         name: 'Jenny Lee',
@@ -269,7 +269,7 @@ const members = {
     ],
   },
   npo3: {
-    name: 'NPO 3',
+    name: 'Cell Dogs',
     members: [
       {
         name: 'Gurneet Cheema',
