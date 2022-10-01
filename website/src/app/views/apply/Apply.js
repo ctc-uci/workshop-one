@@ -1,59 +1,45 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion/dist/framer-motion';
 
-import experienceData from "./experienceData";
-import questionData from "../contact-us/faq";
+import experienceData from './experienceData';
+import questionData from '../contact-us/faq';
 
-import "./Apply.css";
-import designGraphic from "../../../images/apply/designer_graphic.svg";
-import devGraphic from "../../../images/apply/dev_graphic.svg";
-import timelineValues from "./TimelineValues";
-import useViewport from "../../../util/useViewport";
-import VerticalTimeline from "../../components/VerticalTimeline/VerticalTimeline";
-import Question from "../../components/Question/Question";
-import Footer from "../../components/Footer/Footer";
+import './Apply.css';
+import { animationConfigs, animationStates, transitionConfigs } from '../animationConstants';
+import designGraphic from '../../../images/apply/designer_graphic.svg';
+import devGraphic from '../../../images/apply/dev_graphic.svg';
+import timelineValues from './TimelineValues';
+import useViewport from '../../../util/useViewport';
+import VerticalTimeline from '../../components/VerticalTimeline/VerticalTimeline';
+import Question from '../../components/Question/Question';
+import Footer from '../../components/Footer/Footer';
 
 const Apply = () => {
   const [loaded, setLoaded] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const { width } = useViewport();
-  const handleClick = index => {
-    if (expandedIndex === index) {
-      setExpandedIndex(null);
-    } else {
-      setExpandedIndex(index);
-    }
-  };
+  const handleClick = (index) => setExpandedIndex(expandedIndex === index ? null : index);
   useEffect(() => {
     const load = setTimeout(() => {
       setLoaded(true);
     }, 750);
     return () => clearTimeout(load);
   }, []);
-  const applicationLink = "https://tinyurl.com/ctc-app-22";
-  const contactEmail = "ctc@uci.edu";
+  // const applicationLink = 'https://tinyurl.com/ctc-app-22';
+  const contactEmail = 'ctc@uci.edu';
   const inlineEmail = (
     <a href={`mailto:${contactEmail}`} className="ctc-apply-email-link">
       {contactEmail}
     </a>
   );
 
-  const experiences = experienceData.map(e => (
+  const experiences = experienceData.map((e) => (
     <motion.div
       className="t-card"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      viewport={{ once: true }}
-      transition={{
-        delay: 0.1,
-        duration: 0.75,
-        type: "spring",
-        damping: 15,
-      }}
+      key={e.name}
+      variants={animationConfigs.opacity(0, 0)}
+      transition={{ ...transitionConfigs.spring(0.75, 0.1), damping: 15 }}
+      {...animationStates.whileInView(true)}
     >
       <div className="t-card-img-container">
         <img src={e.src} className="t-card-img" alt={`${e.name}'s CTC experience`} />
@@ -69,122 +55,59 @@ const Apply = () => {
       <div className="ctc-apply-bg">
         <motion.div
           className="ctc-apply-1-bg"
-          initial={{
-            opacity: 0,
-            y: "-100%",
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          exit={{
-            opacity: 0,
-            y: "-100%",
-          }}
-          transition={{
-            duration: loaded ? 0.5 : 0.75,
-          }}
+          variants={animationConfigs.transformY('-100%', '-100%')}
+          transition={transitionConfigs.simple(loaded ? 0.5 : 0.75)}
+          {...animationStates.animate}
         >
           <div className="ctc-apply-1-container">
             <motion.p
               className="ctc-apply-1-header"
-              initial={{
-                opacity: 0,
-                y: "-100%",
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: "-100%",
-              }}
-              transition={{
-                duration: 0.5,
-                delay: loaded ? 0 : 0.5,
-              }}
+              variants={animationConfigs.transformY('-100%', '-100%')}
+              transition={transitionConfigs.simple(0.5, loaded ? 0 : 0.5)}
+              {...animationStates.animate}
             >
               Hey future CTC-er!
             </motion.p>
             <motion.p
               className="ctc-apply-1-subhead"
-              initial={{
-                opacity: 0,
-                y: "-200%",
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: "-200%",
-              }}
-              transition={{
-                duration: 0.5,
-                delay: loaded ? 0 : 0.5,
-              }}
+              variants={animationConfigs.transformY('-200%', '-200%')}
+              transition={transitionConfigs.simple(0.5, loaded ? 0 : 0.5)}
+              {...animationStates.animate}
             >
               Want to Join Our Team?
             </motion.p>
             <motion.p
               className="ctc-apply-1-p"
-              initial={{
-                opacity: 0,
-                y: "200%",
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: "200%",
-              }}
-              transition={{
-                duration: 0.5,
-                delay: loaded ? 0 : 0.9,
-              }}
+              variants={animationConfigs.transformY('200%', '200%')}
+              transition={transitionConfigs.simple(0.5, loaded ? 0 : 0.8)}
+              {...animationStates.animate}
             >
+              We recruit new developers and designers at the beginning of every year!
               Apply to join our team as a designer or developer for the
-              &apos;22-23 school year! Applications open September 18th
+              &apos;22-23 school year - applications open September 18th
               and close September 30th.
             </motion.p>
             <motion.div
               className="ctc-apply-1-buttons"
-              initial={{
-                opacity: 0,
-                y: "200%",
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: "200%",
-              }}
-              transition={{
-                duration: 0.5,
-                delay: loaded ? 0 : 0.9,
-              }}
+              variants={animationConfigs.transformY('200%', '200%')}
+              transition={transitionConfigs.simple(0.5, loaded ? 0 : 0.8)}
+              {...animationStates.animate}
             >
-              <a
-                // href={null}
+              {/* <a
                 href={applicationLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ctc-apply-1-applink"
-                // className="ctc-apply-1-applink-disabled"
-              >
-                <div className="ctc-apply-1-apply">Apply Now</div>
-                {/* <div className="ctc-apply-1-apply-disabled">
+              > */}
+              <span className="ctc-apply-1-applink-disabled">
+                {/* <div className="ctc-apply-1-apply">Apply Now</div> */}
+                <div className="ctc-apply-1-apply-disabled">
                   {width > 850
-                    ? "The 2022-23 application opens September 18th!"
-                    : "Check back on September 18th!"}
-                </div> */}
-              </a>
+                    ? 'The 2022-23 application closed September 30th!'
+                    : 'Check back at a later date!'}
+                </div>
+              </span>
+              {/* </a> */}
             </motion.div>
           </div>
         </motion.div>
@@ -201,12 +124,7 @@ const Apply = () => {
             scale: 1,
           }}
           viewport={{ once: true }}
-          transition={{
-            duration: loaded ? 0.5 : 0.75,
-            delay: loaded ? 0 : 0.5,
-            type: "spring",
-            damping: 15,
-          }}
+          transition={{ ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5), damping: 15 }}
           exit={{
             opacity: 0,
             rotate: -45,
@@ -301,205 +219,110 @@ const Apply = () => {
           <div className="ctc-apply-3-container">
             <motion.p
               className="ctc-apply-3-header"
-              initial={{
-                opacity: 0,
-                y: -50,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{
-                duration: loaded ? 0.5 : 0.75,
-                delay: loaded ? 0 : 0.5,
-                type: "spring",
-                damping: 15,
-              }}
-              exit={{
-                opacity: 0,
-                y: -50,
-              }}
+              variants={animationConfigs.transformY(-50, -50)}
+              transition={{ ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5), damping: 15 }}
+              {...animationStates.whileInView(true)}
             >
               Our Experiences
             </motion.p>
           </div>
           <motion.div
             className="ctc-apply-3-t"
-            initial={{
-              opacity: 0,
-              y: -50,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{ once: true }}
+            variants={animationConfigs.transformY(-50, -50)}
             transition={{
-              duration: loaded ? 0.5 : 0.75,
-              delay: loaded ? 0 : 0.5,
-              type: "spring",
+              ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5),
               damping: 15,
               staggerChildren: 0.5,
             }}
-            exit={{
-              opacity: 0,
-              y: -50,
-            }}
+            {...animationStates.whileInView(true)}
           >
             {experiences}
           </motion.div>
         </div>
         <motion.div
           className="ctc-apply-4-bg"
-          exit={{
-            opacity: 0,
-          }}
+          variants={animationConfigs.opacity(1, 0)}
           transition={{
-            duration: loaded ? 0.5 : 0.75,
-            delay: loaded ? 0 : 0.5,
-            type: "spring",
+            ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5),
             damping: 15,
           }}
+          {...animationStates.animate}
         >
           <motion.p
             className="ctc-apply-4-header"
-            initial={{
-              opacity: 0,
-              x: -200,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            exit={{
-              opacity: 0,
-              x: 200,
-            }}
-            viewport={{ once: true }}
+            variants={animationConfigs.transformX(-200, 200)}
             transition={{
-              duration: loaded ? 0.5 : 0.75,
-              delay: loaded ? 0 : 0.5,
-              type: "spring",
+              ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5),
               damping: 15,
             }}
+            {...animationStates.whileInView(true)}
           >
             Application Timeline
           </motion.p>
           <motion.p
             className="ctc-apply-4-p"
-            initial={{
-              opacity: 0,
-              x: 200,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            exit={{
-              opacity: 0,
-              x: 200,
-            }}
-            viewport={{ once: true }}
+            variants={animationConfigs.transformX(200, 200)}
             transition={{
-              duration: loaded ? 0.5 : 0.75,
-              delay: loaded ? 0 : 0.5,
-              type: "spring",
+              ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5),
               damping: 15,
             }}
+            {...animationStates.whileInView(true)}
           >
             All applicants will go through the same process, regardless of the
             role they&apos;re applying for. Keep reading for a brief timeline of
             our application process.
             <span className="ctc-apply-4-bold"> Have any questions? </span>
-            Reach out to us on any of our social platforms or email us at{" "}
-            {inlineEmail}.
+            Reach out to us on any of our social platforms or email us at
+            {' '}
+            {inlineEmail}
+            .
           </motion.p>
           <motion.div
             className="ctc-apply-4-timeline-container"
-            initial={{
-              height: 0,
-              opacity: 0,
-            }}
-            whileInView={{
-              height: "auto",
-              opacity: 1,
-            }}
-            exit={{
-              height: 0,
-              opacity: 0,
-            }}
-            viewport={{ once: true }}
+            variants={animationConfigs.height(0, 'auto', 0)}
             transition={{
-              duration: loaded ? 0.5 : 1,
-              type: "spring",
+              ...transitionConfigs.spring(loaded ? 0.5 : 1),
               damping: 15,
             }}
+            {...animationStates.whileInView(true)}
           >
             <VerticalTimeline timelineValues={timelineValues} />
           </motion.div>
           <div className="ctc-apply-4-buttons">
-            <a
-              // href={null}
+            {/* <a
               href={applicationLink}
               target="_blank"
               rel="noopener noreferrer"
               className="ctc-apply-4-applink"
-              // className="ctc-apply-4-applink-disabled"
-            >
-              <div className="ctc-apply-4-apply">Apply Now</div>
-              {/* <div className="ctc-apply-4-apply-disabled">
+            > */}
+            <span className="ctc-apply-4-applink-disabled">
+              {/* <div className="ctc-apply-4-apply">Apply Now</div> */}
+              <div className="ctc-apply-4-apply-disabled">
                 {width > 850
-                  ? "The 2022-23 application opens September 18th!"
-                  : "Check back on September 18th!"}
-              </div> */}
-            </a>
+                  ? 'The 2022-23 application closed September 30th!'
+                  : 'Check back at a later date!'}
+              </div>
+            </span>
+            {/* </a> */}
           </div>
         </motion.div>
         <div className="ctc-apply-5-bg">
           <motion.div
             className="ctc-apply-5-top"
-            initial={{
-              opacity: 0,
-              scaleY: 0,
-            }}
-            whileInView={{
-              opacity: 1,
-              scaleY: 1,
-            }}
-            exit={{
-              opacity: 0,
-              scaleY: 0,
-            }}
-            viewport={{ once: true }}
-            transition={{
-              duration: loaded ? 0.5 : 0.75,
-              delay: loaded ? 0 : 0.5,
-            }}
+            variants={animationConfigs.scaleY(0, 0)}
+            transition={transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5)}
+            {...animationStates.whileInView(true)}
           >
             <p className="ctc-apply-5-header">Got Questions?</p>
           </motion.div>
           <motion.div
             className="ctc-apply-5-faq-container"
-            initial={{
-              opacity: 0,
-              y: "20%",
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            exit={{
-              opacity: 0,
-              y: "-20%",
-            }}
-            viewport={{ once: true }}
+            variants={animationConfigs.transformY('20%', '-20%')}
             transition={{
-              duration: loaded ? 0.5 : 0.75,
-              delay: loaded ? 0 : 0.5,
-              type: "spring",
+              ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5),
               damping: 15,
             }}
+            {...animationStates.whileInView(true)}
           >
             <div className="ctc-apply-5-q-container">
               {questionData.current.map((q, index) => (
