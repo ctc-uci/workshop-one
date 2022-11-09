@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { animationConfigs, animationStates, transitionConfigs } from '../animationConstants';
 
 import membersData from './members';
@@ -34,19 +34,21 @@ const mapMembersToCards = (members) => (
         <p className="ctc-ourteam-card-name">{member.name}</p>
         <div className="ctc-ourteam-card-bottom-row">
           <p className="ctc-ourteam-card-pos">{member.position}</p>
-          <a
-            className="ctc-ourteam-card-link"
-            href={member.linkedinURL}
-            target="_blank noreferrer noopener"
-          >
-            <img
-              alt={`${member.name} LinkedIn`}
-              className="ctc-ourteam-card-linkedin"
-              src={LinkedIn}
-            />
-          </a>
+          {member.linkedinURL.length !== 0 && (
+            <a
+              className="ctc-ourteam-card-link"
+              href={member.linkedinURL}
+              target="_blank noreferrer noopener"
+            >
+              <img
+                alt={`${member.name} LinkedIn`}
+                className="ctc-ourteam-card-linkedin"
+                src={LinkedIn}
+              />
+            </a>
+          )}
         </div>
-        <div className="ctc-ourteam-card-overlay" />
+        <div className={`${member.linkedinURL.length === 0 ? 'no-linkedin-overlay ' : ''}ctc-ourteam-card-overlay`} />
       </motion.div>
     ))}
   </motion.div>
