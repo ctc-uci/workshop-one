@@ -55,13 +55,12 @@ import michelleblin from '../../../images/ourTeam/memberImages/michelleblin.jpg'
 import kristenyee from '../../../images/ourTeam/memberImages/kristenyee.jpg';
 import kevinliu from '../../../images/ourTeam/memberImages/kevinliu.png';
 import rachel from '../../../images/ourTeam/memberImages/rachel.jpg';
-import claire from '../../../images/ourTeam/memberImages/claire.jpg';
+// import claire from '../../../images/ourTeam/memberImages/claire.jpg';
 import mandy from '../../../images/ourTeam/memberImages/mandy.jpg';
 import myron from '../../../images/ourTeam/memberImages/myron_zhou_.jpg';
-
 import ostend from '../../../images/ourTeam/memberImages/ostend.png';
 import rayan from '../../../images/ourTeam/memberImages/rayan.jpg';
-import mia from '../../../images/ourTeam/memberImages/mia.jpg';
+// import mia from '../../../images/ourTeam/memberImages/mia.jpg';
 import matthewc from '../../../images/ourTeam/memberImages/matthewc.jpg';
 import maithyle from '../../../images/ourTeam/memberImages/maithyle.jpg';
 import jackie from '../../../images/ourTeam/memberImages/jackie.jpg';
@@ -217,12 +216,12 @@ const members = {
         linkedinURL: 'https://www.linkedin.com/in/kristencyee/',
         imageURL: kristenyee,
       },
-      {
-        name: 'Mia Schroeder',
-        position: 'Developer',
-        linkedinURL: 'https://www.linkedin.com/in/mia-schroeder/',
-        imageURL: mia,
-      },
+      // {
+      //   name: 'Mia Schroeder',
+      //   position: 'Developer',
+      //   linkedinURL: 'https://www.linkedin.com/in/mia-schroeder/',
+      //   imageURL: mia,
+      // },
       {
         name: 'Michael Pien',
         position: 'Developer',
@@ -431,12 +430,12 @@ const members = {
         linkedinURL: 'https://www.linkedin.com/in/cguzylak/',
         imageURL: carly,
       },
-      {
-        name: 'Claire Xia',
-        position: 'Developer',
-        linkedinURL: '',
-        imageURL: claire,
-      },
+      // {
+      //   name: 'Claire Xia',
+      //   position: 'Developer',
+      //   linkedinURL: '',
+      //   imageURL: claire,
+      // },
       {
         name: 'Emmy Chen',
         position: 'Developer',
