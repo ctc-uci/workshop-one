@@ -69,7 +69,7 @@ import kory from '../../../images/ourTeam/memberImages/kory.jpg';
 import kyled from '../../../images/ourTeam/memberImages/kyled.jpg';
 import ted from '../../../images/ourTeam/memberImages/ted.jpg';
 import sienna from '../../../images/ourTeam/memberImages/sienna.jpg';
-import tannvi from '../../../images/ourTeam/memberImages/tannvi.jpg';
+// import tannvi from '../../../images/ourTeam/memberImages/tannvi.jpg';
 // --- ------- ---
 
 // Note for bootcamp task: The members attribute of each section is an ordered list.
@@ -383,12 +383,12 @@ const members = {
         linkedinURL: 'https://www.linkedin.com/in/subin-kim-bba754180/',
         imageURL: subin,
       },
-      {
-        name: 'Tannvi Banerjee',
-        position: 'Developer',
-        linkedinURL: 'https://www.linkedin.com/in/tannvi-banerjee/',
-        imageURL: tannvi,
-      },
+      // {
+      //   name: 'Tannvi Banerjee',
+      //   position: 'Developer',
+      //   linkedinURL: 'https://www.linkedin.com/in/tannvi-banerjee/',
+      //   imageURL: tannvi,
+      // },
       {
         name: 'Ted Kim',
         position: 'Developer',

@@ -9,17 +9,17 @@ import Footer from '../../components/Footer/Footer';
 
 import './OurTeam.css';
 
-const mapMembersToCards = (members) => (
+const mapMembersToCards = (members, tab) => (
   <motion.div
     className="ctc-ourteam-cards"
     key={members}
     variants={animationConfigs.transformX(-500, 500)}
-    transition={transitionConfigs.simple(0.5)}
+    transition={transitionConfigs.simple(0.3)}
     {...animationStates.animate}
   >
     {members?.map((member) => (
       <motion.div
-        key={`card-${member.name}`}
+        key={`card-${member.name}-${tab}`}
         className="ctc-ourteam-card"
         initial={{ x: -10, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -132,7 +132,7 @@ const OurTeam = () => {
           </div>
           <AnimatePresence exitBeforeEntry>
             <div className="ctc-ourteam-centered-container">
-              {mapMembersToCards(currentMembers)}
+              {mapMembersToCards(currentMembers, currentTab)}
             </div>
           </AnimatePresence>
         </div>

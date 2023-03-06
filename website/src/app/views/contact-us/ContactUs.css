@@ -17,7 +17,6 @@
   min-height: calc(100% - 300px);
   color: white;
   text-align: center;
-  overflow: auto;
 }
 
 .contact-footer.contact-footer {
