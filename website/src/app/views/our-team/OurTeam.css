@@ -85,6 +85,7 @@
   text-align: center;
   margin: 25px 30px;
   font-size: 16px;
+  letter-spacing: -0.01em;
   line-height: 24px;
   max-height: 260px;
   flex: 0 0 260px;
@@ -147,7 +148,26 @@
   position: relative;
   width: 28px;
   padding-bottom: 5px;
+  top: -1%;
+  left: -4%;
   bottom: 4.4%;
+  z-index: 5;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.ctc-ourteam-card-globe {
+  color: var(--light-pink);
+  position: relative;
+  width: 24px;
+  padding-bottom: 9px;
+  top: 5%;
+  bottom: 4.4%;
+  left: -3%;
   z-index: 5;
   -webkit-user-select: none;
   -khtml-user-select: none;

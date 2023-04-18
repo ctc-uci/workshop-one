@@ -100,7 +100,7 @@ const members = {
       {
         name: 'Alan Chang',
         position: 'Technical Director',
-        linkedinURL: 'https://www.linkedin.com/in/acxyz/',
+        linkedinURL: 'https://www.alanchang.xyz',
         imageURL: alan,
       },
       {

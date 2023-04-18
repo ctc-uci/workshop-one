@@ -25,23 +25,19 @@ const App = () => {
   return (
     <>
       <div className="App">
-        <div className="page-container">
-          <div className="content-wrap">
-            <Nav />
-            <AnimatePresence exitBeforeEnter>
-              <Routes key={location.pathname} location={location}>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/apply" element={<Apply />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path="/discord" element={<Redirect url="https://discord.gg/bNTTT83Kgk" />} />
-                <Route path="*" element={<Redirect url="/" />} />
-              </Routes>
-            </AnimatePresence>
-          </div>
-        </div>
+        <Nav />
+        <AnimatePresence exitBeforeEnter>
+          <Routes key={location.pathname} location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/apply" element={<Apply />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/discord" element={<Redirect url="https://discord.gg/bNTTT83Kgk" />} />
+            <Route path="*" element={<Redirect url="/" />} />
+          </Routes>
+        </AnimatePresence>
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { AnimatePresence, motion } from 'framer-motion';
+import { Globe } from "react-feather";
 import { animationConfigs, animationStates, transitionConfigs } from '../animationConstants';
 
 import membersData from './members';
@@ -40,11 +41,15 @@ const mapMembersToCards = (members, tab) => (
               href={member.linkedinURL}
               target="_blank noreferrer noopener"
             >
-              <img
-                alt={`${member.name} LinkedIn`}
-                className="ctc-ourteam-card-linkedin"
-                src={LinkedIn}
-              />
+              {member.linkedinURL.includes('linkedin.com') ? (
+                <img
+                  alt={`${member.name} LinkedIn`}
+                  className="ctc-ourteam-card-linkedin"
+                  src={LinkedIn}
+                />
+              ) : (
+                <Globe className="ctc-ourteam-card-globe" />
+              )}
             </a>
           )}
         </div>
