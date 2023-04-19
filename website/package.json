@@ -15,7 +15,8 @@
     "react-ga4": "^2.1.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "webpack": "^5.79.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -69,5 +70,6 @@
     "husky": "^4.3.0",
     "lint-staged": "^13.2.1",
     "typescript": "^5.0.3"
-  }
+  },
+  "packageManager": "yarn@3.5.0"
 }
