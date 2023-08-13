@@ -69,7 +69,7 @@ const Footer = ({ className }) => {
                 className="social-logos"
               />
             </a>
-            <a
+            {/* <a
               href="https://medium.com/@committhechange.uci"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Footer = ({ className }) => {
                 alt="medium logo"
                 className="social-logos-medium social-logos"
               />
-            </a>
+            </a> */}
           </div>
           <div className="right-column">
             <div className="inner-right">

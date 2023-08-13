@@ -72,7 +72,7 @@ html {
   border-radius: 5px;
   margin: 30px 30px 50px 30px;
   background-color: white;
-  box-shadow: 0px 4px 15px rgba(237, 49, 93, 0.3);
+  box-shadow: 0px 4px 10px 3px rgba(25, 22, 30, 0.29);
 }
 
 .ctc-ourwork-past-projects-card-img-container {
@@ -228,4 +228,36 @@ html {
   .ctc-ourwork-past-projects-card-text {
     padding: 0 22px;
   }
+}
+
+/* TEMPORARY */
+.ctc-ourwork-comingsoon-box {
+  width: 554px;
+  height: 131px;
+  background: var(--dark-purple);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: space-between;
+  padding: 5px 15px;
+  margin-bottom: 20px
+}
+
+.ctc-ourwork-comingsoon-p {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.ctc-ourwork-comingsoon-logo {
+  width: 60px;
+  height: auto;
 }

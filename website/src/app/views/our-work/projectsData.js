@@ -14,6 +14,10 @@ import pnp from '../../../images/nonprofits/Patriots-and-Paws.png';
 
 const projects = {
   active: [
+    
+
+  ],
+  inactive: [
     {
       start: 'Fall 2022',
       end: 'Spring 2023',
@@ -22,7 +26,7 @@ const projects = {
       projectName: 'Get Inspired',
       description:
         'We will be building a new database system for them to better organize and report their Pismo Clam restoration data!',
-      projectURL: '',
+      projectURL: 'https://github.com/ctc-uci/get-inspired/',
       npoURL: 'https://getinspiredinc.org/',
     },
     {
@@ -33,7 +37,7 @@ const projects = {
       projectName: 'Cell Dogs',
       description:
         'We will be creating a canine tracker for them to manage their trainee dogs in correctional programs and adoption!',
-      projectURL: '',
+      projectURL: 'https://github.com/ctc-uci/cell-dogs/',
       npoURL: 'https://celldogs.org/',
     },
     {
@@ -44,12 +48,9 @@ const projects = {
       projectName: 'Patriots and Paws',
       description:
         'We will be designing a system for them to manage and schedule pickups for their furniture donations for veterans!',
-      projectURL: '',
+      projectURL: 'https://github.com/ctc-uci/patriots-and-paws/',
       npoURL: 'https://patriotsandpaws.org/',
     },
-
-  ],
-  inactive: [
     {
       start: 'Fall 2021',
       end: 'Spring 2022',

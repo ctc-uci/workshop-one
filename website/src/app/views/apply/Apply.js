@@ -83,9 +83,8 @@ const Apply = () => {
               {...animationStates.animate}
             >
               We recruit new developers and designers at the beginning of every year!
-              Apply to join our team as a designer or developer for the
-              &apos;22-23 school year - applications open September 18th
-              and close September 30th.
+              Apply to join our team for the
+              &apos;23-24 school year- applications open <b>early September</b>.
             </motion.p>
             <motion.div
               className="ctc-apply-1-buttons"
@@ -99,14 +98,14 @@ const Apply = () => {
                 rel="noopener noreferrer"
                 className="ctc-apply-1-applink"
               > */}
-              <span className="ctc-apply-1-applink-disabled">
-                {/* <div className="ctc-apply-1-apply">Apply Now</div> */}
+              {/* <span className="ctc-apply-1-applink-disabled">
+                <div className="ctc-apply-1-apply">Apply Now</div>
                 <div className="ctc-apply-1-apply-disabled">
                   {width > 850
                     ? 'The 2022-23 application closed September 30th!'
                     : 'Check back at a later date!'}
                 </div>
-              </span>
+              </span> */}
               {/* </a> */}
             </motion.div>
           </div>
@@ -240,6 +239,8 @@ const Apply = () => {
           </motion.div>
         </div>
         <motion.div
+          style={{ display: 'none' }}
+
           className="ctc-apply-4-bg"
           variants={animationConfigs.opacity(1, 0)}
           transition={{

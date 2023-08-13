@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 
 import projects from './projectsData';
 import { animationConfigs, animationStates, transitionConfigs } from '../animationConstants';
+import ctcLogo from '../../../images/logo/white-ctc.svg';
 
 const pastProjects = projects.inactive.map((project) => (
   <motion.div
@@ -78,7 +79,7 @@ const OurWork = () => {
           }}
           {...animationStates.whileInView(true)}
         >
-          2022-2023 Projects
+          2023-2024 Projects
         </motion.p>
         <div className="ctc-ourwork-centered-container">
           <motion.div
@@ -91,6 +92,11 @@ const OurWork = () => {
             }}
             {...animationStates.whileInView(true)}
           >
+            {/* TEMPORARY */}
+            <div className="ctc-ourwork-comingsoon-box">
+              <img className="ctc-ourwork-comingsoon-logo" src={ctcLogo} alt="CTC Logo" />
+              <p className="ctc-ourwork-comingsoon-p">Check back this Fall to see our upcoming projects!</p>
+            </div>
             {projects.active.map((project) => <ProjectCard key={project.projectName} {...project} />)}
           </motion.div>
         </div>
