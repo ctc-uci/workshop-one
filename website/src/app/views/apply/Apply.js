@@ -240,7 +240,6 @@ const Apply = () => {
         </div>
         <motion.div
           style={{ display: 'none' }}
-
           className="ctc-apply-4-bg"
           variants={animationConfigs.opacity(1, 0)}
           transition={{

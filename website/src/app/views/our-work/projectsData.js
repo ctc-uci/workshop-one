@@ -14,8 +14,6 @@ import pnp from '../../../images/nonprofits/Patriots-and-Paws.png';
 
 const projects = {
   active: [
-    
-
   ],
   inactive: [
     {

@@ -157,8 +157,8 @@ const members = {
         linkedinURL: 'https://www.linkedin.com/in/minhtnguy/',
         imageURL: minh,
       },
-    ]
-  }
+    ],
+  },
 };
 
 export default members;
