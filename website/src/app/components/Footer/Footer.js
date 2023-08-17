@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import ctcLogo from '../../../images/logo/white-ctc.svg';
 import iglogo from '../../../images/nav/ig.svg';
 import fblogo from '../../../images/nav/fb.svg';
-// import mediumlogo from '../../../images/nav/md.svg';
 import linkedinlogo from '../../../images/nav/li.svg';
 import maillogo from '../../../images/nav/mail.svg';
 
@@ -69,17 +68,6 @@ const Footer = ({ className }) => {
                 className="social-logos"
               />
             </a>
-            {/* <a
-              href="https://medium.com/@committhechange.uci"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={mediumlogo}
-                alt="medium logo"
-                className="social-logos-medium social-logos"
-              />
-            </a> */}
           </div>
           <div className="right-column">
             <div className="inner-right">

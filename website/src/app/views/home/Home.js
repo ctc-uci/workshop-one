@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import maillogo from '../../../images/home/mail.svg';
 import fblogo from '../../../images/home/fb.svg';
 import instagramlogo from '../../../images/home/ig.svg';
-import mediumlogo from '../../../images/home/md.svg';
 import linkedinlogo from '../../../images/home/li.svg';
+import ctcLogo from '../../../images/logo/white-ctc.svg';
 
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import Footer from '../../components/Footer/Footer';
@@ -69,23 +69,6 @@ const Home = () => {
           <img src={linkedinlogo} alt="linkedin logo" className="ctc-home-4-social-logo" />
         </div>
         <p className="ctc-home-4-social-title">Linkedin</p>
-      </a>
-    </div>,
-    <div className="ctc-home-4-social-container" key="medium">
-      <a
-        href="https://medium.com/@committhechange.uci"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="ctc-home-4-social-link"
-      >
-        <div className="ctc-home-4-social-img-container">
-          <img
-            src={mediumlogo}
-            alt="medium logo"
-            className="ctc-home-4-medium-logo"
-          />
-        </div>
-        <p className="ctc-home-4-social-title">Medium</p>
       </a>
     </div>,
   ];
@@ -238,6 +221,10 @@ const Home = () => {
           Current Projects
         </motion.h1>
         <div className="ctc-home-3-projects-container">
+          <div className="ctc-ourwork-comingsoon-box">
+            <img className="ctc-ourwork-comingsoon-logo" src={ctcLogo} alt="CTC Logo" />
+            <p className="ctc-ourwork-comingsoon-p">Check back this Fall to see our upcoming projects!</p>
+          </div>
           {projectData.active.map((p) => <ProjectCard key={p.projectName} {...p} />)}
         </div>
         <motion.div

@@ -6,7 +6,6 @@ import { animationConfigs, animationStates, transitionConfigs } from '../animati
 import Portfolio from '../../../CTC_Portfolio_2022_2023.pdf';
 import iglogo from '../../../images/contactUs/ig.svg';
 import fblogo from '../../../images/contactUs/fb.svg';
-import mediumlogo from '../../../images/contactUs/md.svg';
 import linkedinlogo from '../../../images/contactUs/li.svg';
 import maillogo from '../../../images/contactUs/mail.svg';
 
@@ -31,12 +30,6 @@ const SocialMediaIcons = () => {
       image: iglogo,
       link: 'https://www.instagram.com/ctc.uci/',
       special: false,
-    },
-    {
-      name: 'Medium',
-      image: mediumlogo,
-      link: 'https://medium.com/@committhechange.uci',
-      special: 'ctc-contact-2-medium-img',
     },
     {
       name: 'LinkedIn',

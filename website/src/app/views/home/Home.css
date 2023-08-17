@@ -226,7 +226,7 @@
   margin-left: 4%;
   height: 450px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* TEMPORARY space-between; */
 }
 
 .ctc-home-3-projects-container .project-card {
@@ -761,4 +761,36 @@
     padding-left: 1px;
     margin-bottom: 8%;
   }
+}
+
+/* TEMPORARY */
+.ctc-ourwork-comingsoon-box {
+  width: 554px;
+  height: 131px;
+  background: var(--dark-purple);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: space-between;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+}
+
+.ctc-ourwork-comingsoon-p {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.ctc-ourwork-comingsoon-logo {
+  width: 60px;
+  height: auto;
 }
