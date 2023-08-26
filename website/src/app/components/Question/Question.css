@@ -63,15 +63,15 @@
 
 @media (prefers-reduced-motion: no-preference) {  
   .expand-symbol-hidden{
+    transform: rotate(-90deg);
     opacity: 0;
-    transform: rotate(-45deg);
-    transition: 0.15s;
-    transition-timing-function: cubic-bezier(.57,-1.1,.58,2.04);
+    transition: 0.225s;
+    transition-timing-function: cubic-bezier(.6,-1.3,.6,3.0);
   }
 
   .expand-symbol-shown{
     opacity: 1;
-    transition: 0.175s;
+    transition: 0.25s;
   }
 }
 

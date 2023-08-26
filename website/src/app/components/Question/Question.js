@@ -43,8 +43,8 @@ const Question = ({
         className="top-half"
       >
         <div className="symbol">
-          <span className={`expand-symbol ${expanded ? 'expand-symbol-shown' : 'expand-symbol-hidden'}`}>+</span>
-          <span className={`expand-symbol ${expanded ? 'expand-symbol-hidden' : 'expand-symbol-shown'}`}>-</span>
+          <span className={`expand-symbol ${expanded ? 'expand-symbol-hidden' : 'expand-symbol-shown'}`}>+</span>
+          <span className={`expand-symbol ${expanded ? 'expand-symbol-shown' : 'expand-symbol-hidden'}`}>-</span>
         </div>
         <h2
           style={expanded ? { color: '#ed315d' } : null}
