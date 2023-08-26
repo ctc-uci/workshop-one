@@ -22,6 +22,8 @@ const pastProjects = projects.inactive.map((project) => (
       <div
         className="ctc-ourwork-past-projects-card-img"
         style={{ backgroundImage: `url(${project.src})` }}
+        role="img"
+        aria-label=""
       />
     </div>
     <div className="ctc-ourwork-past-projects-card-text">
@@ -47,7 +49,7 @@ const pastProjects = projects.inactive.map((project) => (
       <div className="ctc-ourwork-past-projects-card-buttons-div">
         <a href={project.projectURL} target="_blank" rel="noopener noreferrer">
           <div className="ctc-ourwork-past-projects-card-github-button">
-            Github
+            GitHub
           </div>
         </a>
         {/* <div className="ctc-ourwork-past-projects-card-case-study-button">
@@ -94,7 +96,7 @@ const OurWork = () => {
           >
             {/* TEMPORARY */}
             <div className="ctc-ourwork-comingsoon-box">
-              <img className="ctc-ourwork-comingsoon-logo" src={ctcLogo} alt="CTC Logo" />
+              <img className="ctc-ourwork-comingsoon-logo" src={ctcLogo} alt="" />
               <p className="ctc-ourwork-comingsoon-p">Check back this Fall to see our upcoming projects!</p>
             </div>
             {projects.active.map((project) => <ProjectCard key={project.projectName} {...project} />)}

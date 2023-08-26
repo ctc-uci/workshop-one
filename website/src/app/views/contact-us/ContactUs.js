@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Footer from '../../components/Footer/Footer';
 import { animationConfigs, animationStates, transitionConfigs } from '../animationConstants';
 
-import Portfolio from '../../../CTC_Portfolio_2022_2023.pdf';
+import Portfolio from '../../../CTC_Portfolio_2023_2024.pdf';
 import iglogo from '../../../images/contactUs/ig.svg';
 import fblogo from '../../../images/contactUs/fb.svg';
 import linkedinlogo from '../../../images/contactUs/li.svg';
@@ -18,6 +18,7 @@ const SocialMediaIcons = () => {
       image: maillogo,
       link: 'mailto:ctc@uci.edu',
       special: 'ctc-contact-2-email-img',
+      alt: 'Send an Email to CTC',
     },
     {
       name: 'Facebook',
@@ -47,11 +48,12 @@ const SocialMediaIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="ctc-contact-2-social-link"
+          aria-label={card.alt ? card.alt : `Go to CTC's ${card.name}`}
         >
           <div className="ctc-contact-2-social-card">
             <img
               src={card.image}
-              alt={`CTC ${card.name}`}
+              alt=""
               className={
                 card.special ? card.special : 'ctc-contact-2-social-img'
               }
@@ -74,7 +76,7 @@ const ContactUs = () => {
   }, []);
 
   const inlineEmail = (
-    <a href="mailto:ctc@uci.edu" className="ctc-contact-1-email-link">
+    <a href="mailto:ctc@uci.edu" className="ctc-contact-1-email-link" aria-label="Send an Email to CTC">
       ctc@uci.edu
     </a>
   );

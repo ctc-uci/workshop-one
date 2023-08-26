@@ -11,17 +11,20 @@ import iglogo from '../../../images/nav/ig.svg';
 import fblogo from '../../../images/nav/fb.svg';
 import linkedinlogo from '../../../images/nav/li.svg';
 import maillogo from '../../../images/nav/mail.svg';
+import { getPageLinkInfo } from '../../../util/utils';
 
 const Nav = () => {
   const { width } = useViewport();
   const [open, toggleVisibility] = useState(false);
   const location = useLocation();
+
   const isActiveLink = (pathname) => (location.pathname === pathname
     ? 'navbar-active-link navbar-link'
     : 'navbar-link');
   const isActiveMobileLink = (pathname) => (location.pathname === pathname
     ? 'mobile-nav-active-link mobile-nav-link'
     : 'mobile-nav-link');
+
   return (
     <motion.nav
       className="nav-bar"
@@ -29,8 +32,13 @@ const Nav = () => {
       transition={transitionConfigs.simple(0.5, 0.25)}
       {...animationStates.animate}
     >
-      <Link to="/">
-        <div className="navbar-logo" />
+      <Link
+        to="/"
+        onClick={() => {
+          if (location.pathname === '/') { document.querySelector('main').firstChild.scrollTo({ top: 0, behavior: 'smooth' }); }
+        }}
+      >
+        <div className="navbar-logo" role="img" aria-label="Commit the Change Home" />
       </Link>
       {width > 850 ? (
         <motion.div
@@ -39,7 +47,21 @@ const Nav = () => {
           transition={transitionConfigs.simple(0.25)}
           {...animationStates.animate}
         >
-          <Link className={isActiveLink('/about')} to="/about">
+          {
+            getPageLinkInfo().map(([linkPath, linkPageName, onClickListener]) => (
+              linkPath === '/' ? null : (
+                <Link
+                  key={linkPageName}
+                  to={linkPath}
+                  onClick={onClickListener}
+                  className={isActiveLink(linkPath)}
+                >
+                  { (linkPath === '/apply') ? <div className="navbar-apply-button">Apply</div> : linkPageName }
+                </Link>
+              )
+            ))
+          }
+          {/* <Link className={isActiveLink('/about')} to="/about">
             About Us
           </Link>
           <Link className={isActiveLink('/projects')} to="/projects">
@@ -53,7 +75,7 @@ const Nav = () => {
           </Link>
           <Link className="navbar-link" to="/apply">
             <div className="navbar-apply-button">Apply</div>
-          </Link>
+          </Link> */}
         </motion.div>
       ) : (
         <AnimatePresence exitBeforeEnter>
@@ -83,48 +105,18 @@ const Nav = () => {
                 {...animationStates.animate}
               >
                 <div className="mobile-nav-links">
-                  <Link
-                    onClick={() => toggleVisibility(false)}
-                    className={isActiveMobileLink('/')}
-                    to="/"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    onClick={() => toggleVisibility(false)}
-                    className={isActiveMobileLink('/about')}
-                    to="/about"
-                  >
-                    About Us
-                  </Link>
-                  <Link
-                    onClick={() => toggleVisibility(false)}
-                    className={isActiveMobileLink('/projects')}
-                    to="/projects"
-                  >
-                    Projects
-                  </Link>
-                  <Link
-                    onClick={() => toggleVisibility(false)}
-                    className={isActiveMobileLink('/contact')}
-                    to="/contact"
-                  >
-                    Contact
-                  </Link>
-                  <Link
-                    onClick={() => toggleVisibility(false)}
-                    className={isActiveMobileLink('/team')}
-                    to="/team"
-                  >
-                    Our Team
-                  </Link>
-                  <Link
-                    onClick={() => toggleVisibility(false)}
-                    className="mobile-nav-link"
-                    to="/apply"
-                  >
-                    <div className="navbar-apply-button">Apply</div>
-                  </Link>
+                  {
+                    getPageLinkInfo().map(([linkPath, linkPageName, onClickListener]) => (
+                      <Link
+                        key={linkPageName}
+                        to={linkPath}
+                        onClick={() => { onClickListener(); return toggleVisibility(false); }}
+                        className={isActiveMobileLink(linkPath)}
+                      >
+                        { (linkPath === '/apply') ? <div className="navbar-apply-button">Apply</div> : linkPageName }
+                      </Link>
+                    ))
+                  }
                 </div>
                 <button
                   type="button"
@@ -144,7 +136,7 @@ const Nav = () => {
                       <img
                         className="mobile-nav-footer-logo"
                         src={ctcLogo}
-                        alt="ctc logo"
+                        alt="Commit the Change Home"
                       />
                     </Link>
                   </div>
@@ -153,7 +145,7 @@ const Nav = () => {
                     <a href="mailto:ctc@uci.edu" target="_top">
                       <img
                         src={maillogo}
-                        alt="email icon"
+                        alt="Send CTC an email"
                         className="mobile-nav-mail-icon mobile-nav-social-icon"
                       />
                     </a>
@@ -164,7 +156,7 @@ const Nav = () => {
                     >
                       <img
                         src={fblogo}
-                        alt="facebook logo"
+                        alt="Visit CTC's Facebook"
                         className="mobile-nav-social-icon"
                       />
                     </a>
@@ -175,7 +167,7 @@ const Nav = () => {
                     >
                       <img
                         src={iglogo}
-                        alt="instagram logo"
+                        alt="Visit CTC's Instagram"
                         className="mobile-nav-social-icon"
                       />
                     </a>
@@ -186,7 +178,7 @@ const Nav = () => {
                     >
                       <img
                         src={linkedinlogo}
-                        alt="linkedin logo"
+                        alt="Visit CTC's LinkedIn"
                         className="mobile-nav-social-icon"
                       />
                     </a>

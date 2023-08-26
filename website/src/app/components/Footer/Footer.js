@@ -12,6 +12,7 @@ import maillogo from '../../../images/nav/mail.svg';
 import useViewport from '../../../util/useViewport';
 import { transitionConfigs } from '../../views/animationConstants';
 import './Footer.css';
+import { getPageLinkInfo } from '../../../util/utils';
 
 const Footer = ({ className }) => {
   const { width } = useViewport();
@@ -34,12 +35,12 @@ const Footer = ({ className }) => {
             </div>
           </div>
           <div className="middle-column">
-            <img className="footer-logo" src={ctcLogo} alt="ctc logo" />
+            <img className="footer-logo" src={ctcLogo} alt="Commit the Change's Logo" />
             <h2>Tech with Purpose.</h2>
             <a href="mailto:ctc@uci.edu" target="_top">
               <img
                 src={maillogo}
-                alt="email icon"
+                alt="Send CTC an email"
                 className="social-logos-mail social-logos"
               />
             </a>
@@ -48,14 +49,14 @@ const Footer = ({ className }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={fblogo} alt="facebook logo" className="social-logos" />
+              <img src={fblogo} alt="Visit CTC's Facebook" className="social-logos" />
             </a>
             <a
               href="https://www.instagram.com/ctc.uci/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={iglogo} alt="instagram logo" className="social-logos" />
+              <img src={iglogo} alt="Visit CTC's Instagram" className="social-logos" />
             </a>
             <a
               href="https://www.linkedin.com/company/commit-the-change-uci/"
@@ -64,31 +65,18 @@ const Footer = ({ className }) => {
             >
               <img
                 src={linkedinlogo}
-                alt="linkedin logo"
+                alt="Visit CTC's LinkedIn"
                 className="social-logos"
               />
             </a>
           </div>
           <div className="right-column">
             <div className="inner-right">
-              <div className="footer-right-link">
-                <Link to="/">Home</Link>
-              </div>
-              <div className="footer-right-link">
-                <Link to="/about">About Us</Link>
-              </div>
-              <div className="footer-right-link">
-                <Link to="/projects">Projects</Link>
-              </div>
-              <div className="footer-right-link">
-                <Link to="/team">Our Team</Link>
-              </div>
-              <div className="footer-right-link">
-                <Link to="/contact">Contact</Link>
-              </div>
-              <div className="footer-right-link">
-                <Link to="/apply">Apply</Link>
-              </div>
+              { getPageLinkInfo().map(([linkPath, linkPageName, onClickListener]) => (
+                <div className="footer-right-link" key={linkPath}>
+                  <Link to={linkPath} onClick={onClickListener}>{linkPageName}</Link>
+                </div>
+              )) }
             </div>
           </div>
         </div>

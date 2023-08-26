@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, MotionConfig, useReducedMotion } from 'framer-motion';
 
 import Nav from './app/components/Navbar/Nav';
 import Redirect from './app/components/Redirect/Redirect';
@@ -21,22 +21,29 @@ const App = () => {
   ReactGA.initialize('G-BHJD57HXT8');
   ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
   const location = useLocation();
+  const prefersReducedMotion = useReducedMotion();
+
+  // (done this way to make it easier to wrap with AnimatePresence
+  //  only if the user does not prefer reduced motion)
+  const PageRoutes = (
+    <Routes key={location.pathname} location={location}>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/apply" element={<Apply />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/team" element={<Team />} />
+      <Route path="/contact" element={<ContactUs />} />
+      <Route path="/discord" element={<Redirect url="https://discord.gg/bNTTT83Kgk" />} />
+      <Route path="*" element={<Redirect url="/" />} />
+    </Routes>
+  );
 
   return (
     <div className="App">
-      <Nav />
-      <AnimatePresence exitBeforeEnter>
-        <Routes key={location.pathname} location={location}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/apply" element={<Apply />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/discord" element={<Redirect url="https://discord.gg/bNTTT83Kgk" />} />
-          <Route path="*" element={<Redirect url="/" />} />
-        </Routes>
-      </AnimatePresence>
+      <MotionConfig reducedMotion="user">
+        <Nav />
+        {prefersReducedMotion ? PageRoutes : <AnimatePresence exitBeforeEnter>{PageRoutes}</AnimatePresence>}
+      </MotionConfig>
     </div>
   );
 };
