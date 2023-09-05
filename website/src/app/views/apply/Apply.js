@@ -90,7 +90,7 @@ const Apply = () => {
             >
               We recruit new developers and designers at the beginning of every year!
               Apply to join our team for the
-              &apos;23-24 school year- applications open <b>early September</b>.
+              &apos;23-24 school year- applications open <b>late September</b>.
             </motion.p>
             <motion.div
               className="ctc-apply-1-buttons"
