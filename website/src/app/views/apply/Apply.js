@@ -26,8 +26,8 @@ const Apply = () => {
     return () => clearTimeout(load);
   }, []);
 
-  const designAppLink = 'https://forms.gle/dB7ycYwSnZsoB5d16';
-  const devAppLink = 'https://forms.gle/erPif4t7LJCzCJHy9';
+  const designAppLink = 'https://bit.ly/ctc-designer-app';
+  const devAppLink = 'https://bit.ly/ctc-developer-app';
   const contactEmail = 'ctc@uci.edu';
   const inlineEmail = (
     <a href={`mailto:${contactEmail}`} className="ctc-apply-email-link">
@@ -92,7 +92,7 @@ const Apply = () => {
             >
               We recruit new developers and designers at the beginning of every year!
               Apply to join our team for the
-              &apos;23-24 school year- <b>applications are open below!</b>
+              &apos;23-24 school year:<br /> <b>applications are open below and close October 3rd</b>!
             </motion.p>
             {/* <motion.div
               className="ctc-apply-1-buttons"
