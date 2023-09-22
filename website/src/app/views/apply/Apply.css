@@ -314,7 +314,7 @@ html {
 }
 
 .ctc-apply-4-p {
-  width: min(50ch, 90vw);
+  width: min(60ch, 90vw);
   margin-bottom: 1rem;
   font-family: Inter;
   font-size: 1.25rem;

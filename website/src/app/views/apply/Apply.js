@@ -92,7 +92,7 @@ const Apply = () => {
             >
               We recruit new developers and designers at the beginning of every year!
               Apply to join our team for the
-              &apos;23-24 school year- applications open <b>late September</b>.
+              &apos;23-24 school year- applications are <b>now open: apply below!</b>
             </motion.p>
             {/* <motion.div
               className="ctc-apply-1-buttons"
@@ -300,6 +300,21 @@ const Apply = () => {
           >
             <VerticalTimeline timelineValues={timelineValues} />
           </motion.div>
+          <motion.p
+            className="ctc-apply-4-p"
+            variants={animationConfigs.transformX(200, 200)}
+            transition={{
+              ...transitionConfigs.spring(loaded ? 0.5 : 0.75, loaded ? 0 : 0.5),
+              damping: 15,
+            }}
+            {...animationStates.whileInView(true)}
+          >
+            If you&apos;d like to learn more, come meet us in person!
+            <ul>
+              <li><b>Anteater Involvement Fair</b>: Come meet the club at AIF! Learn about what it means to be a CTC member and pick up some CTC swag.</li>
+              <li><b>Recruitment Events</b>: Join us at recruitment events & socials to meet the club and see if CTC is the right fit for you.</li>
+            </ul>
+          </motion.p>
           {/* <div className="ctc-apply-4-buttons">
             <a
               href={applicationLink}
