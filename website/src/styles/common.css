@@ -53,11 +53,25 @@ Commit the Change website environment styles.
   background: var(--light-purple); /* Gecko Browsers */
 }
 
-.common-button {
+.ctc-button,
+.ctc-button-disabled {
+  padding: 0.5rem 2.25rem;
+  text-decoration: none;
+  background-color: var(--dark-pink);
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.ctc-button-disabled {
+  cursor: not-allowed;
+  background-color: var(--light-pink);
+}
+
+/* .common-button {
   border-radius: 4px;
   font-size: 18px;
   color: white;
-  /* box-shadow: 0px 2px 4px rgb(0 0 0 / 50%); */
   font-weight: 500;
   line-height: 36px;
   text-decoration: none;
@@ -65,7 +79,7 @@ Commit the Change website environment styles.
   margin-top: 30px;
   width: 100px;
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 800px) {
   .top-panel {

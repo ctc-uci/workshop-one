@@ -79,22 +79,26 @@ html {
 
 .ctc-apply-1-bg {
   width: 100vw;
-  height: clamp(1000px, 70%, 70%);
-  max-height: calc(100vh - 60px);
+  height: 100vh;
   background-image: url("../../../images/apply/join.jpg");
   background-color: rgba(24, 9, 58, 0.3);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  display: grid;
+  place-items: center;
 }
 
 .ctc-apply-1-container {
-  height: 45%;
-  margin-top: 60px;
-  width: 60%;
-  margin-left: 20%;
+  height: 100%;
+  width: 100%;
+  max-width: 80ch;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .ctc-apply-1-header {
@@ -104,7 +108,6 @@ html {
   font-weight: 500;
   line-height: 48px;
   text-align: center;
-  padding-top: 25%;
   margin: 0;
   /* margin: 100px 0 0 0; */
 }
@@ -233,11 +236,6 @@ html {
   position: absolute;
   bottom: 0;
   font-size: 1.5rem;
-  padding: 0.5rem 2.25rem;
-  text-decoration: none;
-  background-color: var(--dark-pink);
-  color: white;
-  border-radius: 0.25rem;
 }
 
 .ctc-apply-2-column-image {
@@ -474,9 +472,6 @@ html {
     padding-top: 2px;
     font-size: 16px;
     line-height: 24px;
-  }
-  .ctc-apply-1-bg {
-    height: 500px;
   }
   .ctc-apply-1-container {
     width: 90%;

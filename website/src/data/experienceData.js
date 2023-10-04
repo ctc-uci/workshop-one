@@ -1,9 +1,9 @@
-import sydneyImage from '../../../images/apply/sydney.png';
-import sonaliImage from '../../../images/apply/sonali.png';
-import rostamImage from '../../../images/apply/rostam.jpeg';
-import janeImage from '../../../images/apply/jane.jpg';
-import mingjiaImage from '../../../images/apply/mingjia.jpg';
-import meghnaImage from '../../../images/apply/meghna.jpg';
+import sydneyImage from '../images/apply/sydney.png';
+import sonaliImage from '../images/apply/sonali.png';
+import rostamImage from '../images/apply/rostam.jpeg';
+import janeImage from '../images/apply/jane.jpg';
+import mingjiaImage from '../images/apply/mingjia.jpg';
+import meghnaImage from '../images/apply/meghna.jpg';
 
 const experiences = [
   {

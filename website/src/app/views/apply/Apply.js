@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { LayoutGroup, motion } from 'framer-motion';
 
-import experienceData from './experienceData';
-import questionData from '../contact-us/faq';
+import experienceData from '../../../data/experienceData';
+import questionData from '../../../data/faq';
+import applyData from '../../../data/applyData';
+import socialsData from '../../../data/socialsData';
 
 import './Apply.css';
 import { animationConfigs, animationStates, transitionConfigs } from '../animationConstants';
@@ -18,22 +20,15 @@ const Apply = () => {
   const [loaded, setLoaded] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const { width } = useViewport();
+
   const handleClick = (index) => setExpandedIndex(expandedIndex === index ? null : index);
+
   useEffect(() => {
     const load = setTimeout(() => {
       setLoaded(true);
     }, 750);
     return () => clearTimeout(load);
   }, []);
-
-  const designAppLink = 'https://bit.ly/ctc-designer-app';
-  const devAppLink = 'https://bit.ly/ctc-developer-app';
-  const contactEmail = 'ctc@uci.edu';
-  const inlineEmail = (
-    <a href={`mailto:${contactEmail}`} className="ctc-apply-email-link">
-      {contactEmail}
-    </a>
-  );
 
   const experiences = experienceData.map((e) => (
     <motion.div
@@ -65,7 +60,7 @@ const Apply = () => {
             Hacky solution for alt-text, but a good option given that the backgroud image is on the parent:
             see http://www.davidmacd.com/blog/alternate-text-for-css-background-images.html
           */}
-          <span role="img" aria-label="Groupshot of our amazing team. " />
+          {/* <span role="img" aria-label="Groupshot of our amazing team. " /> */}
 
           <div className="ctc-apply-1-container">
             <motion.p
@@ -91,8 +86,9 @@ const Apply = () => {
               {...animationStates.animate}
             >
               We recruit new developers and designers at the beginning of every year!
-              Apply to join our team for the
-              &apos;23-24 school year:<br /> <b>applications are open below and close October 3rd</b>!
+              Applications for the 23-24 school year closed on October 3rd.
+              <hr style={{ width: "40%" }} />
+              <b>Thank you so much to everyone that applied!</b> You will be hearing back from us very soon!
             </motion.p>
             {/* <motion.div
               className="ctc-apply-1-buttons"
@@ -178,7 +174,14 @@ const Apply = () => {
                   Use Figma to create your designs
                 </li>
               </ul>
-              <a target="_blank" className="ctc-apply-2-apply-button" href={designAppLink} rel="noreferrer">Apply Here!</a>
+              <a
+                target={applyData.applicationsOpen ? '_top' : '_blank'}
+                className={`${applyData.applicationsOpen ? 'ctc-button' : 'ctc-button-disabled'} ctc-apply-2-apply-button`}
+                href={applyData.designAppLink}
+                rel="noreferrer"
+              >
+                {applyData.applicationsOpen ? "Apply Here" : "Applications Closed"}
+              </a>
             </div>
             <div className="ctc-apply-2-separator" />
             <div className="ctc-apply-2-column">
@@ -223,7 +226,14 @@ const Apply = () => {
                   sustainable code
                 </li>
               </ul>
-              <a target="_blank" className="ctc-apply-2-apply-button" href={devAppLink} rel="noreferrer">Apply Here!</a>
+              <a
+                target={applyData.applicationsOpen ? '_top' : '_blank'}
+                className={`${applyData.applicationsOpen ? 'ctc-button' : 'ctc-button-disabled'} ctc-apply-2-apply-button`}
+                href={applyData.devAppLink}
+                rel="noreferrer"
+              >
+                {applyData.applicationsOpen ? "Apply Here" : "Applications Closed"}
+              </a>
             </div>
           </div>
         </motion.div>
@@ -286,7 +296,7 @@ const Apply = () => {
             <span className="ctc-apply-4-bold"> Have any questions? </span>
             Reach out to us on any of our social platforms or email us at
             {' '}
-            {inlineEmail}
+            {socialsData.email}
             .
           </motion.p>
           <motion.div

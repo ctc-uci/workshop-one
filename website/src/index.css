@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.ctc-button,
+.ctc-button-disabled {
+  padding: 0.5rem 2.25rem;
+  text-decoration: none;
+  background-color: var(--dark-pink);
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.ctc-button-disabled {
+  cursor: not-allowed;
+
+}

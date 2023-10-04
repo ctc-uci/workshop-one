@@ -17,6 +17,8 @@ import Projects from './app/views/our-work/OurWork';
 import Team from './app/views/our-team/OurTeam';
 import ContactUs from './app/views/contact-us/ContactUs';
 
+import './styles/common.css';
+
 const App = () => {
   ReactGA.initialize('G-BHJD57HXT8');
   ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
