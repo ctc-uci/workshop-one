@@ -70,7 +70,7 @@ const OurWork = () => {
   return (
     <main>
       <div className="ctc-ourwork-bg">
-        <CurrentProjectSection title="2023-20224 Projects" className="current-projects" />
+        <CurrentProjectSection title="2023-2024 Projects" className="current-projects" />
         <motion.p
           className="ctc-ourwork-past-projects-header"
           variants={animationConfigs.transformY(-50, -50)}
