@@ -8,9 +8,9 @@ import Redirect from "./app/components/Redirect/Redirect";
 
 import "./styles/common.css";
 import GSPAbout from "./app/views/our-work/GSP/GSPAbout";
-import FPHAbout from "./app/views/our-work/FPH/FPHAbout";
-import AISSAbout from "./app/views/our-work/AISS/AISSAbout";
-import S2TAbout from "./app/views/our-work/S2T/S2TAbout";
+import CCHAbout from "./app/views/our-work/CCH/CCHABout";
+import CSEAbout from "./app/views/our-work/CSE/CSEAbout";
+import LPAAbout from "./app/views/our-work/LPA/LPAAbout";
 
 const App = () => {
   const location = useLocation();
@@ -22,22 +22,21 @@ const App = () => {
       location={location}
     >
       <Route
-        path="/projects/aiss-about"
-        element={<AISSAbout />}
-      />
-      <Route
-        path="/projects/fph-about"
-        element={<FPHAbout />}
-      />
-      <Route
         path="/projects/gsp-about"
         element={<GSPAbout />}
       />
       <Route
-        path="/projects/s2t-about"
-        element={<S2TAbout />}
+        path="/projects/cse-about"
+        element={<CSEAbout />}
       />
-
+      <Route
+        path="/projects/cch-about"
+        element={<CCHAbout />}
+      />
+      <Route
+        path="/projects/lpa-about"
+        element={<LPAAbout />}
+      />
       <Route
         path="*"
         element={<Redirect url="/" />}
