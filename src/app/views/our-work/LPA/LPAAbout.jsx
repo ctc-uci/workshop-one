@@ -2,25 +2,24 @@ import React from "react";
 
 // note: this is normally bad practice, but we haven't covered module files yet,
 //  will be changed when we
-import "./FPHAbout.css";
+import "./LPAAbout.css";
 import Footer from "../../../components/Footer/Footer";
-import fphImage from '../../../../images/nonprofits/Feeding-Pets-Of-The-Homeless.png';
+import LPAImage from '../../../../images/nonprofits/La-Pena.jpg';
 
 // you can safely ignore most of the things above the opening div tag for now,
 // we'll cover them in more detail in our Frontend/React unit
-const FPHAbout = () => (
+const LPAAbout = () => (
   <div className="about-us-page-container">
     {/* your HTML starts here! */}
 
     <main className="about-us-main">
       <div>
         <section>
-          <h1>Feeding Pets of the Homeless</h1>
+          <h1>La Peña</h1>
 
-          {/* for your convenience, the npo logo */}
-          <img src={fphImage} alt="Feeding Pets of the Homeless Logo" />
+          <img src={LPAImage} alt="Stand Up to Trash Logo" style={{ width: '300px', height: 'auto' }} />
 
-          {/* for your convenience, some basic styles defined elsewhere */}
+          {/* for your convenience, some styles defined elsewhere */}
           <button type="button" className="primary-button">Primary Button</button>
           <button type="button" className="secondary-button">Secondary Button</button>
         </section>
@@ -45,4 +44,4 @@ const FPHAbout = () => (
   </div>
 );
 
-export default FPHAbout;
+export default LPAAbout;

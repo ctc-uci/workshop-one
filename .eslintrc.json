@@ -28,6 +28,7 @@
         "react/no-array-index-key": "off",
         "import/no-unresolved": "off",
         "max-len":"off",
-        "quotes": "off"
+        "quotes": "off",
+        "linebreak-style": ["error", "windows"]
     }
 }
