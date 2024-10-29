@@ -19,6 +19,7 @@
     "webpack": "^5.79.0"
   },
   "scripts": {
+    "dev": "react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "format": "prettier --write \"**/*.+(js|jsx|css)\"",
@@ -60,16 +61,16 @@
     "@babel/core": "^7.21.4",
     "@babel/plugin-syntax-flow": "^7.21.4",
     "@babel/plugin-transform-react-jsx": "^7.21.0",
+    "@eslint/js": "^9.13.0",
     "@testing-library/dom": "^9.2.0",
     "eslint": "^8.38.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "globals": "^15.11.0",
     "husky": "^4.3.0",
-    "lint-staged": "^13.2.1",
-    "typescript": "^5.0.3"
+    "lint-staged": "^13.2.1"
   },
   "packageManager": "yarn@3.5.0"
 }
