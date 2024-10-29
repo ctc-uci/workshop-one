@@ -16,7 +16,7 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
     "react-spring": "^8.0.27",
-    "webpack": "^5.79.0"
+    "webpack": "^5.94.0"
   },
   "scripts": {
     "start": "react-scripts start",
