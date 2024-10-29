@@ -27,21 +27,6 @@
     "eject": "react-scripts eject",
     "lint": "eslint ."
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.jsx": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "eslintConfig": {
     "extends": "react-app"
   },

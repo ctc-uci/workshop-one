@@ -37,10 +37,6 @@ const App = () => {
         path="/projects/lpa-about"
         element={<LPAAbout />}
       />
-      <Route
-        path="*"
-        element={<Redirect url="/" />}
-      />
     </Routes>
   );
 
