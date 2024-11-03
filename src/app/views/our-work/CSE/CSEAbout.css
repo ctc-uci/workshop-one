@@ -1,3 +1,5 @@
+@import url("https://rsms.me/inter/inter.css");
+
 .about-us-page-container {
     padding-top: 4rem;
     padding-bottom: 20rem;
@@ -9,3 +11,118 @@
 .about-us-page-container .footer {
     height: 20rem;
 }
+
+.about-us-content section h2{
+    color: #431fa4;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.about-us-content section p {
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 2;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    width: 150px;
+    height: 39px;
+}
+
+img {
+    width: 104px;
+    height: 117px;
+}
+
+
+.ctc-logo {
+    width: 30px;
+    height: 15px;
+}
+
+.about-us-main {
+    position: relative;
+    width: 50vw;
+    /* margin: auto; */
+    left: 10vw;
+    top: 7vh;
+}
+
+.titlewithbuttons {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    height: 40px;
+    /* border: 2px solid green; */
+    padding: 0;
+}
+
+.titlewithbuttons button {
+    border-radius: 2px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid red; */
+    margin-bottom: 2.5rem;
+}
+
+.header-flex-container h2 {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 16px;
+    color: #6F6F6F;
+    font-weight: 500;
+    width: 221px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.titlewithbuttons button {
+    width: 117px;
+    height: 29px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.titlewithbuttons h1 {
+    font-family: "Inter", sans-serif;
+    padding: 0px;
+}
+
+.top-right-triangle {
+    /* position: absolute; */
+    width: 278.16px;
+    height: 236.99px;
+    margin-top: 80px;
+    float: right;
+}
+
+.bottom-right-triangle {
+    /* float: right; */
+    position: absolute;
+    transform: rotate(90deg);
+    width: 278.16px;
+    height: 236.99px;
+    top: 70vh;
+    left: 55vw;
+}
+
+.spacer {
+    height: 25vh;
+}
+
+/* .img-container {
+    display: flex;
+    align-items: center;
+} */
