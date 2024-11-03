@@ -60,7 +60,7 @@ const CCHAbout = () => (
         </div>
       </div>
     </main>
-    <img src={FamilyClipArt} alt="Family clip art"/>
+    {/* <img src={FamilyClipArt} alt="Family clip art"/> */}
 
     {/* your HTML ends here! */}
 
