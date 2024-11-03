@@ -9,7 +9,7 @@ const root = createRoot(
 );
 
 root.render(
-  <React.StrictMode>
+  <React.StrictMode> 
     <Router>
       <App />
     </Router>

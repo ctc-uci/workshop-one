@@ -9,3 +9,77 @@
 .about-us-page-container .footer {
     height: 20rem;
 }
+
+.subheadings {
+    color: #481DAB;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-body {
+    margin-left: 135px;
+    margin-top: 43px;
+    height: 1200px;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    width: 659.96px;
+    height: 430px;
+}
+
+.primary-button {
+    border-radius: 2px;
+    width: 118px;
+    height: 31px;
+    padding-left: 33px;
+    padding-bottom: 6px;
+    padding-right: 33px;
+    padding-top: 6px;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.secondary-button  {
+    border-radius: 2px;
+    width: 129px;
+    height: 31px;
+    padding-left: 20px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    padding-top: 6px;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+p {
+    font-family: 'Inter';
+    line-height: 27px;
+}
+
+.solutionLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.text-section {
+    height: 0px;
+}
