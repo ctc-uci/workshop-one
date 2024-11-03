@@ -1,11 +1,149 @@
-.about-us-page-container {
+.cch-about-us-page-container {
     padding-top: 4rem;
     padding-bottom: 20rem;
-    background-color: white;
+    background-color: #d3eaf2;
     overflow-x: hidden;
     position: relative;
 }
 
+.cch-text .h1{
+    font-size: 32px;
+}
+
+.cch-about-us-main{
+    /* background-color: #d3eaf2; */
+    font-family: "Inter", monospace;
+    font-weight: 400;
+    margin-left: 60px;
+    padding-top: 40px;
+}
+
 .about-us-page-container .footer {
     height: 20rem;
+}
+
+.cch-about-us-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    width: 70%;
+}
+
+.cch-about-us-title {
+    color: #6331d8;
+}
+
+.cch-about-us-wrapped {
+    display: flex;
+    gap: 10px;
+}
+
+.cch-about-us-wrapped img {
+    width: 40px;
+}
+
+.cch-about-us-content hr {
+
+}
+
+@media (max-width: 600px) {
+
+    .cch-about-us-main{
+        /* background-color: #d3eaf2; */
+        font-family: "Inter", monospace;
+        font-weight: 400;
+        padding-top: 40px;
+        margin-left: 0px;
+    }
+
+    .cch-about-us-content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        width: 90%;
+        font-size: 12px;
+        z-index: 10;
+        margin-left: 40px;
+    }
+}
+
+#section-header{
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    #section-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #buttons-and-title{
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    #buttons-and-title h1{
+        padding-top: 20px;
+    }
+
+    #btnbox{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+#cch-logo{
+    width: 120px;
+    height: 120px;
+    border: 9px solid#2596be;
+}
+
+#buttons-and-title{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#buttons-and-title  h1{
+    margin: 0;
+    font-family: "Inter", monospace;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+#buttons-and-title  h2{
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: gray;
+}
+
+#btnbox {
+    display: flex;
+}
+
+#btnbox button{
+    margin-right: 20px;
+    width: 130px;
+    font-family: "Inter", monospace;
+    border-radius: 2px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in-image { 
+    animation: fadeIn 3s; 
+}
+
+.background-image{
+    z-index: 0;
 }
