@@ -1,11 +1,99 @@
+/* create colors */
+.root {
+    --color-primary: #481DAB;
+}
+
 .about-us-page-container {
-    padding-top: 4rem;
-    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10rem;
+    padding-bottom: 22rem;
     background-color: white;
     overflow-x: hidden;
     position: relative;
 }
 
+.about-us-main {
+    height: 100%;
+    margin-left: 7.5rem;
+    /* width: 50vw; */
+}
+
 .about-us-page-container .footer {
     height: 20rem;
 }
+
+.about-us-main {
+    margin-right: 50%;
+}
+
+.about-us-main .header-container {
+    width: 635px;
+    height: 94px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.about-us-main .header-container h1 {
+    font-family: Inter;
+    font-size: 20px;
+}
+
+.about-us-main .header-container .primary-button {
+    height: 31px;
+    width: 118px;
+}
+
+.secondary-button {
+    height: 31px;
+    width: 129px;
+}
+
+.about-us-content .timeline-text {
+    font-size: 1.1rem;
+    font-family: Source Code Pro;
+    color: #6F6F6F;
+    margin-bottom: 1rem;
+}
+
+.about-us-content h2 {
+    color: #481DAB;
+    font-size: 18px;
+}
+
+.about-us-content .header-logo {
+    float: left;
+    width: 36.96px;
+    height: 20.16px;
+    margin-right: .5rem;
+}
+
+/* graphics section */
+.about-us-page-container .graphics-container {
+    position: absolute;
+    /* position: relative; */
+    top: -1rem;
+    right: 15rem;
+    width: 30vw;
+    padding-right: 1rem;
+}
+
+.about-us-page-container .graphics-container .triangle1 {
+    /* put this top right */
+    position: absolute;
+    width: 135.67px;
+    top: 10rem;
+    right: 0rem;
+}
+
+.about-us-page-container .graphics-container .triangle2 {
+    /* put this bottom left */
+    position: absolute;
+    width: 189.6px;
+    top: 40rem;
+    right: 10rem;
+}
+
